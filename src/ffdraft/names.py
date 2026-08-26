@@ -7,6 +7,11 @@ import unicodedata
 # consensus says "Kyle Pitts Sr.").
 SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "v"}
 
+# First-name nicknames that differ across sources (ESPN "Kenny Gainwell",
+# Underdog "Kenneth Gainwell"). Keep this to proven cases only: folding
+# nicknames aggressively merges different players who share a surname.
+FIRST_NAME_ALIASES = {"kenny": "kenneth"}
+
 # Team abbreviation variants -> canonical (consensus/FFPC style).
 TEAM_ALIASES = {
     "WSH": "WAS", "WFT": "WAS",
@@ -105,6 +110,8 @@ def normalize_name(name):
     parts = [p for p in n.split() if p]
     while len(parts) > 2 and parts[-1] in SUFFIXES:
         parts.pop()
+    if parts:
+        parts[0] = FIRST_NAME_ALIASES.get(parts[0], parts[0])
     return " ".join(parts)
 
 

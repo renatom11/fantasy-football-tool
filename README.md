@@ -75,28 +75,23 @@ The consensus sample is 12-team; the target league is **10-team, first pick**. R
 
 ## Viewer
 
-`viewer/board.html` is a self-contained draft board (no build step, no dependencies —
-open the file or publish it). Regenerate its embedded data after changing any source:
+`viewer/board.html` is the board itself (published as the Claude artifact;
+`scripts/build_site.py` wraps it into `site/index.html` for the — currently
+manual-only — GitHub Pages deploy).
 
-```bash
-python3 -c "...ffdraft export..." > out/board.json   # see git history for the exporter
-```
+It shows **ESPN's top 200 in ESPN's order**, each player tagged against a
+selectable market baseline:
 
-It sorts by board order / best value / biggest reach / ESPN rank, filters by position,
-and crosses players off on tap (saved per-device in `localStorage`). Because every
-crossed-off player is one pick spent, the **your pick** markers slide up the board as the
-draft thins, so the top marker is always your real next turn — verified against the
-snake math for a 10-team slot-1 draft (19 spent -> R2 2.10, 20 -> R3 3.01, 40 -> R5 5.01).
+- **Market toggle** — Consensus (FFC, 7,726 12-team PPR drafts), Underdog
+  (best-ball, half-PPR, no K/DST), or the average of both.
+- **WAIT / HURRY / FAIR tags** — delta = ESPN ADP − market ADP. Positive
+  (green, WAIT) means ESPN drafters take him later than the market, so he
+  falls to you; negative (red, HURRY) means ESPN reaches, so market price is
+  unpayable there. |delta| < 3 reads FAIR.
+- **Seen X–Y** — the consensus sample's earliest/latest actual pick.
+- **UD n ↑k** — Underdog ADP and board movement since April (↑ = climbing).
+- Tap to cross off drafted players (localStorage); "Hide drafted" filters them.
 
-## Website
-
-The board deploys to GitHub Pages on every push:
-`https://renatom11.github.io/fantasy-football-tool/`
-
-- `viewer/board.html` is the single source of truth (also published as the Claude artifact).
-- `scripts/build_site.py` wraps it into a full standalone document at `site/index.html`.
-- `.github/workflows/pages.yml` rebuilds and deploys. CI runs the build itself, so
-  editing `viewer/board.html` alone is enough — the committed `site/index.html` is a
-  convenience copy, not the deployed truth.
-
-Note: the repo is private; GitHub Pages sites are still public URLs.
+The earlier live pick markers ("your pick", "on the clock") were removed on
+request. Rebuild the embedded data with the exporter in git history, then
+`python3 scripts/build_site.py`.

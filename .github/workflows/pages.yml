@@ -1,8 +1,8 @@
 name: Deploy site to GitHub Pages
 
+# Manual-only until Pages is enabled in repo settings (Settings > Pages >
+# Source: GitHub Actions) — on-push deploys just fail red until then.
 on:
-  push:
-    branches: [claude/fantasy-draft-rankings-r5665l]
   workflow_dispatch:
 
 permissions:
