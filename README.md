@@ -87,3 +87,16 @@ and crosses players off on tap (saved per-device in `localStorage`). Because eve
 crossed-off player is one pick spent, the **your pick** markers slide up the board as the
 draft thins, so the top marker is always your real next turn — verified against the
 snake math for a 10-team slot-1 draft (19 spent -> R2 2.10, 20 -> R3 3.01, 40 -> R5 5.01).
+
+## Website
+
+The board deploys to GitHub Pages on every push:
+`https://renatom11.github.io/fantasy-football-tool/`
+
+- `viewer/board.html` is the single source of truth (also published as the Claude artifact).
+- `scripts/build_site.py` wraps it into a full standalone document at `site/index.html`.
+- `.github/workflows/pages.yml` rebuilds and deploys. CI runs the build itself, so
+  editing `viewer/board.html` alone is enough — the committed `site/index.html` is a
+  convenience copy, not the deployed truth.
+
+Note: the repo is private; GitHub Pages sites are still public URLs.
