@@ -72,3 +72,18 @@ yet.
 The consensus sample is 12-team; the target league is **10-team, first pick**. Raw ADP
 (overall pick number) compares fine across the two, but round.pick does not, so pass
 `--teams 10` to get rounds that match the actual draft board.
+
+## Viewer
+
+`viewer/board.html` is a self-contained draft board (no build step, no dependencies —
+open the file or publish it). Regenerate its embedded data after changing any source:
+
+```bash
+python3 -c "...ffdraft export..." > out/board.json   # see git history for the exporter
+```
+
+It sorts by board order / best value / biggest reach / ESPN rank, filters by position,
+and crosses players off on tap (saved per-device in `localStorage`). Because every
+crossed-off player is one pick spent, the **your pick** markers slide up the board as the
+draft thins, so the top marker is always your real next turn — verified against the
+snake math for a 10-team slot-1 draft (19 spent -> R2 2.10, 20 -> R3 3.01, 40 -> R5 5.01).
