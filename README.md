@@ -56,3 +56,19 @@ If your network blocks the call, `--print-url` prints the request URL and the
 Then feed `data/raw/espn.csv` to the comparison above. Private-league data
 (your actual draft board) needs `SWID` / `espn_s2` cookies and is not wired up
 yet.
+
+## Data provenance
+
+- `data/raw/consensus_adp_2026-08-25.csv` - consensus export, PPR, **12-team**, 7,726 drafts.
+- `data/raw/espn_2026-08-26.csv` - ESPN rank + ADP for the top 200, **hand-transcribed
+  from a screen recording of the ESPN draft room** because the API is unreachable
+  from the dev sandbox. Ranks 1-200 are complete with no gaps or duplicates, but the
+  digits are read off video: re-pull with `ffdraft/espn.py` when a network path exists
+  and diff before trusting it for a real draft.
+- `data/raw/underdog_adp_2026-08-26.csv` - Underdog ADP incl. April->August movement. Unused so far.
+
+### League size
+
+The consensus sample is 12-team; the target league is **10-team, first pick**. Raw ADP
+(overall pick number) compares fine across the two, but round.pick does not, so pass
+`--teams 10` to get rounds that match the actual draft board.
