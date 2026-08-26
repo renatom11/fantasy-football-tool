@@ -34,3 +34,25 @@ Useful flags: `--pos RB`, `--max-adp 120` (draftable range only),
 - `src/ffdraft/compare.py` - join, deltas, table + CSV output
 
 No third-party dependencies; stdlib Python 3 only.
+
+## Pulling ESPN automatically
+
+ESPN's fantasy endpoints are undocumented but public for league defaults, and
+carry both numbers we care about: their editorial draft rank and the ADP their
+drafters actually produce.
+
+```bash
+python3 -c "import sys; sys.path.insert(0,'src'); from ffdraft.espn import main; main()" \
+  --season 2026 --scoring ppr --out data/raw/espn.csv
+```
+
+If your network blocks the call, `--print-url` prints the request URL and the
+`x-fantasy-filter` header. Open it in a browser, save the JSON, then:
+
+```bash
+... from ffdraft.espn import main; main()" --from-json espn.json --out data/raw/espn.csv
+```
+
+Then feed `data/raw/espn.csv` to the comparison above. Private-league data
+(your actual draft board) needs `SWID` / `espn_s2` cookies and is not wired up
+yet.
