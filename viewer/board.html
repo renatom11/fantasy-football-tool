@@ -160,26 +160,34 @@ button.chip:focus-visible,.row:focus-visible,#q:focus-visible{outline:2px solid 
       <p><b>ADP</b> means Average Draft Position: across thousands of real drafts, the average
       pick number where a player gets taken. ADP 34 means he usually goes around the 34th
       pick of the draft.</p>
-      <p>Every player here gets two numbers: <b>ESPN</b> (where ESPN drafters take him &mdash;
-      your draft room) and <b>Market</b> (where everyone else takes him, from the source you
-      pick below). The colored tag compares them:</p>
+      <p>Every player gets two prices: <b>ESPN</b> (where ESPN drafters take him &mdash; your
+      draft room) and <b>Market</b> (where everyone else takes him, from the source you pick
+      below). The colored tag compares them &mdash; and it counts <b>value, not just picks</b>,
+      because early picks matter far more: a player sliding 8 spots in round 1 is a bigger
+      gift than one sliding 60 spots in round 10.</p>
+      <p>How value is counted: every pick gets a price, the way auction dollars work &mdash;
+      pick 1 is worth <b>100</b>, pick 20 about <b>62</b>, pick 40 about <b>38</b>, pick 100
+      about <b>8</b>. The tag's number ("val") is his market-pick price minus his ESPN-pick
+      price.</p>
       <dl>
-        <dt><span class="demo wait">WAIT +63</span></dt>
-        <dd><b>Green = ESPN drafters take him 63 picks LATER than the market.</b> He'll
-        probably still be sitting there long after his market price, so you don't need to
-        spend an early pick &mdash; wait and get him cheap.</dd>
-        <dt><span class="demo hurry">HURRY &minus;40</span></dt>
-        <dd><b>Red = ESPN drafters grab him 40 picks EARLIER than the market.</b> If you want
-        him, market price is irrelevant &mdash; in your ESPN room he'll be gone. Take him
-        early or let him go.</dd>
+        <dt><span class="demo wait">WAIT +15 val</span></dt>
+        <dd><b>Green = ESPN drafters take him LATER than the market says he's worth. Free
+        value &mdash; wait and pocket it.</b> Example: the market prices Drake London around
+        pick 10, but ESPN rooms let him last to pick 18 &mdash; a first-round player sliding
+        into round 2 for free.</dd>
+        <dt><span class="demo hurry">HURRY &minus;15 val</span></dt>
+        <dd><b>Red = ESPN drafters grab him EARLIER than the market price. If you want him
+        you must overpay.</b> Example: the market prices Josh Allen around pick 34, but on
+        ESPN he's gone by 22 &mdash; wanting him costs you a round of value.</dd>
         <dt><span class="demo fair">FAIR</span></dt>
-        <dd>Gray = ESPN and the market land within 3 picks of each other. They agree; no edge either way.</dd>
+        <dd>Gray = ESPN and the market land within 3 picks of each other. They agree; no
+        edge either way.</dd>
       </dl>
-      <p style="margin-top:10px">The thin <b>bar under each player</b> is the same number as
-      the tag, drawn as a picture: the center tick is "ESPN agrees with the market", green
-      grows to the right (falls further on ESPN), red grows to the left (goes earlier on
-      ESPN). Longer bar = bigger disagreement, until it maxes out at a 45-pick gap &mdash;
-      past that, read the number on the tag.</p>
+      <p style="margin-top:10px">Each row also spells out the raw gap ("<b>9 picks later on
+      ESPN</b>") so you always see both the plain pick difference and what it's worth. The
+      thin <b>bar under each player</b> draws the val number: the center tick is "they
+      agree", green grows right (free value), red grows left (overpaying). It maxes out at
+      18 val &mdash; past that, read the number on the tag.</p>
       <dl>
         <dt>#36</dt><dd>The player's position on ESPN's ranking list &mdash; the order you'll
         see in your draft room.</dd>
@@ -196,8 +204,8 @@ button.chip:focus-visible,.row:focus-visible,#q:focus-visible{outline:2px solid 
       <p style="margin-top:10px"><b>During your draft:</b> tap a player when he gets taken
       &mdash; he dims and crosses out. "Hide drafted" sweeps them away so you only see who's
       left; "Clear drafted" un-crosses everyone for your next draft. Your taps are remembered
-      on this device. The "Biggest WAIT" and "Biggest HURRY" sort buttons rank the whole
-      board by those same green and red tags.</p>
+      on this device. "Biggest WAIT" and "Biggest HURRY" rank the whole board by val, so a
+      round-1 discrepancy outranks round-12 noise.</p>
     </div>
   </details>
 
@@ -247,15 +255,18 @@ button.chip:focus-visible,.row:focus-visible,#q:focus-visible{outline:2px solid 
 <script>
 const DATA = {"meta":{"teams":10,"fmt":"PPR","espn_date":"2026-08-26","consensus_drafts":7726,"consensus_teams":12},"players":[{"n":"Jahmyr Gibbs","p":"RB","t":"DET","er":1,"ea":1.4,"by":6,"ca":1.5,"chi":1,"clo":4,"ctd":1954,"ua":1.1,"uapr":1.6},{"n":"Bijan Robinson","p":"RB","t":"ATL","er":2,"ea":2.5,"by":11,"ca":2.1,"chi":1,"clo":6,"ctd":1155,"ua":2.0,"uapr":1.5},{"n":"Ja'Marr Chase","p":"WR","t":"CIN","er":3,"ea":3.9,"by":6,"ca":3.8,"chi":1,"clo":8,"ctd":2021,"ua":3.0,"uapr":3.1},{"n":"Puka Nacua","p":"WR","t":"LAR","er":4,"ea":5.2,"by":11,"ca":3.1,"chi":1,"clo":6,"ctd":302,"ua":4.2,"uapr":4.1},{"n":"Jaxon Smith-Njigba","p":"WR","t":"SEA","er":5,"ea":5.7,"by":11,"ca":5.4,"chi":2,"clo":11,"ctd":1075,"ua":5.5,"uapr":5.1},{"n":"Christian McCaffrey","p":"RB","t":"SF","er":6,"ea":7.3,"by":8,"ca":6.6,"chi":2,"clo":12,"ctd":1596,"ua":6.1,"uapr":7.2},{"n":"Jonathan Taylor","p":"RB","t":"IND","er":7,"ea":7.6,"by":13,"ca":7.5,"chi":3,"clo":14,"ctd":1791,"ua":7.7,"uapr":6.8},{"n":"Amon-Ra St. Brown","p":"WR","t":"DET","er":8,"ea":8.2,"by":6,"ca":6.4,"chi":2,"clo":12,"ctd":1151,"ua":7.2,"uapr":8.7},{"n":"CeeDee Lamb","p":"WR","t":"DAL","er":9,"ea":10.7,"by":14,"ca":10.7,"chi":6,"clo":18,"ctd":1337,"ua":9.8,"uapr":8.7},{"n":"De'Von Achane","p":"RB","t":"MIA","er":10,"ea":12.0,"by":6,"ca":10.4,"chi":5,"clo":18,"ctd":808,"ua":16.7,"uapr":13.8},{"n":"Justin Jefferson","p":"WR","t":"MIN","er":11,"ea":12.1,"by":6,"ca":11.7,"chi":5,"clo":20,"ctd":1362,"ua":10.9,"uapr":9.6},{"n":"James Cook III","p":"RB","t":"BUF","er":12,"ea":12.4,"by":7,"ca":12.7,"chi":5,"clo":22,"ctd":2881,"ua":10.0,"uapr":11.3},{"n":"Ashton Jeanty","p":"RB","t":"LV","er":13,"ea":17.4,"by":13,"ca":15.1,"chi":6,"clo":23,"ctd":1314,"ua":16.2,"uapr":11.6},{"n":"Drake London","p":"WR","t":"ATL","er":14,"ea":18.5,"by":11,"ca":10.0,"chi":6,"clo":16,"ctd":294,"ua":21.7,"uapr":19.6},{"n":"Jeremiyah Love","p":"RB","t":"ARI","er":15,"ea":22.8,"by":14,"ca":27.7,"chi":18,"clo":41,"ctd":629,"ua":29.8,"uapr":23.8},{"n":"Rashee Rice","p":"WR","t":"KC","er":16,"ea":22.1,"by":5,"ca":14.8,"chi":9,"clo":22,"ctd":248,"ua":27.1,"uapr":20.4},{"n":"Trey McBride","p":"TE","t":"ARI","er":17,"ea":20.6,"by":14,"ca":29.0,"chi":16,"clo":44,"ctd":1058,"ua":28.9,"uapr":22.4},{"n":"Saquon Barkley","p":"RB","t":"PHI","er":18,"ea":15.5,"by":10,"ca":19.5,"chi":10,"clo":31,"ctd":2624,"ua":13.1,"uapr":14.3},{"n":"Derrick Henry","p":"RB","t":"BAL","er":19,"ea":18.8,"by":13,"ca":17.6,"chi":10,"clo":25,"ctd":1057,"ua":16.8,"uapr":18.0},{"n":"Chase Brown","p":"RB","t":"CIN","er":20,"ea":22.3,"by":6,"ca":13.3,"chi":6,"clo":20,"ctd":1776,"ua":14.4,"uapr":20.3},{"n":"Kenneth Walker III","p":"RB","t":"KC","er":21,"ea":22.2,"by":5,"ca":21.8,"chi":11,"clo":34,"ctd":2477,"ua":13.8,"uapr":15.6},{"n":"Omarion Hampton","p":"RB","t":"LAC","er":22,"ea":25.6,"by":7,"ca":23.4,"chi":12,"clo":37,"ctd":2287,"ua":16.3,"uapr":16.7},{"n":"Breece Hall","p":"RB","t":"NYJ","er":23,"ea":33.7,"by":13,"ca":35.3,"chi":22,"clo":47,"ctd":641,"ua":32.0,"uapr":32.6},{"n":"Brock Bowers","p":"TE","t":"LV","er":24,"ea":24.3,"by":13,"ca":35.4,"chi":16,"clo":52,"ctd":2597,"ua":20.1,"uapr":22.6},{"n":"Nico Collins","p":"WR","t":"HOU","er":25,"ea":26.9,"by":8,"ca":21.0,"chi":13,"clo":32,"ctd":835,"ua":21.9,"uapr":25.8},{"n":"Chris Olave","p":"WR","t":"NO","er":26,"ea":31.0,"by":8,"ca":19.5,"chi":10,"clo":30,"ctd":548,"ua":26.2,"uapr":34.7},{"n":"Garrett Wilson","p":"WR","t":"NYJ","er":27,"ea":36.4,"by":13,"ca":25.7,"chi":18,"clo":36,"ctd":344,"ua":39.1,"uapr":37.7},{"n":"A.J. Brown","p":"WR","t":"NE","er":28,"ea":26.8,"by":11,"ca":18.2,"chi":9,"clo":29,"ctd":1530,"ua":18.4,"uapr":27.5},{"n":"Malik Nabers","p":"WR","t":"NYG","er":29,"ea":34.0,"by":8,"ca":27.3,"chi":18,"clo":40,"ctd":1618,"ua":22.6,"uapr":17.7},{"n":"Josh Jacobs","p":"RB","t":"GB","er":30,"ea":37.0,"by":11,"ca":30.6,"chi":21,"clo":40,"ctd":650,"ua":41.8,"uapr":26.9},{"n":"Javonte Williams","p":"RB","t":"DAL","er":31,"ea":35.4,"by":14,"ca":36.5,"chi":24,"clo":50,"ctd":1548,"ua":33.5,"uapr":37.7},{"n":"George Pickens","p":"WR","t":"DAL","er":32,"ea":30.7,"by":14,"ca":20.6,"chi":12,"clo":29,"ctd":728,"ua":23.6,"uapr":25.3},{"n":"Tetairoa McMillan","p":"WR","t":"CAR","er":33,"ea":41.5,"by":5,"ca":32.2,"chi":22,"clo":43,"ctd":562,"ua":40.7,"uapr":33.8},{"n":"Zay Flowers","p":"WR","t":"BAL","er":34,"ea":40.7,"by":13,"ca":26.1,"chi":18,"clo":37,"ctd":448,"ua":31.1,"uapr":39.4},{"n":"DeVonta Smith","p":"WR","t":"PHI","er":35,"ea":40.8,"by":10,"ca":29.8,"chi":20,"clo":43,"ctd":1435,"ua":27.7,"uapr":30.4},{"n":"Josh Allen","p":"QB","t":"BUF","er":36,"ea":22.1,"by":7,"ca":34.2,"chi":11,"clo":50,"ctd":1697,"ua":36.7,"uapr":30.4},{"n":"Travis Etienne Jr.","p":"RB","t":"NO","er":37,"ea":43.8,"by":8,"ca":39.1,"chi":26,"clo":52,"ctd":794,"ua":39.9,"uapr":30.8},{"n":"Kyren Williams","p":"RB","t":"LAR","er":38,"ea":41.7,"by":11,"ca":31.6,"chi":20,"clo":44,"ctd":1308,"ua":29.9,"uapr":33.9},{"n":"Quinshon Judkins","p":"RB","t":"CLE","er":39,"ea":54.7,"by":11,"ca":50.4,"chi":37,"clo":64,"ctd":810,"ua":54.3,"uapr":55.0},{"n":"Cam Skattebo","p":"RB","t":"NYG","er":40,"ea":44.0,"by":8,"ca":37.1,"chi":24,"clo":56,"ctd":541,"ua":46.7,"uapr":50.7},{"n":"Bucky Irving","p":"RB","t":"TB","er":41,"ea":53.6,"by":10,"ca":44.7,"chi":33,"clo":58,"ctd":589,"ua":54.2,"uapr":43.0},{"n":"Emeka Egbuka","p":"WR","t":"TB","er":42,"ea":48.0,"by":10,"ca":34.8,"chi":24,"clo":50,"ctd":1711,"ua":35.9,"uapr":40.0},{"n":"Davante Adams","p":"WR","t":"LAR","er":43,"ea":46.0,"by":11,"ca":42.0,"chi":30,"clo":59,"ctd":858,"ua":52.2,"uapr":51.8},{"n":"Ladd McConkey","p":"WR","t":"LAC","er":44,"ea":50.5,"by":7,"ca":37.8,"chi":26,"clo":59,"ctd":2223,"ua":33.3,"uapr":41.7},{"n":"Terry McLaurin","p":"WR","t":"WAS","er":45,"ea":59.8,"by":7,"ca":46.9,"chi":34,"clo":66,"ctd":925,"ua":48.6,"uapr":50.0},{"n":"Tee Higgins","p":"WR","t":"CIN","er":46,"ea":55.5,"by":6,"ca":36.8,"chi":24,"clo":52,"ctd":1087,"ua":35.0,"uapr":35.5},{"n":"Jaylen Waddle","p":"WR","t":"DEN","er":47,"ea":56.7,"by":10,"ca":46.0,"chi":31,"clo":71,"ctd":2202,"ua":37.4,"uapr":48.9},{"n":"Rome Odunze","p":"WR","t":"CHI","er":48,"ea":64.4,"by":10,"ca":52.6,"chi":36,"clo":72,"ctd":1109,"ua":58.4,"uapr":57.1},{"n":"Colston Loveland","p":"TE","t":"CHI","er":49,"ea":45.0,"by":10,"ca":57.0,"chi":33,"clo":79,"ctd":1961,"ua":44.0,"uapr":45.9},{"n":"Tyler Warren","p":"TE","t":"IND","er":50,"ea":50.3,"by":13,"ca":65.5,"chi":41,"clo":91,"ctd":1548,"ua":63.2,"uapr":69.0},{"n":"Jameson Williams","p":"WR","t":"DET","er":51,"ea":67.2,"by":6,"ca":44.2,"chi":32,"clo":62,"ctd":499,"ua":50.8,"uapr":47.5},{"n":"DJ Moore","p":"WR","t":"BUF","er":52,"ea":62.7,"by":7,"ca":48.5,"chi":32,"clo":70,"ctd":2524,"ua":52.6,"uapr":51.4},{"n":"Luther Burden III","p":"WR","t":"CHI","er":53,"ea":76.8,"by":10,"ca":58.3,"chi":38,"clo":83,"ctd":1338,"ua":45.4,"uapr":42.5},{"n":"Carnell Tate","p":"WR","t":"TEN","er":54,"ea":78.1,"by":9,"ca":77.3,"chi":52,"clo":102,"ctd":1583,"ua":62.7,"uapr":59.9},{"n":"Jayden Daniels","p":"QB","t":"WAS","er":55,"ea":50.9,"by":7,"ca":72.2,"chi":42,"clo":113,"ctd":571,"ua":69.1,"uapr":64.4},{"n":"Lamar Jackson","p":"QB","t":"BAL","er":56,"ea":38.6,"by":13,"ca":56.9,"chi":39,"clo":74,"ctd":851,"ua":56.3,"uapr":53.2},{"n":"Drake Maye","p":"QB","t":"NE","er":57,"ea":47.4,"by":11,"ca":51.8,"chi":31,"clo":70,"ctd":377,"ua":66.8,"uapr":70.9},{"n":"Jalen Hurts","p":"QB","t":"PHI","er":58,"ea":51.3,"by":10,"ca":78.8,"chi":49,"clo":114,"ctd":780,"ua":72.1,"uapr":68.9},{"n":"Bhayshul Tuten","p":"RB","t":"JAX","er":59,"ea":72.7,"by":7,"ca":52.2,"chi":38,"clo":69,"ctd":963,"ua":49.7,"uapr":57.0},{"n":"D'Andre Swift","p":"RB","t":"CHI","er":60,"ea":64.3,"by":10,"ca":45.7,"chi":34,"clo":58,"ctd":1145,"ua":44.2,"uapr":56.9},{"n":"David Montgomery","p":"RB","t":"HOU","er":61,"ea":69.8,"by":8,"ca":58.4,"chi":41,"clo":81,"ctd":1841,"ua":47.1,"uapr":49.0},{"n":"Jadarian Price","p":"RB","t":"SEA","er":62,"ea":76.1,"by":11,"ca":76.5,"chi":49,"clo":119,"ctd":2976,"ua":60.2,"uapr":60.9},{"n":"TreVeyon Henderson","p":"RB","t":"NE","er":63,"ea":78.2,"by":11,"ca":61.5,"chi":44,"clo":81,"ctd":715,"ua":59.8,"uapr":47.4},{"n":"Rhamondre Stevenson","p":"RB","t":"NE","er":64,"ea":84.0,"by":11,"ca":66.4,"chi":48,"clo":86,"ctd":498,"ua":69.4,"uapr":76.3},{"n":"Courtland Sutton","p":"WR","t":"DEN","er":65,"ea":80.0,"by":10,"ca":59.6,"chi":42,"clo":79,"ctd":653,"ua":82.8,"uapr":80.3},{"n":"Michael Pittman Jr.","p":"WR","t":"PIT","er":66,"ea":91.1,"by":9,"ca":74.8,"chi":54,"clo":96,"ctd":888,"ua":100.6,"uapr":105.9},{"n":"Marvin Harrison Jr.","p":"WR","t":"ARI","er":67,"ea":85.6,"by":14,"ca":65.8,"chi":45,"clo":87,"ctd":1220,"ua":66.5,"uapr":67.2},{"n":"DK Metcalf","p":"WR","t":"PIT","er":68,"ea":86.6,"by":9,"ca":64.5,"chi":46,"clo":87,"ctd":905,"ua":73.9,"uapr":76.9},{"n":"Parker Washington","p":"WR","t":"JAX","er":69,"ea":94.6,"by":7,"ca":64.8,"chi":45,"clo":87,"ctd":2020,"ua":57.2,"uapr":73.8},{"n":"Alec Pierce","p":"WR","t":"IND","er":70,"ea":101.6,"by":13,"ca":66.7,"chi":47,"clo":85,"ctd":471,"ua":95.5,"uapr":68.9},{"n":"Kyle Pitts Sr.","p":"TE","t":"ATL","er":71,"ea":64.9,"by":11,"ca":75.5,"chi":51,"clo":98,"ctd":410,"ua":101.4,"uapr":101.0},{"n":"Harold Fannin Jr.","p":"TE","t":"CLE","er":72,"ea":75.3,"by":11,"ca":78.9,"chi":59,"clo":109,"ctd":205,"ua":104.9,"uapr":87.1},{"n":"Sam LaPorta","p":"TE","t":"DET","er":73,"ea":70.9,"by":6,"ca":106.7,"chi":46,"clo":166,"ctd":911,"ua":92.7,"uapr":102.3},{"n":"Joe Burrow","p":"QB","t":"CIN","er":74,"ea":58.7,"by":6,"ca":57.9,"chi":38,"clo":77,"ctd":739,"ua":68.1,"uapr":62.9},{"n":"Jaxson Dart","p":"QB","t":"NYG","er":75,"ea":76.2,"by":8,"ca":116.4,"chi":85,"clo":140,"ctd":463,"ua":103.9,"uapr":88.4},{"n":"Mike Evans","p":"WR","t":"SF","er":76,"ea":94.0,"by":8,"ca":54.3,"chi":38,"clo":77,"ctd":1031,"ua":50.6,"uapr":45.4},{"n":"Christian Watson","p":"WR","t":"GB","er":77,"ea":95.5,"by":11,"ca":58.8,"chi":42,"clo":80,"ctd":1717,"ua":57.0,"uapr":59.5},{"n":"Matthew Golden","p":"WR","t":"GB","er":78,"ea":102.4,"by":11,"ca":106.2,"chi":82,"clo":127,"ctd":826,"ua":101.1,"uapr":111.9},{"n":"Michael Wilson","p":"WR","t":"ARI","er":79,"ea":103.4,"by":14,"ca":76.0,"chi":55,"clo":97,"ctd":1188,"ua":90.6,"uapr":83.3},{"n":"Brian Thomas Jr.","p":"WR","t":"JAX","er":80,"ea":102.9,"by":7,"ca":72.5,"chi":52,"clo":92,"ctd":1113,"ua":64.5,"uapr":63.9},{"n":"Jakobi Meyers","p":"WR","t":"JAX","er":81,"ea":113.1,"by":7,"ca":87.7,"chi":69,"clo":104,"ctd":386,"ua":119.3,"uapr":90.7},{"n":"Trevor Lawrence","p":"QB","t":"JAX","er":82,"ea":92.7,"by":7,"ca":91.2,"chi":58,"clo":126,"ctd":1057,"ua":86.3,"uapr":83.9},{"n":"Dak Prescott","p":"QB","t":"DAL","er":83,"ea":85.2,"by":14,"ca":65.6,"chi":45,"clo":96,"ctd":562,"ua":80.1,"uapr":79.0},{"n":"Bo Nix","p":"QB","t":"DEN","er":84,"ea":86.7,"by":10,"ca":111.9,"chi":77,"clo":142,"ctd":756,"ua":106.3,"uapr":97.9},{"n":"Brock Purdy","p":"QB","t":"SF","er":85,"ea":102.8,"by":8,"ca":88.0,"chi":56,"clo":120,"ctd":269,"ua":102.4,"uapr":98.0},{"n":"Matthew Stafford","p":"QB","t":"LAR","er":86,"ea":80.2,"by":11,"ca":76.9,"chi":50,"clo":114,"ctd":392,"ua":110.5,"uapr":103.2},{"n":"Caleb Williams","p":"QB","t":"CHI","er":87,"ea":92.3,"by":10,"ca":90.6,"chi":58,"clo":121,"ctd":1241,"ua":73.3,"uapr":70.6},{"n":"Wan'Dale Robinson","p":"WR","t":"TEN","er":88,"ea":113.9,"by":9,"ca":85.9,"chi":64,"clo":109,"ctd":714,"ua":112.9,"uapr":111.9},{"n":"Jordan Addison","p":"WR","t":"MIN","er":89,"ea":114.8,"by":6,"ca":97.4,"chi":74,"clo":119,"ctd":592,"ua":88.5,"uapr":80.8},{"n":"Khalil Shakir","p":"WR","t":"BUF","er":90,"ea":124.2,"by":7,"ca":101.8,"chi":79,"clo":127,"ctd":348,"ua":131.0,"uapr":127.2},{"n":"Travis Hunter","p":"WR","t":"JAX","er":91,"ea":120.9,"by":7,"ca":169.4,"chi":138,"clo":196,"ctd":61,"ua":156.2,"uapr":159.7},{"n":"Jayden Reed","p":"WR","t":"GB","er":92,"ea":125.3,"by":11,"ca":95.0,"chi":73,"clo":120,"ctd":590,"ua":78.3,"uapr":90.9},{"n":"Xavier Worthy","p":"WR","t":"KC","er":93,"ea":122.8,"by":5,"ca":105.6,"chi":84,"clo":122,"ctd":569,"ua":106.9,"uapr":115.2},{"n":"Justin Herbert","p":"QB","t":"LAC","er":94,"ea":106.6,"by":7,"ca":105.9,"chi":69,"clo":140,"ctd":1448,"ua":83.8,"uapr":87.1},{"n":"Patrick Mahomes","p":"QB","t":"KC","er":95,"ea":106.7,"by":5,"ca":102.7,"chi":70,"clo":132,"ctd":884,"ua":97.0,"uapr":93.8},{"n":"Jaylen Warren","p":"RB","t":"PIT","er":96,"ea":98.1,"by":9,"ca":58.4,"chi":43,"clo":74,"ctd":253,"ua":70.0,"uapr":81.8},{"n":"Rico Dowdle","p":"RB","t":"PIT","er":97,"ea":103.7,"by":9,"ca":74.5,"chi":54,"clo":98,"ctd":509,"ua":84.0,"uapr":90.8},{"n":"Tony Pollard","p":"RB","t":"TEN","er":98,"ea":106.5,"by":9,"ca":69.3,"chi":51,"clo":90,"ctd":409,"ua":77.6,"uapr":83.1},{"n":"Kenny Gainwell","p":"RB","t":"TB","er":99,"ea":117.4,"by":10,"ca":91.5,"chi":64,"clo":120,"ctd":705,"ua":109.1,"uapr":118.3},{"n":"Jonathon Brooks","p":"RB","t":"CAR","er":100,"ea":116.1,"by":5,"ca":97.5,"chi":60,"clo":141,"ctd":2379,"ua":76.1,"uapr":129.0},{"n":"Chuba Hubbard","p":"RB","t":"CAR","er":101,"ea":122.1,"by":5,"ca":79.0,"chi":53,"clo":114,"ctd":417,"ua":98.0,"uapr":69.2},{"n":"Tucker Kraft","p":"TE","t":"GB","er":102,"ea":89.4,"by":11,"ca":100.4,"chi":49,"clo":153,"ctd":1448,"ua":77.4,"uapr":84.4},{"n":"George Kittle","p":"TE","t":"SF","er":103,"ea":94.6,"by":8,"ca":116.7,"chi":65,"clo":160,"ctd":897,"ua":112.2,"uapr":117.8},{"n":"Dallas Goedert","p":"TE","t":"PHI","er":104,"ea":98.3,"by":10,"ca":101.0,"chi":47,"clo":150,"ctd":314,"ua":133.4,"uapr":135.4},{"n":"Travis Kelce","p":"TE","t":"KC","er":105,"ea":96.9,"by":5,"ca":106.7,"chi":52,"clo":150,"ctd":340,"ua":123.4,"uapr":127.6},{"n":"J.K. Dobbins","p":"RB","t":"DEN","er":106,"ea":116.4,"by":10,"ca":88.5,"chi":61,"clo":120,"ctd":911,"ua":95.9,"uapr":99.1},{"n":"Kyle Monangai","p":"RB","t":"CHI","er":107,"ea":128.2,"by":10,"ca":108.7,"chi":75,"clo":147,"ctd":599,"ua":108.6,"uapr":87.0},{"n":"Jacory Croskey-Merritt","p":"RB","t":"WAS","er":108,"ea":131.6,"by":7,"ca":115.6,"chi":77,"clo":150,"ctd":1182,"ua":100.2,"uapr":109.9},{"n":"Rachaad White","p":"RB","t":"WAS","er":109,"ea":136.2,"by":7,"ca":111.2,"chi":75,"clo":148,"ctd":605,"ua":118.1,"uapr":122.3},{"n":"Jake Ferguson","p":"TE","t":"DAL","er":110,"ea":111.3,"by":14,"ca":132.7,"chi":87,"clo":170,"ctd":436,"ua":135.7,"uapr":125.4},{"n":"Mark Andrews","p":"TE","t":"BAL","er":111,"ea":121.0,"by":13,"ca":127.8,"chi":78,"clo":170,"ctd":436,"ua":133.3,"uapr":137.2},{"n":"T.J. Hockenson","p":"TE","t":"MIN","er":112,"ea":132.8,"by":6,"ca":166.8,"chi":113,"clo":207,"ctd":47,"ua":169.9,"uapr":163.6},{"n":"Quentin Johnston","p":"WR","t":"LAC","er":113,"ea":137.8,"by":7,"ca":96.3,"chi":72,"clo":119,"ctd":842,"ua":75.6,"uapr":105.8},{"n":"Josh Downs","p":"WR","t":"IND","er":114,"ea":135.2,"by":13,"ca":85.9,"chi":64,"clo":107,"ctd":1009,"ua":82.5,"uapr":110.0},{"n":"Deebo Samuel Sr.","p":"WR","t":"SF","er":115,"ea":130.6,"by":8,"ca":109.7,"chi":82,"clo":142,"ctd":637,"ua":127.2,"uapr":171.0},{"n":"Aaron Jones Sr.","p":"RB","t":"MIN","er":116,"ea":132.5,"by":6,"ca":101.8,"chi":69,"clo":141,"ctd":481,"ua":128.0,"uapr":125.6},{"n":"Isaiah Likely","p":"TE","t":"NYG","er":117,"ea":127.6,"by":8,"ca":136.6,"chi":90,"clo":174,"ctd":1361,"ua":127.2,"uapr":136.7},{"n":"Dalton Kincaid","p":"TE","t":"BUF","er":118,"ea":131.7,"by":7,"ca":148.9,"chi":93,"clo":196,"ctd":331,"ua":120.7,"uapr":132.5},{"n":"Kenyon Sadiq","p":"TE","t":"NYJ","er":119,"ea":147.0,"by":13,"ca":160.0,"chi":124,"clo":187,"ctd":32,"ua":181.6,"uapr":143.7},{"n":"Hunter Henry","p":"TE","t":"NE","er":120,"ea":142.8,"by":11,"ca":153.4,"chi":91,"clo":188,"ctd":96,"ua":153.4,"uapr":155.6},{"n":"Jordan Mason","p":"RB","t":"MIN","er":121,"ea":139.7,"by":6,"ca":117.4,"chi":75,"clo":150,"ctd":1649,"ua":98.1,"uapr":119.6},{"n":"Blake Corum","p":"RB","t":"LAR","er":122,"ea":136.0,"by":11,"ca":121.4,"chi":76,"clo":150,"ctd":1536,"ua":87.4,"uapr":98.9},{"n":"RJ Harvey","p":"RB","t":"DEN","er":123,"ea":138.3,"by":10,"ca":88.1,"chi":55,"clo":120,"ctd":637,"ua":88.0,"uapr":78.5},{"n":"Woody Marks","p":"RB","t":"HOU","er":124,"ea":148.9,"by":8,"ca":140.9,"chi":101,"clo":177,"ctd":363,"ua":137.1,"uapr":144.1},{"n":"Stefon Diggs","p":"WR","t":"WAS","er":125,"ea":127.0,"by":7,"ca":91.2,"chi":68,"clo":112,"ctd":1230,"ua":93.8,"uapr":156.4},{"n":"Makai Lemon","p":"WR","t":"PHI","er":126,"ea":142.2,"by":10,"ca":115.6,"chi":87,"clo":147,"ctd":863,"ua":81.2,"uapr":72.7},{"n":"KC Concepcion","p":"WR","t":"CLE","er":127,"ea":144.7,"by":11,"ca":120.9,"chi":92,"clo":148,"ctd":1314,"ua":111.5,"uapr":111.5},{"n":"Chris Godwin Jr.","p":"WR","t":"TB","er":128,"ea":143.0,"by":10,"ca":80.0,"chi":58,"clo":101,"ctd":1421,"ua":84.7,"uapr":90.9},{"n":"Romeo Doubs","p":"WR","t":"NE","er":129,"ea":151.1,"by":11,"ca":114.3,"chi":89,"clo":142,"ctd":566,"ua":119.2,"uapr":103.4},{"n":"De'Zhaun Stribling","p":"WR","t":"SF","er":130,"ea":150.5,"by":8,"ca":135.7,"chi":90,"clo":180,"ctd":1459,"ua":112.4,"uapr":185.0},{"n":"Tank Dell","p":"WR","t":"HOU","er":131,"ea":155.6,"by":8,"ca":156.5,"chi":115,"clo":180,"ctd":302,"ua":177.2,"uapr":195.0},{"n":"Jalen Coker","p":"WR","t":"CAR","er":132,"ea":159.7,"by":5,"ca":121.6,"chi":95,"clo":145,"ctd":471,"ua":129.3,"uapr":126.9},{"n":"Rashid Shaheed","p":"WR","t":"SEA","er":133,"ea":154.8,"by":11,"ca":129.0,"chi":98,"clo":149,"ctd":490,"ua":134.5,"uapr":140.0},{"n":"Kyler Murray","p":"QB","t":"MIN","er":134,"ea":146.5,"by":6,"ca":133.3,"chi":100,"clo":166,"ctd":650,"ua":114.9,"uapr":105.8},{"n":"Tyler Shough","p":"QB","t":"NO","er":135,"ea":155.6,"by":8,"ca":134.0,"chi":99,"clo":154,"ctd":298,"ua":126.3,"uapr":114.8},{"n":"Jared Goff","p":"QB","t":"DET","er":136,"ea":137.1,"by":6,"ca":99.8,"chi":66,"clo":129,"ctd":653,"ua":111.5,"uapr":104.2},{"n":"Daniel Jones","p":"QB","t":"IND","er":137,"ea":158.4,"by":13,"ca":160.7,"chi":128,"clo":180,"ctd":203,"ua":144.3,"uapr":143.9},{"n":"Zach Charbonnet","p":"RB","t":"SEA","er":138,"ea":156.4,"by":11,"ca":134.2,"chi":93,"clo":173,"ctd":548,"ua":162.3,"uapr":137.2},{"n":"Alvin Kamara","p":"RB","t":"NO","er":139,"ea":160.3,"by":8,"ca":145.3,"chi":85,"clo":179,"ctd":329,"ua":181.2,"uapr":197.1},{"n":"Tyjae Spears","p":"RB","t":"TEN","er":140,"ea":160.3,"by":9,"ca":130.1,"chi":99,"clo":148,"ctd":147,"ua":156.6,"uapr":159.4},{"n":"Chris Rodriguez Jr.","p":"RB","t":"JAX","er":141,"ea":165.9,"by":7,"ca":157.2,"chi":106,"clo":194,"ctd":208,"ua":124.4,"uapr":120.1},{"n":"Brian Robinson Jr.","p":"RB","t":"ATL","er":142,"ea":164.7,"by":11,"ca":164.1,"chi":118,"clo":206,"ctd":36,"ua":185.6,"uapr":167.2},{"n":"Tyler Allgeier","p":"RB","t":"ARI","er":143,"ea":164.2,"by":14,"ca":153.3,"chi":96,"clo":205,"ctd":328,"ua":140.8,"uapr":147.5},{"n":"Denzel Boston","p":"WR","t":"CLE","er":144,"ea":165.9,"by":11,"ca":138.6,"chi":100,"clo":166,"ctd":135,"ua":140.5,"uapr":149.5},{"n":"Jerry Jeudy","p":"WR","t":"CLE","er":145,"ea":165.5,"by":11,"ca":126.1,"chi":94,"clo":147,"ctd":273,"ua":201.5,"uapr":170.4},{"n":"Jalen McMillan","p":"WR","t":"TB","er":146,"ea":168.6,"by":10,"ca":135.8,"chi":108,"clo":153,"ctd":181,"ua":157.6,"uapr":138.2},{"n":"Calvin Ridley","p":"WR","t":"TEN","er":147,"ea":168.1,"by":9,"ca":142.9,"chi":112,"clo":169,"ctd":88,"ua":202.6,"uapr":175.0},{"n":"Caleb Douglas","p":"WR","t":"MIA","er":148,"ea":169.4,"by":6,"ca":172.8,"chi":132,"clo":208,"ctd":53,"ua":180.2,"uapr":215.5},{"n":"Adonai Mitchell","p":"WR","t":"NYJ","er":149,"ea":169.9,"by":13,"ca":163.4,"chi":127,"clo":181,"ctd":75,"ua":170.5,"uapr":193.5},{"n":"Baker Mayfield","p":"QB","t":"TB","er":150,"ea":148.1,"by":10,"ca":129.2,"chi":102,"clo":150,"ctd":446,"ua":122.8,"uapr":114.2},{"n":"Malik Willis","p":"QB","t":"MIA","er":151,"ea":166.7,"by":6,"ca":162.8,"chi":126,"clo":197,"ctd":206,"ua":133.3,"uapr":128.4},{"n":"Jordyn Tyson","p":"WR","t":"NO","er":152,"ea":166.4,"by":8,"ca":139.8,"chi":73,"clo":180,"ctd":362,"ua":93.9,"uapr":63.8},{"n":"Tre Tucker","p":"WR","t":"LV","er":153,"ea":168.1,"by":13,"ca":132.0,"chi":108,"clo":151,"ctd":287,"ua":153.2,"uapr":174.1},{"n":"Keaton Mitchell","p":"RB","t":"LAC","er":154,"ea":168.8,"by":7,"ca":157.7,"chi":104,"clo":207,"ctd":103,"ua":129.6,"uapr":149.5},{"n":"Isiah Pacheco","p":"RB","t":"DET","er":155,"ea":163.9,"by":6,"ca":153.9,"chi":103,"clo":180,"ctd":245,"ua":185.4,"uapr":160.7},{"n":"Jonah Coleman","p":"RB","t":"DEN","er":156,"ea":169.5,"by":10,"ca":153.4,"chi":117,"clo":192,"ctd":106,"ua":144.2,"uapr":146.9},{"n":"Tank Bigsby","p":"RB","t":"PHI","er":157,"ea":169.2,"by":10,"ca":159.6,"chi":111,"clo":208,"ctd":118,"ua":151.7,"uapr":180.0},{"n":"Ray Davis","p":"RB","t":"BUF","er":158,"ea":170.9,"by":7,"ca":160.4,"chi":123,"clo":177,"ctd":12,"ua":188.1,"uapr":204.1},{"n":"Terrance Ferguson","p":"TE","t":"LAR","er":159,"ea":165.4,"by":11,"ca":160.2,"chi":134,"clo":174,"ctd":23,"ua":160.4,"uapr":208.3},{"n":"Juwan Johnson","p":"TE","t":"NO","er":160,"ea":163.2,"by":8,"ca":143.5,"chi":91,"clo":180,"ctd":374,"ua":142.3,"uapr":154.1},{"n":"Jalen Nailor","p":"WR","t":"LV","er":161,"ea":170.6,"by":13,"ca":155.4,"chi":113,"clo":180,"ctd":137,"ua":150.4,"uapr":160.0},{"n":"Keenan Allen","p":"WR","t":"IND","er":162,"ea":167.1,"by":13,"ca":131.8,"chi":99,"clo":153,"ctd":240,"ua":159.8,"uapr":215.6},{"n":"Rashod Bateman","p":"WR","t":"BAL","er":163,"ea":171.2,"by":13,"ca":151.6,"chi":115,"clo":180,"ctd":42,"ua":211.8,"uapr":215.2},{"n":"Dontayvion Wicks","p":"WR","t":"PHI","er":164,"ea":170.7,"by":10,"ca":166.7,"chi":116,"clo":209,"ctd":103,"ua":160.5,"uapr":189.3},{"n":"Jaylin Noel","p":"WR","t":"HOU","er":165,"ea":171.5,"by":8,"ca":162.8,"chi":134,"clo":194,"ctd":27,"ua":197.0,"uapr":215.1},{"n":"Dylan Sampson","p":"RB","t":"CLE","er":166,"ea":171.0,"by":11,"ca":157.7,"chi":117,"clo":180,"ctd":90,"ua":171.6,"uapr":171.6},{"n":"Mike Washington Jr.","p":"RB","t":"LV","er":167,"ea":164.8,"by":13,"ca":148.2,"chi":81,"clo":209,"ctd":162,"ua":140.6,"uapr":164.8},{"n":"Tyrone Tracy Jr.","p":"RB","t":"NYG","er":168,"ea":169.6,"by":8,"ca":154.6,"chi":108,"clo":180,"ctd":163,"ua":150.6,"uapr":139.6},{"n":"Texans D/ST","p":"DEF","t":"HOU","er":169,"ea":88.3,"by":8,"ca":98.4,"chi":74,"clo":124,"ctd":848,"ua":null,"uapr":null},{"n":"Broncos D/ST","p":"DEF","t":"DEN","er":170,"ea":98.4,"by":10,"ca":88.1,"chi":71,"clo":109,"ctd":395,"ua":null,"uapr":null},{"n":"Steelers D/ST","p":"DEF","t":"PIT","er":171,"ea":117.7,"by":9,"ca":133.0,"chi":95,"clo":180,"ctd":315,"ua":null,"uapr":null},{"n":"Seahawks D/ST","p":"DEF","t":"SEA","er":172,"ea":109.7,"by":11,"ca":83.2,"chi":61,"clo":100,"ctd":234,"ua":null,"uapr":null},{"n":"Rams D/ST","p":"DEF","t":"LAR","er":173,"ea":106.5,"by":11,"ca":109.1,"chi":80,"clo":158,"ctd":672,"ua":null,"uapr":null},{"n":"Ravens D/ST","p":"DEF","t":"BAL","er":174,"ea":133.5,"by":13,"ca":165.3,"chi":113,"clo":209,"ctd":285,"ua":null,"uapr":null},{"n":"Eagles D/ST","p":"DEF","t":"PHI","er":175,"ea":136.0,"by":10,"ca":139.9,"chi":96,"clo":180,"ctd":779,"ua":null,"uapr":null},{"n":"Browns D/ST","p":"DEF","t":"CLE","er":176,"ea":155.0,"by":11,"ca":158.6,"chi":123,"clo":198,"ctd":473,"ua":null,"uapr":null},{"n":"Patriots D/ST","p":"DEF","t":"NE","er":177,"ea":150.5,"by":11,"ca":130.2,"chi":90,"clo":179,"ctd":380,"ua":null,"uapr":null},{"n":"Lions D/ST","p":"DEF","t":"DET","er":178,"ea":152.6,"by":6,"ca":128.6,"chi":89,"clo":175,"ctd":146,"ua":null,"uapr":null},{"n":"Chiefs D/ST","p":"DEF","t":"KC","er":179,"ea":164.1,"by":null,"ca":null,"chi":null,"clo":null,"ctd":null,"ua":null,"uapr":null},{"n":"Chargers D/ST","p":"DEF","t":"LAC","er":180,"ea":164.3,"by":7,"ca":140.9,"chi":102,"clo":180,"ctd":613,"ua":null,"uapr":null},{"n":"Brandon Aubrey","p":"K","t":"DAL","er":181,"ea":87.4,"by":14,"ca":129.4,"chi":74,"clo":184,"ctd":2076,"ua":null,"uapr":null},{"n":"Cameron Dicker","p":"K","t":"LAC","er":182,"ea":107.3,"by":7,"ca":142.6,"chi":94,"clo":187,"ctd":316,"ua":null,"uapr":null},{"n":"Jason Myers","p":"K","t":"SEA","er":183,"ea":119.0,"by":11,"ca":138.6,"chi":88,"clo":185,"ctd":182,"ua":null,"uapr":null},{"n":"Harrison Mevis","p":"K","t":"LAR","er":184,"ea":132.5,"by":11,"ca":148.4,"chi":111,"clo":194,"ctd":132,"ua":null,"uapr":null},{"n":"Ka'imi Fairbairn","p":"K","t":"HOU","er":185,"ea":133.6,"by":8,"ca":140.0,"chi":92,"clo":185,"ctd":180,"ua":null,"uapr":null},{"n":"Eddy Pineiro","p":"K","t":"SF","er":186,"ea":149.4,"by":8,"ca":167.2,"chi":125,"clo":206,"ctd":73,"ua":null,"uapr":null},{"n":"Harrison Butker","p":"K","t":"KC","er":187,"ea":145.1,"by":5,"ca":162.2,"chi":117,"clo":210,"ctd":205,"ua":null,"uapr":null},{"n":"Cam Little","p":"K","t":"JAX","er":188,"ea":140.5,"by":7,"ca":154.0,"chi":110,"clo":199,"ctd":434,"ua":null,"uapr":null},{"n":"Jake Bates","p":"K","t":"DET","er":189,"ea":156.8,"by":6,"ca":147.7,"chi":103,"clo":190,"ctd":182,"ua":null,"uapr":null},{"n":"Tyler Loop","p":"K","t":"BAL","er":190,"ea":164.6,"by":13,"ca":154.6,"chi":115,"clo":180,"ctd":186,"ua":null,"uapr":null},{"n":"Cairo Santos","p":"K","t":"CHI","er":191,"ea":168.5,"by":10,"ca":166.1,"chi":135,"clo":210,"ctd":43,"ua":null,"uapr":null},{"n":"Will Reichard","p":"K","t":"MIN","er":192,"ea":167.0,"by":6,"ca":162.2,"chi":117,"clo":204,"ctd":136,"ua":null,"uapr":null},{"n":"Braelon Allen","p":"RB","t":"NYJ","er":193,"ea":170.8,"by":13,"ca":159.2,"chi":104,"clo":204,"ctd":91,"ua":187.4,"uapr":174.7},{"n":"Brenton Strange","p":"TE","t":"JAX","er":194,"ea":167.9,"by":7,"ca":162.7,"chi":111,"clo":204,"ctd":84,"ua":150.9,"uapr":151.9},{"n":"Justice Hill","p":"RB","t":"BAL","er":195,"ea":170.9,"by":13,"ca":168.4,"chi":136,"clo":192,"ctd":25,"ua":214.2,"uapr":214.7},{"n":"MarShawn Lloyd","p":"RB","t":"GB","er":196,"ea":170.4,"by":11,"ca":154.6,"chi":105,"clo":200,"ctd":43,"ua":151.1,"uapr":215.6},{"n":"Ja'Kobi Lane","p":"WR","t":"BAL","er":197,"ea":167.4,"by":13,"ca":157.1,"chi":105,"clo":208,"ctd":117,"ua":154.1,"uapr":213.7},{"n":"Jordan Love","p":"QB","t":"GB","er":198,"ea":158.3,"by":11,"ca":146.8,"chi":111,"clo":177,"ctd":373,"ua":116.8,"uapr":107.0},{"n":"C.J. Stroud","p":"QB","t":"HOU","er":199,"ea":165.4,"by":8,"ca":158.1,"chi":117,"clo":180,"ctd":156,"ua":147.0,"uapr":139.3},{"n":"Sam Darnold","p":"QB","t":"SEA","er":200,"ea":162.2,"by":11,"ca":142.4,"chi":105,"clo":178,"ctd":243,"ua":141.9,"uapr":134.4}]};
 const TEAMS = DATA.meta.teams;
-const FAIR = 3;          // |gap| below this = "ESPN and the market agree"
-const SCALE = 45;        // picks of gap that fill a half-bar completely
+const FAIR = 3;        // raw-pick gap at or under this = "they agree"
+const SCALE_PK = 45;   // picks of gap that fill a half-bar in the habits strip
+const SCALE_VAL = 18;  // val points that fill a half-bar on a player row
+const VK = 40;         // pick-value curve: 100 * e^(-(pick-1)/VK)
 
+const pickValue = p => 100 * Math.exp(-(p - 1) / VK);
 const round = v => Math.floor((Math.round(v) - 1) / TEAMS) + 1;
 const num = v => (Math.round(v * 10) / 10).toString();
-const width = d => Math.min(Math.abs(d) / SCALE, 1) * 50;
+const widthPk = d => Math.min(Math.abs(d) / SCALE_PK, 1) * 50;
+const widthVal = d => Math.min(Math.abs(d) / SCALE_VAL, 1) * 50;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-// ---- state ----
 let market = "cons", sort = "board", pos = "ALL", hide = false, q = "";
 const KEY_TAKEN = "ddb.taken.v2", KEY_MARKET = "ddb.market.v1";
 let taken = new Set();
@@ -265,8 +276,6 @@ const saveTaken = () => { try { localStorage.setItem(KEY_TAKEN, JSON.stringify([
 const saveMarket = () => { try { localStorage.setItem(KEY_MARKET, market); } catch (e) {} };
 const id = p => p.n + "|" + p.p;
 
-// Market ADP for a player under the current toggle; null when that market
-// simply doesn't have him.
 function marketAdp(p) {
   if (market === "cons") return p.ca;
   if (market === "ud") return p.ua;
@@ -274,26 +283,25 @@ function marketAdp(p) {
   return p.ca != null ? p.ca : p.ua;
 }
 const delta = p => (p.ea == null || marketAdp(p) == null) ? null : p.ea - marketAdp(p);
+// val: his market-pick price minus his ESPN-pick price on the value curve.
+// Positive = free value on ESPN; sign always matches the raw pick gap.
+const impact = p => (p.ea == null || marketAdp(p) == null) ? null
+  : pickValue(marketAdp(p)) - pickValue(p.ea);
 
-const MARKETS = [
-  ["cons", "Consensus"],
-  ["ud", "Underdog"],
-  ["both", "Both (average)"],
-];
+const MARKETS = [["cons","Consensus"],["ud","Underdog"],["both","Both (average)"]];
 const MARKET_NOTES = {
-  cons: "Consensus = 7,726 real 12-team PPR drafts, Aug 18–25. The broadest picture of what everyone pays.",
-  ud: "Underdog = ADP from Underdog Fantasy's best-ball drafts (Aug 25). Sharper crowd, but half-PPR and no kickers or defenses — K and DEF show no tag here.",
+  cons: "Consensus = 7,726 real 12-team PPR drafts, Aug 18\u201325. The broadest picture of what everyone pays.",
+  ud: "Underdog = ADP from Underdog Fantasy's best-ball drafts (Aug 25). Sharper crowd, but half-PPR and no kickers or defenses \u2014 K and DEF show no tag here.",
   both: "Both = the average of Consensus and Underdog for each player (or whichever one has him). A middle-of-the-road market price.",
 };
-
-const SORTS = [["board", "ESPN order"], ["wait", "Biggest WAIT"], ["hurry", "Biggest HURRY"]];
-const POSS = ["ALL", "QB", "RB", "WR", "TE", "K", "DEF"];
+const SORTS = [["board","ESPN order"],["wait","Biggest WAIT"],["hurry","Biggest HURRY"]];
+const POSS = ["ALL","QB","RB","WR","TE","K","DEF"];
 
 const marketsEl = document.getElementById("markets");
 const sortsEl = document.getElementById("sorts"), possEl = document.getElementById("poss");
-marketsEl.innerHTML = MARKETS.map(([v, l]) => '<button class="chip" data-v="' + v + '">' + l + '</button>').join("");
-sortsEl.innerHTML = SORTS.map(([v, l]) => '<button class="chip" data-v="' + v + '">' + l + '</button>').join("");
-possEl.innerHTML = POSS.map(v => '<button class="chip" data-v="' + v + '">' + v + '</button>').join("");
+marketsEl.innerHTML = MARKETS.map(([v,l]) => '<button class="chip" data-v="'+v+'">'+l+'</button>').join("");
+sortsEl.innerHTML = SORTS.map(([v,l]) => '<button class="chip" data-v="'+v+'">'+l+'</button>').join("");
+possEl.innerHTML = POSS.map(v => '<button class="chip" data-v="'+v+'">'+v+'</button>').join("");
 function paintChips() {
   [...marketsEl.children].forEach(b => b.setAttribute("aria-pressed", b.dataset.v === market));
   [...sortsEl.children].forEach(b => b.setAttribute("aria-pressed", b.dataset.v === sort));
@@ -307,25 +315,25 @@ document.getElementById("q").oninput = e => { q = e.target.value.trim().toLowerC
 const hideBtn = document.getElementById("hide");
 hideBtn.onclick = () => { hide = !hide; hideBtn.setAttribute("aria-pressed", hide); render(); };
 document.getElementById("reset").onclick = () => {
-  if (!taken.size) return alert("Nobody is marked as drafted yet — tap a player row to cross him off.");
+  if (!taken.size) return alert("Nobody is marked as drafted yet \u2014 tap a player row to cross him off.");
   if (!confirm("Un-cross all " + taken.size + " drafted players?")) return;
   taken.clear(); saveTaken(); render();
 };
 
 function renderBias() {
-  const med = a => { const s = [...a].sort((x, y) => x - y), m = s.length >> 1;
-    return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+  const med = a => { const s = [...a].sort((x,y) => x-y), m = s.length >> 1;
+    return s.length % 2 ? s[m] : (s[m-1] + s[m]) / 2; };
   document.getElementById("biasrows").innerHTML = ["QB","RB","WR","TE","K","DEF"].map(P => {
     const ds = DATA.players.filter(p => p.p === P).map(delta).filter(d => d != null);
-    if (!ds.length) return '<div class="brow"><span class="pl">' + P +
+    if (!ds.length) return '<div class="brow"><span class="pl">'+P+
       '</span><span class="track"></span><span class="pv nil">no data</span></div>';
     const m = med(ds);
     const noLean = Math.abs(m) <= FAIR;
     const s = noLean ? "nil" : (m > 0 ? "pos" : "neg");
     const word = noLean ? "no lean" : (m > 0 ? "falls " + num(Math.abs(m)) : "reaches " + num(Math.abs(m)));
-    return '<div class="brow"><span class="pl">' + P + '</span>' +
-      '<span class="track">' + (noLean ? '' : '<i class="' + s + '" style="width:' + width(m) + '%"></i>') + '</span>' +
-      '<span class="pv ' + s + '">' + word + '</span></div>';
+    return '<div class="brow"><span class="pl">'+P+'</span>'+
+      '<span class="track">'+(noLean ? '' : '<i class="'+s+'" style="width:'+widthPk(m)+'%"></i>')+'</span>'+
+      '<span class="pv '+s+'">'+word+'</span></div>';
   }).join("");
 }
 
@@ -335,37 +343,40 @@ function render() {
   if (q) rows = rows.filter(p => p.n.toLowerCase().includes(q) || (p.t || "").toLowerCase() === q);
   if (hide) rows = rows.filter(p => !taken.has(id(p)));
 
-  if (sort === "wait") rows.sort((a, b) => (delta(b) ?? -1e9) - (delta(a) ?? -1e9));
-  else if (sort === "hurry") rows.sort((a, b) => (delta(a) ?? 1e9) - (delta(b) ?? 1e9));
-  // "board" keeps ESPN rank order (the data's native order)
+  if (sort === "wait") rows.sort((a,b) => (impact(b) ?? -1e9) - (impact(a) ?? -1e9));
+  else if (sort === "hurry") rows.sort((a,b) => (impact(a) ?? 1e9) - (impact(b) ?? 1e9));
 
   let html = "", shown = 0;
   for (const p of rows) {
     const gone = taken.has(id(p));
-    const d0 = delta(p), m = marketAdp(p);
+    const m = marketAdp(p);
+    const d0 = delta(p);
     const d = d0 == null ? null : Math.round(d0 * 10) / 10;
+    const v = impact(p);
     let vcls, vtxt;
     if (d == null) { vcls = "nil"; vtxt = "no market data"; }
     else if (Math.abs(d) <= FAIR) { vcls = "fair"; vtxt = "FAIR"; }
-    else if (d > 0) { vcls = "wait"; vtxt = "WAIT +" + num(d); }
-    else { vcls = "hurry"; vtxt = "HURRY −" + num(Math.abs(d)); }
+    else if (d > 0) { vcls = "wait"; vtxt = "WAIT +" + Math.round(v) + " val"; }
+    else { vcls = "hurry"; vtxt = "HURRY \u2212" + Math.round(Math.abs(v)) + " val"; }
 
     const bits = [];
-    bits.push("<span>" + (p.t || "FA") + (p.by ? " · Bye " + p.by : "") + "</span>");
+    bits.push("<span>" + (p.t || "FA") + (p.by ? " \u00b7 Bye " + p.by : "") + "</span>");
     if (p.ea != null) bits.push("<span>ESPN takes him at <b>" + num(p.ea) + "</b> (Rd " + round(p.ea) + ")</span>");
     if (m != null) bits.push("<span>Market: <b>" + num(m) + "</b> (Rd " + round(m) + ")</span>");
-    if (p.chi != null && p.clo != null) bits.push("<span>Seen <b>" + p.chi + "–" + p.clo + "</b></span>");
+    if (d != null && Math.abs(d) > FAIR) bits.push("<span><b>" + Math.round(Math.abs(d)) + "</b> picks " +
+      (d > 0 ? "later" : "earlier") + " on ESPN</span>");
+    if (p.chi != null && p.clo != null) bits.push("<span>Seen <b>" + p.chi + "\u2013" + p.clo + "</b></span>");
     if (p.ua != null) {
       let trend = "";
       if (p.uapr != null) {
-        const ch = p.uapr - p.ua; // positive = drafted earlier now = climbing
-        if (Math.abs(ch) >= 1) trend = " " + (ch > 0 ? "↑" : "↓") + Math.round(Math.abs(ch));
+        const ch = p.uapr - p.ua;
+        if (Math.abs(ch) >= 1) trend = " " + (ch > 0 ? "\u2191" : "\u2193") + Math.round(Math.abs(ch));
       }
       bits.push("<span>UD <b>" + num(p.ua) + "</b>" + trend + "</span>");
     }
 
-    const bar = d == null ? ""
-      : '<div class="rbar"><i class="' + (d > 0 ? "pos" : "neg") + '" style="width:' + width(d) + '%"></i></div>';
+    const bar = (v == null || Math.abs(d) <= FAIR) ? ""
+      : '<div class="rbar"><i class="' + (v > 0 ? "pos" : "neg") + '" style="width:' + widthVal(v) + '%"></i></div>';
 
     html += '<button class="row' + (gone ? " gone" : "") + '" data-id="' + esc(id(p)) + '" aria-pressed="' + gone + '">' +
       '<span class="l1"><span class="rk mono">#' + p.er + '</span>' +
@@ -377,7 +388,7 @@ function render() {
 
   document.getElementById("list").innerHTML = html || '<p class="empty">Nobody matches that.</p>';
   document.getElementById("count").textContent =
-    shown + " players shown · " + taken.size + " marked as drafted";
+    shown + " players shown \u00b7 " + taken.size + " marked as drafted";
 }
 
 document.getElementById("list").onclick = e => {
