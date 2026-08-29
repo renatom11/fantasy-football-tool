@@ -102,8 +102,8 @@ button.chip{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
 button.chip:hover{border-color:var(--ink-3);color:var(--ink)}
 button.chip[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
 button.chip:focus-visible,.row:focus-visible,#q:focus-visible{outline:2px solid var(--wait);outline-offset:2px}
-.tools{display:flex;gap:6px;margin-top:6px}
-#q{flex:1;min-width:0;font-family:Barlow,sans-serif;font-size:16px;padding:6px 10px;
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+#q{flex:1 1 170px;min-width:0;font-family:Barlow,sans-serif;font-size:16px;padding:6px 10px;
   border-radius:7px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
 #q::placeholder{color:var(--ink-3)}
 .count{font-size:10.5px;color:var(--ink-3);margin-top:7px;letter-spacing:.05em;text-transform:uppercase}
@@ -203,7 +203,7 @@ button.chip:focus-visible,.row:focus-visible,#q:focus-visible{outline:2px solid 
       </dl>
       <p style="margin-top:10px"><b>During your draft:</b> tap a player when he gets taken
       &mdash; he dims and crosses out. "Hide drafted" sweeps them away so you only see who's
-      left; "Clear drafted" un-crosses everyone for your next draft. Your taps are remembered
+      left; "Reset board" un-crosses everyone, for your next draft. Your taps are remembered
       on this device. "Biggest WAIT" and "Biggest HURRY" rank the whole board by val, so a
       round-1 discrepancy outranks round-12 noise.</p>
     </div>
@@ -232,7 +232,7 @@ button.chip:focus-visible,.row:focus-visible,#q:focus-visible{outline:2px solid 
     <div class="tools">
       <input id="q" type="search" placeholder="Find a player" autocomplete="off" aria-label="Find a player">
       <button class="chip" id="hide" aria-pressed="false">Hide drafted</button>
-      <button class="chip" id="reset">Clear drafted</button>
+      <button class="chip" id="reset">Reset board</button>
     </div>
     <div class="count mono" id="count"></div>
   </div>
