@@ -10,6 +10,7 @@
   --wait:#0F7255; --wait-bar:#199A72; --wait-wash:rgba(25,154,114,.10);
   --hurry:#A93A2E; --hurry-bar:#C9513F; --hurry-wash:rgba(201,81,63,.10);
   --watch:#8A5A00; --watch-wash:rgba(212,146,0,.14);
+  --mark:#3A5BA8;
   --shadow:0 1px 2px rgba(14,20,22,.05);
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
@@ -19,6 +20,7 @@
   --wait:#45CFA0; --wait-bar:#2BA57C; --wait-wash:rgba(69,207,160,.12);
   --hurry:#F0796A; --hurry-bar:#C9564A; --hurry-wash:rgba(240,121,106,.12);
   --watch:#F0B84A; --watch-wash:rgba(240,184,74,.14);
+  --mark:#8FA9EE;
   --shadow:0 1px 2px rgba(0,0,0,.35);
 }}
 :root[data-theme="dark"]{
@@ -28,6 +30,7 @@
   --wait:#45CFA0; --wait-bar:#2BA57C; --wait-wash:rgba(69,207,160,.12);
   --hurry:#F0796A; --hurry-bar:#C9564A; --hurry-wash:rgba(240,121,106,.12);
   --watch:#F0B84A; --watch-wash:rgba(240,184,74,.14);
+  --mark:#8FA9EE;
   --shadow:0 1px 2px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
@@ -176,6 +179,16 @@ button.chip:focus-visible,#q:focus-visible{outline:2px solid var(--wait);outline
 .detail .asof{font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);
   margin-bottom:6px}
 
+/* ---- your-pick lines ---- */
+.mark{display:flex;align-items:center;gap:8px;margin:11px 1px 5px}
+.mark .mtxt{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+  font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--mark);white-space:nowrap}
+.mark .mrule{flex:1 1 auto;height:2px;background:var(--mark);opacity:.35;border-radius:1px}
+.mark.next .mrule{opacity:1}
+.mark.next .mtxt{background:var(--mark);color:var(--surface);padding:3px 8px;border-radius:5px}
+.slotgrid{display:flex;flex-wrap:wrap;gap:5px}
+.slotgrid button.chip{min-width:34px;text-align:center}
+
 .empty{text-align:center;color:var(--ink-3);padding:34px 0;font-size:14px}
 .foot{margin-top:26px;padding-top:14px;border-top:1px solid var(--line-soft);
   font-size:12.5px;color:var(--ink-3);line-height:1.6}
@@ -252,6 +265,15 @@ button.chip:focus-visible,#q:focus-visible{outline:2px solid var(--wait);outline
       list, and so on). Tap <b>Details</b> to read the story &mdash; what happened, where he
       sits on the depth chart, and links to the reporting it came from. The Details button
       never crosses a player off; only tapping the player's name does.</p>
+      <p style="margin-top:12px"><b>Your pick lines.</b> Pick your spot in the draft order and
+      the board draws a line at every pick that will be yours. A 12-team draft snakes, meaning
+      the order reverses each round, so from spot 5 you pick 5th, then 20th, then 29th, then
+      44th, and so on. Each line sits where that pick number falls on the board, so
+      <b>the players listed below a line are the ones who should still be there when that pick
+      comes around</b>, and the players above it will normally be gone. Your next pick, counted
+      from how many players you have crossed off, gets a solid highlighted line. The lines
+      follow whichever sort and market you are using; they are hidden for the two value sorts,
+      which deliberately do not run in board order.</p>
       <p style="margin-top:10px"><b>During your draft:</b> tap a player when he gets taken
       &mdash; he dims and crosses out. "Hide drafted" sweeps them away so you only see who's
       left; <b>"Start over"</b> is the one undo button &mdash; it un-crosses every player and
@@ -270,6 +292,12 @@ button.chip:focus-visible,#q:focus-visible{outline:2px solid var(--wait);outline
     <div class="lbl">Compare ESPN against which rankings?</div>
     <div class="seg" id="markets"></div>
     <div class="note" id="marketnote"></div>
+  </div>
+
+  <div class="marketbox">
+    <div class="lbl">Which spot are you drafting from?</div>
+    <div class="slotgrid" id="slots"></div>
+    <div class="note" id="slotnote"></div>
   </div>
 
   <details class="lean">
@@ -334,13 +362,15 @@ const widthPk = d => Math.min(Math.abs(d) / SCALE_PK, 1) * 50;
 const widthVal = d => Math.min(Math.abs(d) / SCALE_VAL, 1) * 50;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-let market = "f4", sort = "espn", pos = "ALL", hide = false, q = "";
-const KEY_TAKEN = "ddb.taken.v2", KEY_MARKET = "ddb.market.v1";
+let market = "f4", sort = "espn", pos = "ALL", hide = false, q = "", slot = null;
+const KEY_TAKEN = "ddb.taken.v2", KEY_MARKET = "ddb.market.v1", KEY_SLOT = "ddb.slot.v1";
 let taken = new Set();
 try { taken = new Set(JSON.parse(localStorage.getItem(KEY_TAKEN) || "[]")); } catch (e) {}
 try { const m = localStorage.getItem(KEY_MARKET); if (["f4","ds","ud","all"].includes(m)) market = m; } catch (e) {}
+try { const v = parseInt(localStorage.getItem(KEY_SLOT), 10); if (v >= 1 && v <= TEAMS) slot = v; } catch (e) {}
 const saveTaken = () => { try { localStorage.setItem(KEY_TAKEN, JSON.stringify([...taken])); } catch (e) {} };
 const saveMarket = () => { try { localStorage.setItem(KEY_MARKET, market); } catch (e) {} };
+const saveSlot = () => { try { slot ? localStorage.setItem(KEY_SLOT, slot) : localStorage.removeItem(KEY_SLOT); } catch (e) {} };
 const id = p => p.n + "|" + p.p;
 
 function marketAdp(p) {
@@ -383,6 +413,38 @@ function niceDate(d) {
 const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return u; } };
 let open = new Set();   // rows whose Details panel is expanded (not persisted)
 
+// A snake draft reverses every round: from slot s in a TEAMS-team league you
+// pick at s, then 2*TEAMS-s+1, then 2*TEAMS+s, and so on. Stop once the pick
+// number runs off the end of the 200-player board.
+function myPicks(s) {
+  const out = [];
+  for (let r = 1; r <= 40; r++) {
+    const pick = (r % 2) ? (r - 1) * TEAMS + s : r * TEAMS - s + 1;
+    if (pick > DATA.players.length) break;
+    out.push({ round: r, pick });
+  }
+  return out;
+}
+// The value each sort orders the board by, so a pick number can be compared
+// against it. The two value sorts are not in board order, so they get no lines.
+function sortKey() {
+  if (sort === "espn") return p => p.er;
+  if (sort === "market") return marketAdp;
+  if (sort === "f4") return p => p.fa;
+  if (sort === "ds") return p => p.da;
+  if (sort === "ud") return p => p.ua;
+  return null;
+}
+const markHtml = (m, isNext) => '<div class="mark' + (isNext ? " next" : "") +
+  '" role="separator" aria-label="Your pick: round ' + m.round + ', pick ' + m.pick + ' overall">' +
+  '<span class="mtxt">' + (isNext ? "Your next pick" : "Your pick") + " \u00b7 Round " + m.round +
+  ", pick " + m.pick + '</span><span class="mrule"></span></div>';
+
+const slotsEl = document.getElementById("slots");
+slotsEl.innerHTML = '<button class="chip" data-v="">Not set</button>' +
+  Array.from({length: TEAMS}, (_, i) =>
+    '<button class="chip" data-v="' + (i + 1) + '">' + (i + 1) + '</button>').join("");
+
 const marketsEl = document.getElementById("markets");
 const sortsEl = document.getElementById("sorts"), possEl = document.getElementById("poss");
 marketsEl.innerHTML = MARKETS.map(([v,l]) => '<button class="chip" data-v="'+v+'">'+l+'</button>').join("");
@@ -393,8 +455,16 @@ function paintChips() {
   [...sortsEl.children].forEach(b => b.setAttribute("aria-pressed", b.dataset.v === sort));
   [...possEl.children].forEach(b => b.setAttribute("aria-pressed", b.dataset.v === pos));
   document.getElementById("marketnote").textContent = MARKET_NOTES[market];
+  [...slotsEl.children].forEach(b =>
+    b.setAttribute("aria-pressed", (b.dataset.v || "") === (slot ? String(slot) : "")));
+  document.getElementById("slotnote").textContent = slot
+    ? "Drafting " + slot + " of " + TEAMS + ", so your picks are " +
+      myPicks(slot).map(m => m.pick).join(", ") + "."
+    : "Choose your spot and the board marks every pick that will be yours, so you can see who " +
+      "should still be on the board when your turn comes back around.";
 }
 marketsEl.onclick = e => { const b = e.target.closest("button"); if (b) { market = b.dataset.v; saveMarket(); paintChips(); renderAll(); } };
+slotsEl.onclick = e => { const b = e.target.closest("button"); if (b) { slot = b.dataset.v ? +b.dataset.v : null; saveSlot(); paintChips(); render(); } };
 sortsEl.onclick = e => { const b = e.target.closest("button"); if (b) { sort = b.dataset.v; paintChips(); render(); } };
 possEl.onclick = e => { const b = e.target.closest("button"); if (b) { pos = b.dataset.v; paintChips(); render(); } };
 document.getElementById("q").oninput = e => { q = e.target.value.trim().toLowerCase(); render(); };
@@ -407,6 +477,7 @@ document.getElementById("reset").onclick = () => {
       " drafted players and clears your filters.")) return;
   taken.clear(); saveTaken(); open.clear();
   market = "f4"; saveMarket();
+  slot = null; saveSlot();
   sort = "espn"; pos = "ALL"; hide = false; q = "";
   document.getElementById("q").value = "";
   hideBtn.setAttribute("aria-pressed", "false");
@@ -466,8 +537,20 @@ function render() {
   else if (sort === "hurry") rows.sort(by(impact, 1));
   // "espn" keeps the data's native ESPN-rank order
 
+  // Pick lines are placed by value, not by row index: a line goes in just
+  // before the first player the board prices at or after that pick number, so
+  // it stays correct under a position filter or a hidden-drafted board.
+  const key = slot ? sortKey() : null;
+  const picks = key ? myPicks(slot) : [];
+  const nextPick = (picks.find(m => m.pick > taken.size) || {}).pick;
+  let pi = 0;
+
   let html = "", shown = 0;
   for (const p of rows) {
+    const kv = key ? key(p) : null;
+    while (pi < picks.length && kv != null && kv >= picks[pi].pick) {
+      html += markHtml(picks[pi], picks[pi].pick === nextPick); pi++;
+    }
     const gone = taken.has(id(p));
     const m = marketAdp(p);
     const d0 = delta(p);
@@ -530,7 +613,8 @@ function render() {
 
   document.getElementById("list").innerHTML = html || '<p class="empty">Nobody matches that.</p>';
   document.getElementById("count").textContent =
-    shown + " players shown \u00b7 " + taken.size + " marked as drafted";
+    shown + " players shown \u00b7 " + taken.size + " marked as drafted" +
+    (slot && !key ? " \u00b7 pick lines are hidden for this sort" : "");
 }
 
 document.getElementById("list").onclick = e => {
