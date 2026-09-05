@@ -142,7 +142,7 @@ def load_draftsharks(path, espn_rows):
     return by_key, unmatched
 
 
-def build(espn_path, f4_path, underdog_path, ds_path, out_path, teams=10):
+def build(espn_path, f4_path, underdog_path, ds_path, out_path, teams=12):
     espn, _ = load_file(espn_path, "espn")
     f4 = load_4for4(f4_path)
     ud, ud_latest, ud_base = load_underdog(underdog_path)
