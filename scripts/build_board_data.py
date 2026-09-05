@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""Join ESPN / consensus / Underdog exports into out/board.json for the viewer.
+"""Join the ESPN board with its market baselines into out/board.json.
 
 ESPN is the primary board: one row per ESPN player, in ESPN rank order.
-The other sources attach as optional baselines.
+Baselines attached per player:
+  * 4for4  - their blended ADP (the ADP column is the 12-team overall pick),
+             plus the spread across the individual sites they aggregate.
+  * Underdog - best-ball ADP, with movement since the export's first column.
 """
 
 import csv
+import datetime
 import json
 import os
 import re
@@ -14,126 +18,193 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 from ffdraft.load import load_file          # noqa: E402
-from ffdraft.names import player_key        # noqa: E402
+from ffdraft.names import (is_defense, normalize_name, normalize_position,  # noqa: E402
+                           normalize_team, player_key)
 
 MONTHS = ["january", "february", "march", "april", "may", "june", "july",
           "august", "september", "october", "november", "december"]
 
-# Underdog pads its board to a fixed size; players who essentially never get
-# drafted all pile up at the maximum. Treating that as a real ADP would invent
-# enormous fake "value" gaps, so anything at the pile-up is "not drafted here".
+# 4for4 aggregates these; NFL and BB10s ship empty, so they are left out.
+SITES = ["CBS", "Fantrax", "FFPC", "NFFC", "Sleeper", "Y!", "Drafters", "Underdog"]
+
+# Underdog pads its board to a fixed size; everyone who essentially never gets
+# drafted piles up at the maximum. Treating that as an ADP invents huge fake gaps.
 UD_UNDRAFTED_MARGIN = 1.0
 
 
-def _adp_columns(fieldnames):
-    """Underdog's ADP headers carry dates ('ADP on September  5').
+def _num(value):
+    try:
+        return float(str(value).strip())
+    except (TypeError, ValueError):
+        return None
 
-    Returns (baseline_col, latest_col) ordered by that date, so a refreshed
-    export with new headers keeps working without a code change.
-    """
+
+def load_4for4(path):
+    """{player_key: {adp, lo, hi, n}} - blended pick plus the site spread."""
+    out = {}
+    with open(path, encoding="utf-8-sig") as fh:
+        for row in csv.DictReader(fh):
+            pos = row["Position"].split("-")[0]          # "RB-01" -> "RB", "K-1" -> "K"
+            key = player_key(row["Player"], pos, row["Team"])
+            if key in out:
+                continue
+            adp = _num(row["ADP"])
+            if adp is None:
+                continue
+            picks = [v for v in (_num(row.get(s)) for s in SITES) if v is not None]
+            out[key] = {
+                "adp": adp,
+                "lo": int(min(picks)) if picks else None,
+                "hi": int(max(picks)) if picks else None,
+                "n": len(picks),
+            }
+    return out
+
+
+def _adp_columns(fieldnames):
+    """Underdog's ADP headers carry dates ('ADP on September  5')."""
     dated = []
     for name in fieldnames or []:
         m = re.match(r"\s*ADP on\s+([A-Za-z]+)\s+(\d{1,2})\s*$", name)
-        if not m:
-            continue
-        month = m.group(1).lower()
-        if month not in MONTHS:
-            continue
-        dated.append(((MONTHS.index(month), int(m.group(2))), name))
-    if len(dated) < 1:
-        raise ValueError("no 'ADP on <Month> <day>' columns found in Underdog export")
+        if m and m.group(1).lower() in MONTHS:
+            dated.append(((MONTHS.index(m.group(1).lower()), int(m.group(2))), name))
+    if not dated:
+        raise ValueError("no 'ADP on <Month> <day>' columns in the Underdog export")
     dated.sort()
     return dated[0][1], dated[-1][1]
 
 
 def load_underdog(path):
-    """{player_key: {latest, baseline}} plus the label of the latest column."""
     with open(path, encoding="utf-8-sig") as fh:
         reader = csv.DictReader(fh)
         base_col, latest_col = _adp_columns(reader.fieldnames)
         rows = list(reader)
 
-    def num(row, col):
-        try:
-            return float(row[col])
-        except (TypeError, ValueError):
-            return None
-
-    latest = [num(r, latest_col) for r in rows]
+    latest = [_num(r[latest_col]) for r in rows]
     floor = max(v for v in latest if v is not None)
+    cutoff = floor - UD_UNDRAFTED_MARGIN
 
     out = {}
     for row, cur in zip(rows, latest):
-        if cur is None or cur >= floor - UD_UNDRAFTED_MARGIN:
-            continue  # parked at the bottom of the board = undrafted
+        if cur is None or cur >= cutoff:
+            continue
         key = player_key(row["Player"], row["Position"], "")
         if key in out:
-            continue  # first (best-ranked) entry wins
-        base = num(row, base_col)
-        out[key] = {"cur": cur, "base": None if base is None or base >= floor - UD_UNDRAFTED_MARGIN else base}
-    return out, latest_col.strip(), base_col.strip(), floor
+            continue
+        base = _num(row[base_col])
+        out[key] = {"cur": cur, "base": None if base is None or base >= cutoff else base}
+    return out, latest_col.strip(), base_col.strip()
 
 
-def build(espn_path, consensus_path, underdog_path, out_path, teams=10):
+def load_draftsharks(path, espn_rows):
+    """Draft Sharks' consensus ADP, keyed onto the ESPN players.
+
+    Their export abbreviates first names ("B. Robinson"), so players are
+    matched on position + team + surname + first initial. That is ambiguous
+    exactly once in this data - Bijan Robinson and Brian Robinson Jr. are both
+    ATL running backs - so same-bucket players are paired in rank order,
+    which puts the earlier DS rank on the earlier ESPN rank.
+    """
+    def bucket(name, pos, team):
+        parts = normalize_name(name).split()
+        if not parts:
+            return None
+        return (normalize_position(pos), normalize_team(team), parts[-1], parts[0][:1])
+
+    espn_buckets = {}
+    for r in espn_rows:
+        if is_defense(r["name"], r["pos"]):
+            continue
+        espn_buckets.setdefault(bucket(r["name"], r["pos"], r["team"]), []).append(r)
+
+    ds_buckets, by_key = {}, {}
+    with open(path, encoding="utf-8-sig") as fh:
+        for row in csv.DictReader(fh, delimiter="\t"):
+            adp = _num(row["consensus_adp"])
+            if adp is None:
+                continue
+            pos = re.sub(r"\d+$", "", row["pos_rank"])
+            if normalize_position(pos) == "DEF":
+                by_key[player_key(row["player"], pos, row["team"])] = adp
+                continue
+            b = bucket(row["player"], pos, row["team"])
+            ds_buckets.setdefault(b, []).append((int(row["ds_rank"]), adp))
+
+    unmatched = 0
+    for b, ds_rows in ds_buckets.items():
+        targets = espn_buckets.get(b)
+        if not targets:
+            unmatched += 1
+            continue
+        ds_rows.sort()
+        for espn_row, (_, adp) in zip(sorted(targets, key=lambda r: r["rank"]), ds_rows):
+            by_key[espn_row["key"]] = adp
+    return by_key, unmatched
+
+
+def build(espn_path, f4_path, underdog_path, ds_path, out_path, teams=10):
     espn, _ = load_file(espn_path, "espn")
-    cons, cmeta = load_file(consensus_path, "consensus")
-    ud, ud_latest, ud_base, ud_floor = load_underdog(underdog_path)
-    cons_by = {r["key"]: r for r in cons}
+    f4 = load_4for4(f4_path)
+    ud, ud_latest, ud_base = load_underdog(underdog_path)
+    ds, ds_unmatched = load_draftsharks(ds_path, espn)
 
     players = []
     for e in sorted(espn, key=lambda r: r["rank"]):
-        c = cons_by.get(e["key"])
+        m = f4.get(e["key"])
         u = ud.get(e["key"])
         players.append({
             "n": e["name"], "p": e["pos"], "t": e["team"],
             "er": int(e["rank"]), "ea": e["adp"],
-            "by": int(c["bye"]) if c and c["bye"] else None,
-            "ca": c["adp"] if c else None,
-            "chi": int(c["high"]) if c and c["high"] else None,
-            "clo": int(c["low"]) if c and c["low"] else None,
-            "ctd": int(c["times_drafted"] or 0) if c else None,
+            "by": int(e["bye"]) if e["bye"] else None,
+            "fa": m["adp"] if m else None,
+            "flo": m["lo"] if m else None,
+            "fhi": m["hi"] if m else None,
+            "fn": m["n"] if m else None,
+            "da": ds.get(e["key"]),
             "ua": u["cur"] if u else None,
             "uapr": u["base"] if u else None,
         })
 
-    # Dates so the page can show how fresh each source is: comparing a stale
-    # ESPN capture against a current market reads staleness as disagreement.
     espn_day = re.search(r"(\d{4})-(\d{2})-(\d{2})", espn_path)
+    f4_day = re.search(r"(\d{4})-(\d{2})-(\d{2})", f4_path)
     ud_day = re.match(r"ADP on\s+([A-Za-z]+)\s+(\d{1,2})", ud_latest)
     meta = {
         "teams": teams, "fmt": "PPR",
-        "consensus_drafts": int(float(cmeta.get("total drafts", 0))),
-        "consensus_teams": int(float(cmeta.get("teams", 12))),
-        "ud_latest": ud_latest, "ud_base": ud_base,
         "espn_date": espn_day.group(0) if espn_day else "",
-        "cons_dates": f"{cmeta.get('start date','')} to {cmeta.get('end date','')}",
+        "f4_date": f4_day.group(0) if f4_day else "",
         "ud_date": f"{ud_day.group(1)} {ud_day.group(2)}" if ud_day else ud_latest,
+        "ud_base": ud_base, "sites": len(SITES), "ds_date": "2026-09-04",
     }
     if espn_day and ud_day:
-        import datetime
-        e = datetime.date(int(espn_day.group(1)), int(espn_day.group(2)), int(espn_day.group(3)))
+        e = datetime.date(*(int(g) for g in espn_day.groups()))
         u = datetime.date(e.year, MONTHS.index(ud_day.group(1).lower()) + 1, int(ud_day.group(2)))
         meta["stale_days"] = (u - e).days
+
     with open(out_path, "w", encoding="utf-8") as fh:
         json.dump({"meta": meta, "players": players}, fh, separators=(",", ":"))
 
-    skill = [p for p in players if p["p"] not in ("K", "DEF")]
-    print(f"espn {len(players)} | consensus {sum(1 for p in players if p['ca'] is not None)}"
-          f" | underdog {sum(1 for p in players if p['ua'] is not None)}"
-          f" (of {len(skill)} skill)")
-    print(f"underdog columns: baseline '{ud_base}' -> latest '{ud_latest}'; "
-          f"undrafted pile-up at {ud_floor}")
-    missing = [p["n"] for p in skill if p["ua"] is None]
-    if missing:
-        print("skill players with no Underdog ADP:", ", ".join(missing))
+    rated_n = [p for p in players if p["p"] != "HC"]
+    skill = [p for p in players if p["p"] not in ("K", "DEF", "HC")]
+    print(f"espn {len(players)} ({len(players) - len(rated_n)} head-coach rows)"
+          f" | 4for4 {sum(1 for p in players if p['fa'] is not None)}"
+          f" | sharks {sum(1 for p in players if p['da'] is not None)}"
+          f" | underdog {sum(1 for p in players if p['ua'] is not None)} (of {len(skill)} skill)"
+          f" | byes {sum(1 for p in players if p['by'] is not None)}")
+    print(f"  draft-sharks rows with no ESPN match: {ds_unmatched}")
+    # Head coaches are an ESPN-only draft slot; no ADP source lists them.
+    rated = [p for p in players if p["p"] != "HC"]
+    for label, miss in (("4for4", [p["n"] for p in rated if p["fa"] is None]),
+                        ("sharks", [p["n"] for p in rated if p["da"] is None]),
+                        ("underdog", [p["n"] for p in skill if p["ua"] is None]),
+                        ("bye", [p["n"] for p in players if p["by"] is None])):
+        if miss:
+            print(f"  missing {label}: {', '.join(miss[:8])}{' ...' if len(miss) > 8 else ''}")
     return meta, players
 
 
 if __name__ == "__main__":
     root = os.path.join(os.path.dirname(__file__), "..")
-    build(
-        os.path.join(root, "data/raw/espn_2026-08-26.csv"),
-        os.path.join(root, "data/raw/consensus_adp_2026-08-25.csv"),
-        os.path.join(root, sys.argv[1] if len(sys.argv) > 1 else "data/raw/underdog_adp_2026-09-05.csv"),
-        os.path.join(root, "out/board.json"),
-    )
+    j = lambda p: os.path.join(root, p)
+    build(j("data/raw/espn_2026-09-05.csv"), j("data/raw/4for4_adp_2026-09-05.csv"),
+          j("data/raw/underdog_adp_2026-09-05.csv"),
+          j("data/raw/draftsharks_consensus_2026-09-04.tsv"), j("out/board.json"))
