@@ -226,9 +226,10 @@ button.chip:focus-visible,.row:focus-visible,#q:focus-visible{outline:2px solid 
       puts the market, sort, position filter and search back to where they started. Your taps are
       remembered on this device.</p>
       <p style="margin-top:10px"><b>Sorting.</b> The sort buttons reorder the whole board:
-      by ESPN's own rank, by any single source's ADP, or by <b>Market value</b> &mdash; which
-      ranks by val, so a round-1 discrepancy outranks round-12 noise. "Biggest reach" is that
-      list upside down. Sorting by a source that has no number for a player drops him to the
+      by ESPN's own rank, by <b>Market ADP</b> (the market you picked above, so it follows the
+      toggle), by any single source's ADP, or by <b>Best value</b> &mdash; which ranks by val,
+      so a round-1 discrepancy outranks round-12 noise. "Biggest reach" is that list upside
+      down. Sorting by a source that has no number for a player drops him to the
       bottom rather than pretending he is pick 0.</p>
     </div>
   </details>
@@ -322,7 +323,7 @@ const MARKET_NOTES = {
   ud: "Underdog = ADP from Underdog Fantasy's best-ball drafts. One sharp crowd rather than a blend, and it drafts no kickers or defenses \u2014 those rows show no tag.",
   all: "All = the average of every source that has him. The steadiest baseline: a tag that survives here is one all three markets agree on.",
 };
-const SORTS = [["espn","ESPN rank"],["f4","4-4 ADP"],["ds","Consensus ADP"],["ud","Underdog ADP"],["value","Market value"],["hurry","Biggest reach"]];
+const SORTS = [["espn","ESPN rank"],["market","Market ADP"],["f4","4-4 ADP"],["ds","Consensus ADP"],["ud","Underdog ADP"],["value","Best value"],["hurry","Biggest reach"]];
 const POSS = ["ALL","QB","RB","WR","TE","K","DEF","HC"];
 
 const marketsEl = document.getElementById("markets");
@@ -399,7 +400,8 @@ function render() {
     if (bv == null) return -1;
     return dir * (av - bv);
   };
-  if (sort === "ud") rows.sort(by(p => p.ua, 1));
+  if (sort === "market") rows.sort(by(marketAdp, 1));
+  else if (sort === "ud") rows.sort(by(p => p.ua, 1));
   else if (sort === "f4") rows.sort(by(p => p.fa, 1));
   else if (sort === "ds") rows.sort(by(p => p.da, 1));
   else if (sort === "value") rows.sort(by(impact, -1));
