@@ -1,0 +1,1772 @@
+{
+ "Jahmyr Gibbs|RB": {
+  "status": "Healthy",
+  "role": "Bell-cow RB1",
+  "note": "No current injury. Sat out the entire preseason by design to manage his workload; a minor back issue at the start of camp was never viewed as a threat. Isiah Pacheco, signed this offseason, was placed on injured reserve two days after cutdown day, so Gibbs is projected for roughly 80-85% of Detroit's rushing snaps to open the season.",
+  "sources": [
+   "https://fantasyfootballcalculator.com/players/jahmyr-gibbs/injury",
+   "https://sidelionreport.com/jahmyr-gibbs-projected-carries-just-skyrocketed-with-isiah-pacheco-injury-news-01m1f9phr41v"
+  ]
+ },
+ "Bijan Robinson|RB": {
+  "status": "Healthy",
+  "role": "Workhorse RB1",
+  "note": "No injuries, and he has not missed a game in three NFL seasons. Skipped one camp practice over a contract push, since resolved with a three-year, $75 million extension. Widely favored to finish as the overall RB1.",
+  "sources": [
+   "https://fantasyfootballcalculator.com/players/bijan-robinson/injury",
+   "https://www.cbssports.com/nfl/players/3168163/bijan-robinson/fantasy/"
+  ]
+ },
+ "Ja'Marr Chase|WR": {
+  "status": "Questionable",
+  "role": "WR1",
+  "note": "Hyperextended his left knee in practice after landing awkwardly on a Joe Burrow pass. Cincinnati expects him ready for the Sept 13 opener against Tampa Bay; coach Zac Taylor says he will be limited in practice this week but feels good about his progress.",
+  "sources": [
+   "https://www.fox19.com/2026/09/01/jamarr-chase-will-be-limited-practice-after-injury/",
+   "https://www.profootballnetwork.com/jamarr-chase-injury-update-bengals-will-he-play-week-1/"
+  ]
+ },
+ "Puka Nacua|WR": {
+  "status": "Questionable",
+  "role": "WR1",
+  "note": "Missed time in August with a groin issue diagnosed as psoas soreness, then returned to practice and has stayed healthy since. The Rams expect him for the opener against the 49ers in Melbourne. Separately, an off-field matter involving him remains under league review.",
+  "sources": [
+   "https://www.cbssports.com/nfl/news/puka-nacua-injury-update-rams-wr-practicing-fully-ready-to-roll-for-week-1-after-dealing-with-knee-issue",
+   "https://www.rotoballer.com/will-puka-nacua-play-in-week-1-fantasy-football-injury-update-2026/1907671"
+  ]
+ },
+ "Jonathan Taylor|RB": {
+  "status": "Healthy",
+  "role": "Lead back",
+  "note": "Healthy; the Colts limited his preseason snaps to protect him. He was the PPR RB1 through Week 10 last year before the offense collapsed with Daniel Jones' injuries. Jones is expected to start Week 1.",
+  "sources": [
+   "https://www.rotoballer.com/player-news/jonathan-taylor-poised-for-another-productive-year/1922981",
+   "https://sports.yahoo.com/articles/jonathan-taylor-fantasy-outlook-2026-120518237.html"
+  ]
+ },
+ "Jaxon Smith-Njigba|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Reigning AP Offensive Player of the Year after 119 catches for 1,793 yards and 10 touchdowns. Reported as nearly unstoppable in camp with Sam Darnold. The only caveats analysts raise are regression from a historic year and a new offensive coordinator.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/jaxon-smith-njigba-fantasy-outlook-updated-2026/",
+   "https://clutchpoints.com/nfl/seattle-seahawks/jaxon-smith-njigba-fantasy-football-full-2026-outlook-seahawks-star"
+  ]
+ },
+ "Christian McCaffrey|RB": {
+  "status": "Questionable",
+  "role": "Workhorse RB1",
+  "note": "Held out of practice for about two weeks in August with calf tightness and planned workload management after 413 touches in 2025. Back to full participation and expected to play the opener against the Rams in Australia; he called it nothing serious.",
+  "sources": [
+   "https://bleacherreport.com/articles/25481651-christian-mccaffrey-injury-update-latest-49ers-stars-practice-status-ahead-2026-nfl-season",
+   "https://www.profootballnetwork.com/christian-mccaffrey-injury-update-will-he-play-in-week-1/"
+  ]
+ },
+ "Amon-Ra St. Brown|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "No injury concerns reported. Posted a career-high 31.2% target share in 2025 and has finished WR3 three seasons running. Detroit has a new offensive coordinator. Opens against New Orleans.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/amon-ra-st-brown-fantasy-outlook-updated-2026/",
+   "https://www.fanduel.com/research/amon-ra-st-brown-nfl-fantasy-week-1-vs-saints-2026"
+  ]
+ },
+ "James Cook III|RB": {
+  "status": "Healthy",
+  "role": "Lead back",
+  "note": "All Bills starters are set to play, per new head coach Joe Brady. Led the NFL with 1,621 rushing yards in 2025. Ray Davis is the top backup. Opens against Houston on Sept 13.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/james-cook-fantasy-outlook-updated-2026/",
+   "https://www.fantasypros.com/nfl/players/james-cook.php"
+  ]
+ },
+ "CeeDee Lamb|WR": {
+  "status": "Healthy",
+  "role": "WR1 (shares with Pickens)",
+  "note": "Healthy after an ankle-plagued 2025 in which he finished WR22. Dallas is restructuring his contract. He now shares targets with George Pickens, who finished WR5 last year, which analysts see as the main cap on his ceiling.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/ceedee-lamb-fantasy-outlook-2026/",
+   "https://fantasyfootballcalculator.com/players/ceedee-lamb/news"
+  ]
+ },
+ "Justin Jefferson|WR": {
+  "status": "Monitor",
+  "role": "WR1",
+  "note": "Was held out of practice with a mild hamstring strain and has since returned to the field, but at least one report still calls his Week 1 status unsettled. Kyler Murray was brought in to compete with J.J. McCarthy and appears to be the quarterback. Scored just two touchdowns in a down 2025.",
+  "sources": [
+   "https://www.prizepicks.com/playbook-article/justin-jefferson-injury-status-will-the-vikings-wr-play-in-week-1",
+   "https://www.nbcsports.com/fantasy/football/news/2026-minnesota-vikings-fantasy-preview-can-justin-jefferson-return-to-the-wr1-ranks"
+  ]
+ },
+ "De'Von Achane|RB": {
+  "status": "Healthy",
+  "role": "Workhorse RB1",
+  "note": "A full go after rehabbing a shoulder this offseason. Set to lead a backfield that also carries Jaylen Wright and Ollie Gordon. Analysts flag the new offense under Malik Willis as the main risk despite a planned heavy workload; he ranked fifth in the NFL with 1,350 rushing yards last year.",
+  "sources": [
+   "https://www.cbssports.com/nfl/news/devon-achane-fantasy-football-dolphins-workload-2026/",
+   "https://www.nbcsports.com/fantasy/football/news/2026-miami-dolphins-fantasy-preview-can-devon-achane-avoid-fantasy-disaster"
+  ]
+ },
+ "Omarion Hampton|RB": {
+  "status": "Monitor",
+  "role": "Lead back",
+  "note": "Did not practice Wednesday and is described as working through the ankle that sidelined him in Week 18 last season. Lead back under new offensive coordinator Mike McDaniel, with Kimani Vidal and Keaton Mitchell also in the mix, behind an improved line with Joe Alt and Rashawn Slater healthy.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/players/omarion-hampton.php",
+   "https://sports.yahoo.com/articles/omarion-hampton-fantasy-outlook-2026-122721551.html"
+  ]
+ },
+ "Chase Brown|RB": {
+  "status": "Healthy",
+  "role": "Centerpiece RB1",
+  "note": "No injury concerns reported. Described as a centerpiece of the Bengals offense who lines up all over the formation; analysts see top-five PPR upside as the de facto third receiving option behind Chase and Higgins.",
+  "sources": [
+   "https://www.nbcsports.com/watch/fantasy/football/rotoworld-football-show/bengals-chase-brown-trending-up-in-fantasy-nfl-ahead-of-2026-season",
+   "https://www.fanduel.com/research/chase-brown-nfl-fantasy-outlook-2026"
+  ]
+ },
+ "Saquon Barkley|RB": {
+  "status": "Healthy",
+  "role": "Lead back",
+  "note": "Tweaked an ankle in camp, was briefly evaluated and returned to practice; not believed to be serious. Did not play in the preseason. Opens against a Washington run defense that ranked 30th last season.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-saquon-barkley-fantasy-outlook-144328418.html",
+   "https://www.fanduel.com/research/saquon-barkley-nfl-fantasy-week-1-vs-commanders-2026"
+  ]
+ },
+ "Derrick Henry|RB": {
+  "status": "Healthy",
+  "role": "Workhorse RB1",
+  "note": "No injury concerns. Backed up by Justice Hill (change of pace) and Rasheen Ali (kick returner) after Keaton Mitchell left for the Chargers, which points to a workhorse role at 32 with more passing-game involvement promised. New head coach Jesse Minter and offensive coordinator Declan Doyle bring new terminology. Opens against Indianapolis.",
+  "sources": [
+   "https://www.rotowire.com/football/headlines/derrick-henry-news-joined-by-familiar-complements-in-backfield-635837",
+   "https://www.fantasypros.com/nfl/players/derrick-henry.php"
+  ]
+ },
+ "Ashton Jeanty|RB": {
+  "status": "Questionable",
+  "role": "Lead back",
+  "note": "Low right-ankle sprain suffered Aug 23 in camp diving for a Kirk Cousins pass; avoided a more serious ligament injury. Back to light work and considered day-to-day, with coach Klint Kubiak saying the team is monitoring him but counting on him for the opener against Miami. Expected at full strength by Week 2 or 3 at the latest.",
+  "sources": [
+   "https://www.fantasypros.com/2026/08/fantasy-football-injury-ashton-jeanty-questionable-for-week-1/",
+   "https://www.profootballnetwork.com/ashton-jeanty-injury-update-will-he-play-in-week-1/"
+  ]
+ },
+ "Drake London|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Clean bill of health after a knee injury cost him Weeks 12-16 last year. The volatility is at quarterback: Tua Tagovailoa and Michael Penix Jr. (knee) are competing to start Week 1, and the passer he has the strongest rapport with is expected to start sooner rather than later. He was WR6 in points per game over Weeks 1-10 of 2025.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-drake-london-fantasy-outlook-114458768.html",
+   "https://lastwordonsports.com/nfl/2026/08/27/falcons-qb-news-great-drake-london-2026-fantasy-outlook/"
+  ]
+ },
+ "Jeremiyah Love|RB": {
+  "status": "Questionable",
+  "role": "Rookie lead back (in doubt)",
+  "note": "High-ankle sprain suffered in the Aug 13 preseason game against the Raiders; limited most of the preseason. Described as 50/50 for the opener against the Chargers, and likely limited or in a committee even if he dresses. Tyler Allgeier has been getting more work and is the fallback.",
+  "sources": [
+   "https://www.rotoballer.com/will-jeremiyah-love-play-in-week-1-fantasy-football-injury-update-2026-2/1921541",
+   "https://www.profootballnetwork.com/what-happened-to-jeremiyah-love-latest-on-cardinals-stars-injury-how-long-hell-be-out-and-whether-hell-play-week-1-2026/"
+  ]
+ },
+ "A.J. Brown|WR": {
+  "status": "Healthy",
+  "role": "WR1 (new team)",
+  "note": "Traded from Philadelphia to New England in June. Dislocated his left thumb in Monday's practice but returned with a brace and should be ready for the opener against Seattle on Wednesday night. Drake Maye led the NFL in completion rate (72%) and yards per attempt (8.9) last season.",
+  "sources": [
+   "https://www.espn.com/fantasy/football/story/_/id/48677585/fantasy-football-rankings-aj-brown-trade-reaction-eagles-patriots",
+   "https://www.fanduel.com/research/a-j-brown-nfl-fantasy-week-1-vs-seahawks-2026"
+  ]
+ },
+ "Trey McBride|TE": {
+  "status": "Healthy",
+  "role": "TE1",
+  "note": "No injury or eligibility concerns; played a single preseason snap by design. Jacoby Brissett looks like the Week 1 starter, a quarterback McBride produced with last season. Led all tight ends with 18.7 points per game in 2025 (126 catches, 1,239 yards, 11 touchdowns).",
+  "sources": [
+   "https://www.fantasypros.com/nfl/players/trey-mcbride.php",
+   "https://sports.yahoo.com/articles/fantasy-football-outlook-trey-mcbride-110000671.html"
+  ]
+ },
+ "Brock Bowers|TE": {
+  "status": "Healthy",
+  "role": "TE1",
+  "note": "Full participant throughout camp with no expected restrictions after playing through a Week 1 PCL injury for 12 games last year before landing on injured reserve. Kirk Cousins was named the Week 1 starter and the two have looked connected; Bowers is the clear first read regardless of quarterback.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-brock-bowers/",
+   "https://www.si.com/onsi/fantasy/injuries/brock-bowers-injury-update-could-ease-fantasy-football-concerns"
+  ]
+ },
+ "Nico Collins|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "On track for the opener against Buffalo after a strong week of practice with C.J. Stroud. Three straight WR1 seasons in points per game. Jayden Higgins tore his ACL and is out for the year, so the competition for targets is thinner; Tank Dell is expected back midseason and Kayshon Boutte was added by trade.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/texans-nico-collins-showing-no-rust-ahead-of-2026/",
+   "https://www.footballguys.com/article/2026-is-nico-collins-top-12"
+  ]
+ },
+ "Chris Olave|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Had the wind knocked out of him in a practice but head coach Kellen Moore said he is fine; ready for the opener at Detroit. Coming off a career year (100 catches, 1,163 yards, 9 touchdowns, second-team All-Pro) and signed a multi-year extension before camp. Tyler Shough is his quarterback.",
+  "sources": [
+   "https://www.si.com/onsi/fantasy/injuries/should-fantasy-managers-worry-about-chris-olave-s-latest-injury-news",
+   "https://commishkit.com/new-orleans-saints-fantasy-football-2026/"
+  ]
+ },
+ "Rashee Rice|WR": {
+  "status": "Monitor",
+  "role": "WR1 (health risk)",
+  "note": "Not expected to face a new suspension over the probation violation for which he served a 30-day jail sentence this offseason, per NFL Network. Cleared to open camp after May knee surgery but has been leaving practices early for planned rehab and is not 100%. Missed 13 games in 2024 with a knee injury, served a six-game suspension to open 2025, and ended 2025 on injured reserve with a concussion.",
+  "sources": [
+   "https://sports.yahoo.com/articles/rashee-rice-not-expected-suspended-150114356.html",
+   "https://www.rotoballer.com/player-news/rashee-rice-2026-fantasy-football-outlook-does-the-talented-wideouts-upside-outweigh-his-off-field-and-health-concerns/1877907"
+  ]
+ },
+ "Josh Allen|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Expected to be ready for Week 1 against Houston; an earlier foot injury is not expected to affect his season. Consensus No. 1 fantasy quarterback after career highs in completion rate (69.3%) and yards per attempt (8.0), with DJ Moore added at receiver. At least 12 rushing touchdowns in each of the last three seasons.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/josh-allen-fantasy-outlook-updated-2026/",
+   "https://www.fanduel.com/research/josh-allen-nfl-fantasy-week-1-vs-texans-2026"
+  ]
+ },
+ "George Pickens|WR": {
+  "status": "Healthy",
+  "role": "WR1 (with Lamb)",
+  "note": "Playing 2026 on a $27.3 million franchise tag after no extension was reached. Sat out all three preseason games, but no injury is reported and he is expected to be ready for Week 1. Coming off a career year of 93 catches, 1,429 yards and 9 touchdowns.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-george-pickens-fantasy-outlook-115237429.html",
+   "https://www.fantasypros.com/nfl/players/george-pickens.php"
+  ]
+ },
+ "Kenneth Walker III|RB": {
+  "status": "Healthy",
+  "role": "Three-down RB1 (new team)",
+  "note": "Missed some practice with minor ankle swelling blamed on his cleats, then practiced without limitation Wednesday; no long-term concern and expected for the Sept 14 opener against Denver. Signed a three-year, $43 million deal with Kansas City and is expected to handle a three-down role.",
+  "sources": [
+   "https://www.si.com/onsi/fantasy/injuries/emmett-johnson-fantasy-outlook-kenneth-walker-iii-returns-as-full-practice-participant",
+   "https://www.profootballnetwork.com/kenneth-walker-chiefs-foot-injury-depth-week-1-2026/"
+  ]
+ },
+ "Garrett Wilson|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Missed a Monday practice with an illness and was back Tuesday. Full participant in the offseason after a persistent knee injury cost him 10 games last year. Clear leader of the passing game with Geno Smith at quarterback, though rookies Omar Cooper Jr. and Kenyon Sadiq may take some looks.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/garrett-wilson-fantasy-outlook-updated-2026/",
+   "https://fantasyfootballcalculator.com/players/garrett-wilson/news"
+  ]
+ },
+ "Breece Hall|RB": {
+  "status": "Questionable",
+  "role": "Lead back",
+  "note": "Strained his groin in camp (non-contact, Aug 17); coach Aaron Glenn set a two-to-three-week timeline and the expectation is he is ready for the opener against Tennessee on Sept 13. Seen running without issue on a side field. Groin injuries can linger, and a setback would push him past Week 1, with Braelon Allen next up.",
+  "sources": [
+   "https://sports.yahoo.com/articles/breece-hall-injury-jets-details-151132052.html",
+   "https://www.sports731.com/2026/08/19/ny-jets-rb-breece-hall-to-miss-2-3-weeks-with-groin-injury-expected-for-week-1-season-opener/"
+  ]
+ },
+ "Javonte Williams|RB": {
+  "status": "Healthy",
+  "role": "Bell-cow RB1",
+  "note": "Finished 2025 on injured reserve with a nagging shoulder but is expected to be ready well before Week 1. Career year in Dallas (1,201 rushing yards, 11 touchdowns) earned a three-year, $24 million extension in February, and the Cowboys added no running back in the draft, leaving him the lead back by a comfortable margin.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/418778/javonte-williams-2026-outlook.php",
+   "https://www.rotoballer.com/player-news/javonte-williams-excited-about-cowboys-offense-in-2026/1908894"
+  ]
+ },
+ "Kyren Williams|RB": {
+  "status": "Healthy",
+  "role": "Lead back (timeshare)",
+  "note": "No injury concerns. Remains the lead back in one of the league's best offenses, but the Rams describe him and Blake Corum as a timeshare of carries, which caps his workload ceiling. Third straight 1,000-yard season in 2025 (1,252 yards, 10 touchdowns, career-high 36 catches). Opens Thursday night against the 49ers.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/kyren-williams-fantasy-outlook-updated-2026/",
+   "https://www.fanduel.com/research/kyren-williams-nfl-fantasy-week-1-vs-49ers-2026"
+  ]
+ },
+ "Malik Nabers|WR": {
+  "status": "Questionable",
+  "role": "WR1 (returning from ACL)",
+  "note": "Eleven months removed from the ACL tear he suffered Sept 28 last year. Has shed the red non-contact jersey and joined team periods; coach John Harbaugh said it is reasonable to assume he could play Week 1 against Dallas, but Nabers himself would not commit and stressed his long-term health. No unconditional promise from the team yet.",
+  "sources": [
+   "https://bleacherreport.com/articles/25481686-malik-nabers-injury-status-updated-giants-john-harbaugh-ahead-2026-nfl-season",
+   "https://www.cbssports.com/nfl/news/malik-nabers-injury-update-giants-wr-says-my-body-is-gonna-turn-it-on-for-week-1-despite-offseason-setbacks"
+  ]
+ },
+ "DeVonta Smith|WR": {
+  "status": "Healthy",
+  "role": "WR1 (post-Brown trade)",
+  "note": "Back to full practice after a hamstring injury that had him limited last week; on track for Week 1. Positioned as Philadelphia's top target after A.J. Brown was traded to New England, which analysts say lifts him to low-end WR1 or high-end WR2.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-devonta-smith/",
+   "https://fantasyfootballcalculator.com/players/devonta-smith/news"
+  ]
+ },
+ "Travis Etienne Jr.|RB": {
+  "status": "Healthy",
+  "role": "Lead back",
+  "note": "Fully healthy after resting all three preseason games; one of the few Saints backs to avoid a camp setback. Ty Chandler is out for the year on injured reserve and Alvin Kamara sprained his MCL on Aug 18 and is trending toward missing the opener at Detroit, so Etienne should carry the bulk of the work early. Kamara was not placed on injured reserve, so he could return sooner than four weeks.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49820565/nfl-fantasy-outlook-new-orleans-saints-2026-expect-heavy-running-back-usage",
+   "https://sports.yahoo.com/articles/updated-travis-etienne-fantasy-outlook-142208241.html"
+  ]
+ },
+ "Tetairoa McMillan|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Full go after minor ankle soreness in the offseason program; no Week 1 concerns. Reigning AP Offensive Rookie of the Year (70 catches, 1,014 yards, 7 touchdowns). Coach Dave Canales plans to use him more from the slot in 2026.",
+  "sources": [
+   "https://www.prizepicks.com/playbook-article/tetairoa-mcmillan-injury-status-will-the-panthers-wr-play-in-week-1",
+   "https://www.profootballnetwork.com/fantasy-football/tetairoa-mcmillan-fantasy-outlook-2026/"
+  ]
+ },
+ "Zay Flowers|WR": {
+  "status": "Questionable",
+  "role": "WR1",
+  "note": "In and out of practice through camp with a lower-body injury coach Jesse Minter called nothing serious; did not play in the preseason. Expected back at full practice next week with the full expectation he plays the opener against Indianapolis.",
+  "sources": [
+   "https://athlonsports.com/nfl/trending/ravens-zay-flowers-injury-update-week-1-colts",
+   "https://www.profootballnetwork.com/zay-flowers-injury-update-will-he-play-in-week-1/"
+  ]
+ },
+ "Emeka Egbuka|WR": {
+  "status": "Questionable",
+  "role": "WR1/WR2",
+  "note": "Toe sprain from a mid-August joint practice with the Jets; day-to-day, sitting out team drills and missed Tuesday's practice. Coach Todd Bowles is hopeful he is ready for the Sept 13 opener against Cincinnati, but his status stays uncertain until he returns to full practice.",
+  "sources": [
+   "https://www.si.com/nfl/buccaneers/onsi/sorting-out-buccaneers-pre-week-1-injury-news-what-it-means-for-emeka-egbuka",
+   "https://www.fantasynerds.com/news/story/2026/08/29/emeka-egbukas-week-1-status-uncertain-due-to-toe-injury-1610070"
+  ]
+ },
+ "Quinshon Judkins|RB": {
+  "status": "Healthy",
+  "role": "Lead back",
+  "note": "A practice absence was described by coach Todd Monken as precautionary, and he is not expected to miss the opener against Jacksonville. Looked close to 100% in the offseason program after a dislocated ankle and fractured fibula on Dec 21 of his rookie year. Rookie line: 827 rushing yards and 7 touchdowns on 230 carries plus 26 catches.",
+  "sources": [
+   "https://www.si.com/onsi/fantasy/injuries/quinshon-judkins-injury-rb-receives-positive-fantasy-update-after-missing-practice",
+   "https://www.fantasypros.com/nfl/notes/419035/quinshon-judkins-2026-outlook.php"
+  ]
+ },
+ "Ladd McConkey|WR": {
+  "status": "Healthy",
+  "role": "WR1 (slot)",
+  "note": "No Week 1 injury concerns; played a handful of preseason snaps with the starters. Keenan Allen is gone to Indianapolis, opening a higher-volume slot role, and new offensive coordinator Mike McDaniel has a track record of feeding his top receivers. Viewed as a high-end WR2 after a disappointing second year.",
+  "sources": [
+   "https://www.rotoballer.com/player-news/ladd-mcconkey-well-positioned-for-a-2026-resurgence/1914700",
+   "https://fantasyfootballcalculator.com/players/ladd-mcconkey/news"
+  ]
+ },
+ "Tee Higgins|WR": {
+  "status": "Questionable",
+  "role": "WR2",
+  "note": "Heel contusion; missed Tuesday's practice and coach Zac Taylor says he may be limited this week. Both he and Ja'Marr Chase are limited but expected to be ready for the Sept 13 opener against Tampa Bay.",
+  "sources": [
+   "https://sports.yahoo.com/articles/bengals-injury-tee-higgins-misses-032459320.html",
+   "https://www.profootballnetwork.com/tee-higgins-injury-update-bengals-star-play-week-1/"
+  ]
+ },
+ "Colston Loveland|TE": {
+  "status": "Healthy",
+  "role": "TE1 (co-starter)",
+  "note": "Says he feels very good after dealing with a concussion. Listed as a starting tight end alongside Cole Kmet, and with DJ Moore traded to Buffalo he is expected to take a larger share of Caleb Williams' targets. Consensus TE3 behind Bowers and McBride.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/419123/colston-loveland-2026-outlook.php",
+   "https://fantasyfootballcalculator.com/players/colston-loveland/news"
+  ]
+ },
+ "Lamar Jackson|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Fully healthy and reported to be moving as well as ever in camp; locked in as the starter. The open item is his contract, with no new deal reached days before Week 1. Returns his top two targets, Zay Flowers and Mark Andrews, who accounted for 54.7% of last year's receiving yards.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/lamar-jackson-fantasy-outlook-updated-2026/",
+   "https://www.totalprosports.com/nfl/baltimore-ravens/lamar-jackson-unavoidable-problem-ravens-2026/"
+  ]
+ },
+ "Davante Adams|WR": {
+  "status": "Healthy",
+  "role": "WR2 (red-zone)",
+  "note": "No injury concerns. Finished WR9 in PPR last year on 60 catches, 789 yards and 14 touchdowns; analysts expect touchdown regression but note he still ranked first in separation score and route win rate. Opens Thursday night against San Francisco's 25th-ranked pass defense.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-davante-adams-fantasy-outlook-112648905.html",
+   "https://www.fanduel.com/research/davante-adams-nfl-fantasy-week-1-vs-49ers-2026"
+  ]
+ },
+ "Cam Skattebo|RB": {
+  "status": "Healthy",
+  "role": "Co-starter (workload in question)",
+  "note": "Roughly eight months past the dislocated right ankle that limited him to eight games as a rookie; entered camp a full go and is expected to start the opener against Dallas. Listed as a co-starter with Tyrone Tracy Jr., who may handle passing downs, and Najee Harris was signed to be a significant contributor, so his workload is the concern in new coach John Harbaugh's run-heavy offense.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/419045/cam-skattebo-2026-outlook.php",
+   "https://www.fantasylife.com/articles/fantasy/week-1-fantasy-football-projections-cam-skattebo-boom-or-bust"
+  ]
+ },
+ "D'Andre Swift|RB": {
+  "status": "Healthy",
+  "role": "Lead back",
+  "note": "Left Thursday's final preseason practice holding his left side; reported as a muscle cramp in hot conditions, not an injury, and he is set to play the opener against Carolina. Kyle Monangai is week-to-week, which thins the room behind him.",
+  "sources": [
+   "https://chicago.suntimes.com/bears/2026/09/03/bears-practice-report-rb-dandre-swift-wr-rome-odunze-leave-with-injuries",
+   "https://clutchpoints.com/nfl/chicago-bears/bears-news-dandre-swift-practice-injury-scare-important-update"
+  ]
+ },
+ "Bhayshul Tuten|RB": {
+  "status": "Healthy",
+  "role": "Lead-back competition",
+  "note": "Missed a Wednesday practice with an illness; expected to be fine for the opener against Cleveland. With Travis Etienne gone he is competing with Chris Rodriguez Jr. for the lead job, and LeQuint Allen also figures to see snaps when healthy.",
+  "sources": [
+   "https://www.thefantasyfootballers.com/news/636001/bhayshul-tuten-misses-practice-with-illness/",
+   "https://www.fantasypros.com/nfl/notes/419036/bhayshul-tuten-2026-outlook.php"
+  ]
+ },
+ "Jaylen Waddle|WR": {
+  "status": "Healthy",
+  "role": "WR1 (new team)",
+  "note": "Returned to practice Monday after 11 days out with what Sean Payton called left-leg tightness, with no apparent limitations and no expectation it lingers. Now the clear top receiver in a Denver offense that led the NFL in pass attempts last year; the offensive coordinator says he will play everywhere except offensive line.",
+  "sources": [
+   "https://www.nbcsports.com/watch/fantasy/football/rotoworld-football-show/jaylen-waddle-denver-broncos-fantasy-football-injury-news-2026",
+   "https://www.profootballnetwork.com/fantasy-football/jaylen-waddle-fantasy-outlook-updated-2026/"
+  ]
+ },
+ "Bucky Irving|RB": {
+  "status": "Healthy",
+  "role": "Committee lead (talent edge)",
+  "note": "Missed spring workouts rehabbing a shoulder but has been a full participant and looks quick since pads went on. Not expected to open as a clear lead back: Sean Tucker is in the mix on early downs and free-agent addition Kenny Gainwell is expected to take passing-down work. Opens against a Cincinnati run defense that ranked last in 2025.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/bucky-irving-fantasy-outlook-updated-2026/",
+   "https://www.fanduel.com/research/bucky-irving-nfl-fantasy-week-1-vs-bengals-2026"
+  ]
+ },
+ "Terry McLaurin|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Fully healthy offseason after injuries limited him to 10 games and 582 yards in 2025. The clear No. 1 receiver for Jayden Daniels, with newly signed Stefon Diggs drawing coverage rather than threatening his role; the two shared the field for only three games last year.",
+  "sources": [
+   "https://www.rotoballer.com/player-news/consistency-is-key-for-terry-mclaurin-in-2026/1916486",
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-terry-mclaurin/"
+  ]
+ },
+ "DJ Moore|WR": {
+  "status": "Healthy",
+  "role": "WR1 (new team)",
+  "note": "Left a preseason game early with an ankle injury, was limited Tuesday, then back to full participation Thursday. Should be Buffalo's top receiver in the opener against Houston after arriving from Chicago.",
+  "sources": [
+   "https://www.si.com/nfl/bills/onsi/preseason-bills-injury-updates-on-dj-moore-keon-coleman-skyler-bell-after-week-1",
+   "https://www.cbssports.com/nfl/players/2179328/dj-moore/fantasy/"
+  ]
+ },
+ "Tyler Warren|TE": {
+  "status": "Healthy",
+  "role": "TE1",
+  "note": "Minor groin injury in camp cost him about a week; returned to practice Sept 1 and is expected to play without restriction in the opener against Baltimore. Finished TE4 in total points as a rookie.",
+  "sources": [
+   "https://www.si.com/onsi/fantasy/injuries/tyler-warren-injury-update-gives-fantasy-football-managers-reason-to-relax",
+   "https://www.profootballnetwork.com/tyler-warren-injury-update-will-he-play-in-week-1/"
+  ]
+ },
+ "Jameson Williams|WR": {
+  "status": "Healthy",
+  "role": "WR2 (big-play)",
+  "note": "On track for his usual role in the opener against New Orleans. Career-best 1,182 yards in 2025 at nearly 18 yards a catch, but he averaged 10.9 points in games with Sam LaPorta versus 15.1 without him, and LaPorta is healthy. Analysts call him a volatile WR3 with WR2 upside.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-jameson-williams/",
+   "https://www.fanduel.com/research/jameson-williams-nfl-fantasy-week-1-vs-saints-2026"
+  ]
+ },
+ "Rome Odunze|WR": {
+  "status": "Questionable",
+  "role": "WR1/WR2",
+  "note": "Left Thursday's practice in the first half with an apparent right-leg injury; the Chicago Tribune reports he should be all good, but he enters Week 1 prep with a question mark. Played most of last season on a stress fracture in the same foot. With Luther Burden also nursing a groin, Chicago's healthy receiver depth is thin.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/bears-rome-odunze-seemingly-avoids-serious-setback/",
+   "https://www.nbcsports.com/fantasy/football/player-news/2026-09-03/rome-odunze-leaves-practice-early-on-thursday"
+  ]
+ },
+ "Jayden Daniels|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Enters 2026 at full health after an injury-plagued 2025 limited him to seven games. Stefon Diggs was added opposite Terry McLaurin and Rachaad White gives him a pass-catching back. The concern is a battered offensive line: Laremy Tunsil is out after triceps surgery, with the center and right guard also banged up.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/jayden-daniels-fantasy-outlook-updated-2026/",
+   "https://www.si.com/nfl/commanders/onsi/commanders-fantasy-football-2026-hazards-jayden-daniels-stefon-diggs"
+  ]
+ },
+ "Drake Maye|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Healthy and off the injury report. Led the NFL in completion rate and yards per attempt last year and now has A.J. Brown as his top receiver; some analysts see him pushing Josh Allen for QB1. Opens Wednesday night at Seattle in a Super Bowl rematch.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/drake-maye-fantasy-outlook-updated-2026/",
+   "https://www.fanduel.com/research/drake-maye-nfl-fantasy-week-1-vs-seahawks-2026"
+  ]
+ },
+ "David Montgomery|RB": {
+  "status": "Healthy",
+  "role": "Workhorse RB1 (new team)",
+  "note": "Traded from Detroit to Houston and signed a two-year, $16.5 million deal. Figures to start and take most of the carries with Woody Marks behind him, though one analyst suggests benching him in the opener against Buffalo on matchup grounds.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/419021/david-montgomery-2026-outlook.php",
+   "https://www.profootballnetwork.com/fantasy-football/david-montgomery-fantasy-prediction-2026/"
+  ]
+ },
+ "Jadarian Price|RB": {
+  "status": "Healthy",
+  "role": "Rookie lead runner",
+  "note": "First-round rookie (32nd overall) who sat out the preseason with a lower-body issue but is back to full participation. Expected to lead Seattle in carries in Wednesday's opener against New England, with George Holani handling receiving and pass-protection work; Zach Charbonnet is out to start the year.",
+  "sources": [
+   "https://lastwordonsports.com/nfl/2026/09/01/jadarian-price-early-fantasy-stock/",
+   "https://fantasyfootballcalculator.com/players/jadarian-price/news"
+  ]
+ },
+ "Luther Burden III|WR": {
+  "status": "Questionable",
+  "role": "WR2/WR3",
+  "note": "Groin injury from camp kept him out of the preseason, but he has been running routes on the field before games and coach Ben Johnson has dismissed it as a non-issue; expected to be ready for the Sept 13 opener against Carolina.",
+  "sources": [
+   "https://www.si.com/nfl/bears/onsi/luther-burden-injury-update-from-ben-johnson-all-but-confirms-bears-wr-s-week-1-status",
+   "https://chicago.suntimes.com/bears/2026/08/10/bears-luther-burden-groin-injury-preseason-miss-nfl-wide-receiver-practice-tyrique-stevenson"
+  ]
+ },
+ "TreVeyon Henderson|RB": {
+  "status": "Questionable",
+  "role": "Committee back",
+  "note": "Slipped making a cut in Monday's practice and injured his right ankle; the Boston Globe reports he avoided anything serious and should be good to go for the Sept 9 opener at Seattle, but ESPN notes he has not yet been cleared for full practice with the game days away.",
+  "sources": [
+   "https://sports.yahoo.com/articles/patriots-injury-latest-rb-treveyon-161150031.html",
+   "https://www.profootballnetwork.com/treveyon-henderson-injury-patriots-rb-week-1/"
+  ]
+ },
+ "Carnell Tate|WR": {
+  "status": "Healthy",
+  "role": "Rookie starter",
+  "note": "Fourth overall pick. Missed a Tuesday practice with what coach Robert Saleh called stiffness, and earlier left a practice with dizziness after a big hit from safety Kevin Winston Jr.; Saleh says he is not concerned about a concussion and there is no indication his Week 1 status against the Jets is in danger.",
+  "sources": [
+   "https://www.rotowire.com/football/headlines/carnell-tate-injury-working-through-stiffness-635854",
+   "https://www.cbssports.com/fantasy/football/news/titans-carnell-tate-will-be-evaluated-after-hard-hit/"
+  ]
+ },
+ "Mike Evans|WR": {
+  "status": "Questionable",
+  "role": "WR1 (new team)",
+  "note": "Has not practiced with an adductor/groin issue; GM John Lynch said Sept 1 the team hopes he returns to practice next week. ESPN reported Aug 26 that he plans to play the Sept 10 opener against the Rams in Melbourne, but the team has not confirmed it and his readiness is the 49ers' biggest offensive question.",
+  "sources": [
+   "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/mike-evans-injury-update-week-1/1958924/",
+   "https://heavy.com/sports/nfl/san-francisco-49ers/mike-evans-groin-adductor-injury-news/"
+  ]
+ },
+ "Marvin Harrison Jr.|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Rolled his left ankle over the weekend but was back practicing Tuesday; considered minor. Clean bill of health since late July and a full camp with Jacoby Brissett under new coach Mike LaFleur. Opens against the Chargers' fifth-ranked pass defense.",
+  "sources": [
+   "https://fantasyfootballcalculator.com/players/marvin-harrison-jr./news",
+   "https://www.fanduel.com/research/marvin-harrison-nfl-fantasy-week-1-vs-chargers-2026"
+  ]
+ },
+ "Joe Burrow|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Healthy after a toe injury limited him to eight games in 2025. Opens against Tampa Bay's 27th-ranked pass defense with Chase and Higgins both expected to play. Has missed at least seven games in two of the last three years.",
+  "sources": [
+   "https://www.fanduel.com/research/joe-burrow-nfl-fantasy-week-1-vs-buccaneers-2026",
+   "https://www.fantasypros.com/nfl/notes/418947/joe-burrow-2026-outlook.php"
+  ]
+ },
+ "Rhamondre Stevenson|RB": {
+  "status": "Healthy",
+  "role": "Lead back (for now)",
+  "note": "Front-runner for the No. 1 job to open the season while TreVeyon Henderson works back from the ankle he hurt Aug 24. Drew praise all camp and out-carried Henderson 58-30 in last year's postseason. Opens at Seattle on Sept 9.",
+  "sources": [
+   "https://www.rotoballer.com/player-news/rhamondre-stevenson-gaining-steam-as-the-no-1-rb-for-patriots/1922305",
+   "https://sports.yahoo.com/articles/rhamondre-stevenson-fantasy-outlook-2026-130007120.html"
+  ]
+ },
+ "Jalen Hurts|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "No injury concerns; GM Howie Roseman says he has embraced new offensive coordinator Sean Mannion's scheme, which is expected to feature a healthy amount of designed runs. A.J. Brown is gone, leaving DeVonta Smith, Makai Lemon, Dallas Goedert and Saquon Barkley. Rushing dipped to 421 yards in 2025.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/eagles-jalen-hurts-fantasy-ceiling-2026/",
+   "https://www.fantasypros.com/nfl/notes/419964/jalen-hurts-2026-outlook.php"
+  ]
+ },
+ "Michael Pittman Jr.|WR": {
+  "status": "Questionable",
+  "role": "WR2",
+  "note": "Minor hamstring injury from an Aug 8 practice kept him out about a week and a half and out of the preseason, but he and DK Metcalf are both expected to play the Sept 13 opener against Atlanta.",
+  "sources": [
+   "https://athlonsports.com/nfl/pittsburgh-steelers/steelers-dk-metcalf-michael-pittman-injury-update-week-1",
+   "https://www.draftsharks.com/fantasy-football-news/82280/michael-pittman-has-hamstring-injury-expects-to-play-week-1"
+  ]
+ },
+ "Tony Pollard|RB": {
+  "status": "Monitor",
+  "role": "Lead back",
+  "note": "Missed two straight practices with a sore foot described as minor; coach Robert Saleh hoped to have him back Monday. Clear lead back under new offensive coordinator Brian Daboll, who historically rides one runner. Opens against a Jets run defense that ranked 29th.",
+  "sources": [
+   "https://fantasyfootballcalculator.com/players/tony-pollard/news",
+   "https://www.fanduel.com/research/tony-pollard-nfl-fantasy-week-1-vs-jets-2026"
+  ]
+ },
+ "Harold Fannin Jr.|TE": {
+  "status": "Healthy",
+  "role": "TE1",
+  "note": "Cleared about two weeks before camp after a procedure on the groin he hurt in Week 17, and has been a full go. Rookie year: 72 catches, 731 yards, 6 touchdowns. Cleveland drafted receivers KC Concepcion and Denzel Boston in the top 40, and the quarterback room is Shedeur Sanders and Deshaun Watson.",
+  "sources": [
+   "https://www.nbcsports.com/fantasy/football/news/2026-cleveland-browns-fantasy-preview-harold-fannin-ready-for-his-encore",
+   "https://www.fantasypros.com/nfl/notes/419128/harold-fannin-jr-2026-outlook.php"
+  ]
+ },
+ "Kyle Pitts Sr.|TE": {
+  "status": "Healthy",
+  "role": "TE1",
+  "note": "Signed a three-year, $54 million extension. No current injury reported. The split matters: he averaged 19.1 PPR points in five games without Drake London last year but 9.6 in the 12 games with him, and Atlanta's quarterback is unsettled between Tua Tagovailoa and Michael Penix Jr.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/falcons-kyle-pitts-locked-in-for-2026/",
+   "https://www.fantasypros.com/nfl/notes/419130/kyle-pitts-2026-outlook.php"
+  ]
+ },
+ "DK Metcalf|WR": {
+  "status": "Questionable",
+  "role": "WR1",
+  "note": "Undisclosed injury kept him out for much of camp and out of the preseason games as a precaution; he returned to practice last week, says he feels 100% and is expected to play the Sept 13 opener against Atlanta.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/steelers-dk-metcalf-expected-to-be-ready-for-week-1/",
+   "https://www.profootballnetwork.com/dk-metcalf-michael-pittman-jr-injury-week-1-2026/"
+  ]
+ },
+ "George Kittle|TE": {
+  "status": "Questionable",
+  "role": "TE1 (returning from Achilles)",
+  "note": "Tore his right Achilles on Jan 11 in the playoffs and returned to practice less than eight months later. He is confident he plays the Sept 10 opener against the Rams in Melbourne and does not expect to open on the physically-unable-to-perform list, but the team has not confirmed his availability; if he makes the trip, playing is promising but not guaranteed.",
+  "sources": [
+   "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/george-kittle-achilles-rehab-update/1956934/",
+   "https://www.si.com/onsi/fantasy/injuries/week-1-49ers-rams-melbourne-australia-injury-update-fantasy-football-george-kittle"
+  ]
+ },
+ "Courtland Sutton|WR": {
+  "status": "Healthy",
+  "role": "WR2 (perimeter starter)",
+  "note": "In full pads and listed as a starter opposite Jaylen Waddle. Waddle's arrival has pushed his draft cost down to the sixth round and analysts view him as a WR2/WR3 with a reduced ceiling.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/broncos-courtland-sutton-atop-depth-chart-again-in-2026/",
+   "https://www.profootballnetwork.com/fantasy-football/courtland-sutton-fantasy-outlook-updated-2026/"
+  ]
+ },
+ "Christian Watson|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Clean bill of health and a new four-year contract worth up to $110.5 million. With Romeo Doubs gone he is Green Bay's clear top receiver. Opens against Minnesota; experts lean start as a WR2 or flex.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-christian-watson-fantasy-outlook-112248572.html",
+   "https://www.rotoballer.com/christian-watson-start-em-sit-em-fantasy-football-picks-for-week-1-2026/1923746"
+  ]
+ },
+ "Dak Prescott|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Was limited at June minicamp with a sore knee and sat out the preseason as usual for Dallas starters; no current concern reported. Full continuity with Lamb, Pickens (franchise tag), Ferguson and Javonte Williams. Opens Sunday night against the Giants.",
+  "sources": [
+   "https://www.fanduel.com/research/dak-prescott-nfl-fantasy-week-1-vs-giants-2026",
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-dak-prescott/"
+  ]
+ },
+ "Parker Washington|WR": {
+  "status": "Healthy",
+  "role": "WR1 (breakout candidate)",
+  "note": "Missed the preseason with an undisclosed mid-August injury but returned to practice Aug 25 and should be ready for Week 1. Emerged as Jacksonville's top target late last year with four straight games of nine-plus targets; Brian Thomas Jr., Jakobi Meyers and Travis Hunter compete for looks.",
+  "sources": [
+   "https://sports.yahoo.com/articles/report-parker-washington-expected-back-134701626.html",
+   "https://sports.yahoo.com/articles/updated-parker-washington-fantasy-outlook-130016072.html"
+  ]
+ },
+ "Jaylen Warren|RB": {
+  "status": "Healthy",
+  "role": "Featured runner (split)",
+  "note": "Signed a two-year extension with $12 million guaranteed this week and Mike Tomlin called him the featured runner, but ESPN expects a near-even split with Rico Dowdle barring injury or a hot hand. Opens against Atlanta's 24th-ranked run defense.",
+  "sources": [
+   "https://www.nbcsports.com/fantasy/football/player-news/2026-08-05/steelers-list-warren-as-rb1-on-first-depth-chart",
+   "https://www.fantasypros.com/nfl/notes/419078/jaylen-warren-2026-outlook.php"
+  ]
+ },
+ "Sam LaPorta|TE": {
+  "status": "Questionable",
+  "role": "TE1",
+  "note": "Hip injury flared up in camp; Dan Campbell says the team feels good long-term but would not commit to the Sept 13 opener against New Orleans, saying \"I feel like we'll be OK, but I don't know.\" Returned to practice Aug 25.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49672143/sam-laporta-status-uncertain-lions-season-opener",
+   "https://www.foxsports.com/stories/nfl/detroit-lions-dan-campbell-sam-laporta"
+  ]
+ },
+ "Kenny Gainwell|RB": {
+  "status": "Healthy",
+  "role": "Pass-catching back",
+  "note": "Excused from Friday's practice for personal reasons and expected back Sunday. Signed a two-year, $14 million deal in March after leading Pittsburgh with 73 catches; expected to handle passing situations behind Bucky Irving. Opens at Cincinnati.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/players/kenneth-gainwell.php",
+   "https://www.profootballnetwork.com/fantasy-football/kenneth-gainwell-fantasy-outlook-updated-2026/"
+  ]
+ },
+ "Jaxson Dart|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "No injury concerns; John Harbaugh limited his preseason snaps to reduce risk and Dart says he feels in command. Was QB14 overall on just 12 starts as a rookie with eight top-10 weeks. Opens Sunday night against Dallas, with Malik Nabers' return the swing factor.",
+  "sources": [
+   "https://www.giants.com/news/latest-news-notes-roster-moves-john-harbaugh-malik-nabers-jaxson-dart-odell-beckham-jr-dallas-cowboys-season-opener",
+   "https://www.profootballnetwork.com/fantasy-football/jaxson-dart-fantasy-outlook-updated-2026/"
+  ]
+ },
+ "Josh Jacobs|RB": {
+  "status": "Out (exempt list)",
+  "role": "Lead back when active",
+  "note": "Reported to be on the commissioner's exempt list over an ongoing domestic-violence allegation from a May arrest in Wisconsin, with the investigation still open and insiders expecting a possible short suspension. Separately had not practiced since Aug 6 with a groin injury before returning limited in late August. MarShawn Lloyd leads the backfield while he is out.",
+  "sources": [
+   "https://heavy.com/sports/nfl/green-bay-packers/josh-jacobs-suspension-injury-update-news/",
+   "https://www.rotoballer.com/marshawn-lloyd-start-em-sit-em-fantasy-football-picks-for-week-1-2026/1920568"
+  ]
+ },
+ "Wan'Dale Robinson|WR": {
+  "status": "Healthy",
+  "role": "WR2",
+  "note": "Left a joint practice with Chicago after a big hit from safety Xavier Woods and was evaluated for a concussion; NFL Network reports he is not believed to have suffered one and he is on track for the Sept 13 opener against the Jets.",
+  "sources": [
+   "https://athlonsports.com/nfl/tennessee-titans/titans-receive-encouraging-injury-update-on-wandale-robinson",
+   "https://www.rotowire.com/football/headlines/wandale-robinson-injury-appears-to-avoid-concussion-635013"
+  ]
+ },
+ "Jonathon Brooks|RB": {
+  "status": "Questionable",
+  "role": "Lead back",
+  "note": "Sat out the first two practices after cutdowns with unspecified soreness; coach Dave Canales is optimistic he plays the Sept 13 opener against Chicago. Coming off back-to-back ACL surgeries on his right knee, he went through all of camp and two preseason games without issue.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49805489/panthers-rb-jonathon-brooks-coach-optimistic",
+   "https://www.on3.com/pro/news/jonathon-brooks-injury-update-dave-canales-optimistic-panthers-rb-will-be-available-week-1"
+  ]
+ },
+ "Justin Herbert|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Healthy and ready for the opener. New offensive coordinator Mike McDaniel is expected to help him; he finished QB10 in 2025 with a league-high seven games of 225-plus passing and 30-plus rushing yards.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/415113/justin-herbert-2026-outlook.php",
+   "https://www.fanduel.com/research/justin-herbert-nfl-fantasy-outlook-2026"
+  ]
+ },
+ "Michael Wilson|WR": {
+  "status": "Healthy",
+  "role": "WR2",
+  "note": "Agreed to a three-year, $75 million extension on Sept 4. Sat out an early-August practice with an undisclosed issue that was not considered a threat. First 1,000-yard season in 2025, but his target share fell to 11.7% when Marvin Harrison Jr. was active, and Jacoby Brissett is the Week 1 quarterback.",
+  "sources": [
+   "https://www.nbcsports.com/watch/nfl/fantasy-outlook-for-wr-michael-wilson-after-75m-cardinals-extension",
+   "https://www.profootballnetwork.com/fantasy-football/michael-wilson-fantasy-outlook-updated-2026/"
+  ]
+ },
+ "MarShawn Lloyd|RB": {
+  "status": "Healthy",
+  "role": "Lead back (while Jacobs out)",
+  "note": "With Josh Jacobs on the commissioner's exempt list, Lloyd is set to lead Green Bay's backfield in the opener against Minnesota. GM Brian Gutekunst says he is as ready as he has ever been and he held up physically through camp and the preseason.",
+  "sources": [
+   "https://www.rotoballer.com/marshawn-lloyd-start-em-sit-em-fantasy-football-picks-for-week-1-2026/1920568",
+   "https://www.fantasypros.com/2026/08/fantasy-football-outlook-josh-jacobs-marshawn-lloyd-2026/"
+  ]
+ },
+ "Caleb Williams|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Played one preseason possession by design. Second year in Ben Johnson's offense with a top-five line and Odunze, Burden and Loveland; the skill-position question marks are Kyle Monangai (hyperextended knee) and Burden (groin).",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/bears-caleb-williams-poised-to-make-leap-in-2026/",
+   "https://www.nbcsports.com/fantasy/football/news/2026-chicago-bears-fantasy-preview-can-caleb-continue-to-cook"
+  ]
+ },
+ "Rico Dowdle|RB": {
+  "status": "Healthy",
+  "role": "Early-down lead (trending up)",
+  "note": "Signed a two-year, $12.25 million deal. Opens in a timeshare with Jaylen Warren, but Steelers beat writer Mark Kaboly reports he will be the unquestioned RB1 when the season starts and he is more likely to get the early-down work. Opens against Atlanta.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/419058/rico-dowdle-2026-outlook.php",
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-rico-dowdle/"
+  ]
+ },
+ "Stefon Diggs|WR": {
+  "status": "Healthy",
+  "role": "WR2",
+  "note": "Signed a one-year, $12 million deal with Washington as the clear No. 2 behind Terry McLaurin. Expected to play the opener. Caught 85 of 102 targets for over 1,000 yards last year at age 33.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/stefon-diggs-washington-commanders-fantasy-football-2026-outlook/",
+   "https://www.profootballnetwork.com/fantasy-football/stefon-diggs-fantasy-outlook-updated-2026/"
+  ]
+ },
+ "Alec Pierce|WR": {
+  "status": "Healthy",
+  "role": "WR1",
+  "note": "Spent camp on the physically-unable-to-perform list after offseason left ankle/heel surgery, then returned as a full participant about 10 days before the opener against Baltimore; GM Chris Ballard says playing Week 1 is the plan. Being drafted as WR39 with a large projected role.",
+  "sources": [
+   "https://sports.yahoo.com/articles/ballard-alec-pierces-status-colts-170923054.html",
+   "https://www.si.com/nfl/colts/onsi/indianapolis-colts-get-long-awaited-alec-pierce-update-before-week-1"
+  ]
+ },
+ "Travis Hunter|WR": {
+  "status": "Healthy",
+  "role": "WR/CB (usage risk)",
+  "note": "Expected to be 100% for the opener after missing the last two preseason games with an upper-body injury. The bigger issue is usage: in a joint practice he played 28 defensive snaps and 2 on offense, and Jacksonville appears to want him at cornerback more in 2026. A bench stash on upside only.",
+  "sources": [
+   "https://www.si.com/onsi/fantasy/fantasy-football-impact-travis-hunter-could-play-more-cb-than-wr-in-2026-nfl-season",
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-travis-hunter/"
+  ]
+ },
+ "Tucker Kraft|TE": {
+  "status": "Healthy (snap count)",
+  "role": "TE1 (limited)",
+  "note": "Cleared to play the opener against Minnesota after tearing his right ACL on Nov 2 last year; activated from the physically-unable-to-perform list July 31 and eased back. He expects to be on a snap count until around midseason.",
+  "sources": [
+   "https://sports.yahoo.com/articles/green-bay-packers-news-latest-142743990.html",
+   "https://www.profootballnetwork.com/tucker-kraft-injury-update-will-he-play-in-week-1/"
+  ]
+ },
+ "Chuba Hubbard|RB": {
+  "status": "Questionable",
+  "role": "Lead back (committee to start)",
+  "note": "Strained hamstring in camp kept him out of every preseason game; coach Dave Canales is very confident he plays the opener against Chicago after he hit 20 mph in rehab. Expected to open in a committee with Jonathon Brooks while the team stays cautious about cutting.",
+  "sources": [
+   "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/panthers-expect-chuba-hubbard-back-for-week-1",
+   "https://www.foxsports.com/stories/nfl/carolina-panthers-running-back-chuba-hubbard-injury"
+  ]
+ },
+ "Jakobi Meyers|WR": {
+  "status": "Healthy",
+  "role": "WR2/WR3",
+  "note": "Jammed his right hand/thumb in an Aug 19 practice and wore a brace on the sideline in the preseason; logged a limited practice Wednesday and coach Liam Coen says he is all good and not a concern for the opener against Cleveland.",
+  "sources": [
+   "https://www.draftsharks.com/fantasy-football-news/82449/jakobi-meyers-back-on-the-field",
+   "https://sports.yahoo.com/articles/jaguars-wr-jakobi-meyers-working-033402897.html"
+  ]
+ },
+ "Trevor Lawrence|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "No injury concerns; sat the preseason opener as standard management. Fourth among quarterbacks in fantasy points last year (338.1) with his receiving corps intact. Opens against Cleveland's third-ranked pass defense. New backup Quinn Ewers arrived by trade.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/trevor-lawrence-fantasy-outlook-updated-2026/",
+   "https://www.fanduel.com/research/trevor-lawrence-nfl-fantasy-week-1-vs-browns-2026"
+  ]
+ },
+ "Aaron Jones Sr.|RB": {
+  "status": "Healthy",
+  "role": "Passing-down back (co-starter)",
+  "note": "Retained on a revised deal with a $5.5 million 2026 salary. Listed as a co-starter with Jordan Mason, expected to handle passing downs while Mason takes early downs, and camp reporting says Mason has emerged as the leader. Missed five games in 2025 and six in 2024, entering his age-31 season.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-aaron-jones-fantasy-outlook-155557335.html",
+   "https://www.fantasypros.com/nfl/players/aaron-jones.php"
+  ]
+ },
+ "Brian Thomas Jr.|WR": {
+  "status": "Healthy",
+  "role": "WR1/WR2",
+  "note": "Fell on his shoulder in a joint practice with Tampa Bay, was limited, then returned to full practice Tuesday; coach Liam Coen expressed no concern for the opener against Cleveland. With Parker Washington absent, he was clearly Trevor Lawrence's top target in practice. Coming off a bust 2025 marred by a high-ankle sprain.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/news/605657/brian-thomas-jr-shoulder-practicing-full.php",
+   "https://www.si.com/onsi/fantasy/injuries/brian-thomas-jr-avoids-serious-injury-sustains-fantasy-bounce-back-case-2026"
+  ]
+ },
+ "Brandon Aubrey|K": {
+  "status": "Healthy",
+  "role": "K1",
+  "note": "Signed a four-year, $28 million extension that makes him the highest-paid kicker ever, through 2030. Healthy for the Sunday night opener at the Giants; at least 36 field goals and a 60-plus-yarder in each of his three seasons.",
+  "sources": [
+   "https://www.dallascowboys.com/news/cowboys-brandon-aubrey-agree-to-terms-on-record-setting-extension",
+   "https://www.bloggingtheboys.com/dallas-cowboys-roster/210381/2026-roster-rundown-kicker-brandon-aubrey"
+  ]
+ },
+ "Brock Purdy|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Healthy after last year's shoulder and toe issues. New receivers Mike Evans, Christian Kirk and rookie De'Zhaun Stribling, though Evans is nursing an adductor and George Kittle is coming back from an Achilles, so the early passing game may lean on the wideouts. Opens Thursday night against the Rams.",
+  "sources": [
+   "https://www.fanduel.com/research/brock-purdy-nfl-fantasy-week-1-vs-rams-2026",
+   "https://sports.yahoo.com/articles/updated-brock-purdy-fantasy-outlook-162011343.html"
+  ]
+ },
+ "Rachaad White|RB": {
+  "status": "Questionable",
+  "role": "Pass-catching back",
+  "note": "Hamstring strain from an Aug 12 joint practice with Miami kept him out of the last two exhibitions; back for individual work this week but not yet in 11-on-11, per coach Dan Quinn. Caught 40 of 45 targets last year and is Washington's receiving back.",
+  "sources": [
+   "https://clutchpoints.com/nfl/washington-commanders/commanders-news-rachaad-white-practice-confirms-best-case-scenario-injury",
+   "https://www.cbssports.com/fantasy/football/news/commanders-rachaad-white-nursing-hamstring-injury/"
+  ]
+ },
+ "J.K. Dobbins|RB": {
+  "status": "Healthy",
+  "role": "Early-down lead",
+  "note": "Sean Payton says he is moving well and on track for the Sept 14 Monday night opener against Kansas City after a soft-tissue injury limited camp and kept him out of the preseason. RJ Harvey holds the passing-down role and rookie Jonah Coleman could take carries; analysts call him a September rental.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/broncos-j-k-dobbins-ready-for-week-1/",
+   "https://sports.yahoo.com/articles/updated-j-k-dobbins-fantasy-154556546.html"
+  ]
+ },
+ "Kyle Monangai|RB": {
+  "status": "Questionable",
+  "role": "Backup (in doubt)",
+  "note": "Hyperextended his knee Aug 16 when Grady Jarrett accidentally tackled him in an unpadded session; week-to-week per Ben Johnson. Tests showed the joint structurally sound and he stayed on the active 53 rather than an injured list, but the Sept 13 opener is in doubt.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49643703/bears-rb-kyle-monangai-knee-expected-miss-multiple-weeks-source-says",
+   "https://www.si.com/nfl/bears/onsi/kyle-monangai-injury-update-following-chicago-bears-53-man-roster-cuts"
+  ]
+ },
+ "Travis Kelce|TE": {
+  "status": "Healthy",
+  "role": "TE1",
+  "note": "Back on a new three-year deal worth up to $57.7 million after retirement speculation; turns 37 in October. Finished TE3 last year (76 catches, 851 yards) and his value rides on Patrick Mahomes returning from a torn ACL and LCL for Week 1.",
+  "sources": [
+   "https://www.cbssports.com/fantasy/football/news/travis-kelce-resigns-chiefs-fantasy-football-fallout/",
+   "https://www.fantasypros.com/nfl/notes/419131/travis-kelce-2026-outlook.php"
+  ]
+ },
+ "Matthew Golden|WR": {
+  "status": "Healthy",
+  "role": "WR2 (X receiver)",
+  "note": "Returned to practice Tuesday with the first-team offense after missing a few days with a toe injury. Penciled in as the starting X opposite Christian Watson after Dontayvion Wicks was traded and Romeo Doubs left; Jordan Love says he expects big things. Analysts split on whether the year-two breakout comes.",
+  "sources": [
+   "https://fantasyfootballcalculator.com/players/matthew-golden/news",
+   "https://www.profootballnetwork.com/fantasy-football/matthew-golden-fantasy-prediction-2026/"
+  ]
+ },
+ "Chris Godwin Jr.|WR": {
+  "status": "Healthy",
+  "role": "WR1 (slot)",
+  "note": "Fully healthy after a fibula injury limited him to nine games last year; a Tuesday practice absence was described as routine soreness management. Listed as a starter working mostly from the slot, and for the first time in his career Mike Evans is gone, vacating a huge target share. New offensive coordinator Zac Robinson.",
+  "sources": [
+   "https://www.rotoballer.com/player-news/chris-godwin-jr-looking-good-ahead-of-2026-season/1921207",
+   "https://www.fantasylife.com/articles/fantasy/chris-godwin-fantasy-football-outlook-for-2026-the-most-underpri"
+  ]
+ },
+ "Jordan Addison|WR": {
+  "status": "Healthy",
+  "role": "WR2",
+  "note": "Ready for the opener against Green Bay after regular first-team reps in camp; a minor thumb injury this week came back clean on imaging and he is expected close to full participation. Kyler Murray at quarterback is viewed as an upgrade.",
+  "sources": [
+   "https://www.fanduel.com/research/jordan-addison-nfl-fantasy-outlook-2026",
+   "https://fantasyfootballcalculator.com/players/jordan-addison/news"
+  ]
+ },
+ "Josh Downs|WR": {
+  "status": "Questionable",
+  "role": "Slot WR2",
+  "note": "Missed Tuesday and Wednesday practice with a calf issue he called very minor and precautionary; also worked through a groin a few weeks ago that coach Shane Steichen said was not serious. Expects to be ready for the opener against Baltimore.",
+  "sources": [
+   "https://clutchpoints.com/nfl/indianapolis-colts/colts-news-josh-downs-downplays-calf-injury-very-minor",
+   "https://www.si.com/nfl/colts/onsi/colts-josh-downs-gets-candid-on-injury-expectations-for-season"
+  ]
+ },
+ "Dallas Goedert|TE": {
+  "status": "Healthy",
+  "role": "TE1",
+  "note": "Re-signed on a one-year, $7 million deal and starts for a ninth season; had a good day in Thursday's joint practice with New England. Opens against Washington, which allowed the fourth-most fantasy points to tight ends last year, and could see more work with A.J. Brown gone.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/news/dallas-goedert.php",
+   "https://www.rotoballer.com/player-news/dallas-goedert-back-outside-of-te1-territory-for-2026/1882996"
+  ]
+ },
+ "RJ Harvey|RB": {
+  "status": "Healthy",
+  "role": "Passing-down back (committee)",
+  "note": "Healthy and rested in the preseason finale. Sean Payton calls receiving a strength, but with J.K. Dobbins healthy as the lead runner and rookie Jonah Coleman taking early-down work, Denver's backfield looks like a three-way split in the opener against Kansas City.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-rj-harvey-fantasy-outlook-155930059.html",
+   "https://www.cbssports.com/fantasy/football/news/broncos-rj-harvey-focused-on-big-plays-in-2026/"
+  ]
+ },
+ "Patrick Mahomes|QB": {
+  "status": "Questionable",
+  "role": "QB1 (returning from ACL)",
+  "note": "Tore the ACL and LCL in his left knee on Dec 14 and had surgery in Dallas. Full participant in camp, held out of all preseason games as a precaution, and told reporters Tuesday he is on track to start the Monday night opener against Denver on Sept 14.",
+  "sources": [
+   "https://bleacherreport.com/articles/25485853-patrick-mahomes-gives-week-1-injury-status-update-amid-knee-rehab-chiefs-prepare-broncos",
+   "https://www.profootballnetwork.com/patrick-mahomes-injury-update-will-he-play-in-week-1/"
+  ]
+ },
+ "Khalil Shakir|WR": {
+  "status": "Questionable",
+  "role": "Slot WR",
+  "note": "Out of practice since mid-August with an undisclosed injury and played in just one preseason game. CBS reports optimism he is available for the opener against Houston, with Buffalo being cautious.",
+  "sources": [
+   "https://sports.yahoo.com/articles/bills-news-khalil-shakir-gets-202304978.html",
+   "https://www.rotowire.com/football/headlines/khalil-shakir-injury-managing-unspecified-injury-634234"
+  ]
+ },
+ "Blake Corum|RB": {
+  "status": "Questionable",
+  "role": "1B back (rising)",
+  "note": "Listed questionable with an ankle alongside Kyren Williams, though reporting says both should be ready for Thursday's opener against the 49ers. Looks leaner and more explosive per Williams; ESPN's Dan Graziano thinks he could be the 1A by year's end if his pass protection improves. Elite handcuff.",
+  "sources": [
+   "https://www.rotoballer.com/player-news/blake-corum-could-emerge-as-the-1a-in-rams-backfield/1921990",
+   "https://sports.yahoo.com/articles/updated-blake-corum-fantasy-outlook-155746120.html"
+  ]
+ },
+ "Bo Nix|QB": {
+  "status": "Healthy",
+  "role": "QB1/QB2",
+  "note": "Ankle cleanup in April, full participant since camp with no limitations. QB7 in each of his first two seasons, now with Jaylen Waddle and new play-caller Davis Webb, but Denver opens against the Chiefs, Jaguars, Rams, 49ers, Chargers and Seahawks in the first six weeks.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/419975/bo-nix-2026-outlook.php",
+   "https://www.nbcsports.com/fantasy/football/news/2026-denver-broncos-fantasy-preview-how-good-is-bo-nix"
+  ]
+ },
+ "Matthew Stafford|QB": {
+  "status": "Healthy",
+  "role": "QB1",
+  "note": "Reigning MVP at 38, coming off a QB2 fantasy finish with no rushing. Sharp in camp with his workload managed for the opener. Puka Nacua and Davante Adams return; analysts flag regression risk from last year's touchdown rate.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/matthew-stafford-fantasy-outlook-updated-2026/",
+   "https://www.nbcsports.com/fantasy/football/news/2026-los-angeles-rams-fantasy-preview-one-last-ride-for-matthew-stafford"
+  ]
+ },
+ "Jake Ferguson|TE": {
+  "status": "Healthy",
+  "role": "TE1",
+  "note": "Undisputed starter after a four-year, $52 million extension; missed a Saturday practice for personal reasons. Was the overall PPR TE1 through Week 7 last year, then TE22 the rest of the way, averaging 18.6 points without CeeDee Lamb and 8.9 with him.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/415905/jake-ferguson-2026-outlook.php",
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-jake-ferguson/"
+  ]
+ },
+ "Makai Lemon|WR": {
+  "status": "Healthy",
+  "role": "Rookie WR3",
+  "note": "Full participant Monday after a hamstring strain cost him much of camp. Expected among Philadelphia's top three receivers with DeVonta Smith and Dontayvion Wicks, but a crowded room and a low-volume passing game cap his early role.",
+  "sources": [
+   "https://www.profootballnetwork.com/fantasy-football/makai-lemon-fantasy-outlook-updated-2026/",
+   "https://www.fantasypros.com/nfl/notes/424686/makai-lemon-2026-outlook.php"
+  ]
+ },
+ "Isaiah Likely|TE": {
+  "status": "Healthy",
+  "role": "TE1 (new team)",
+  "note": "Signed a three-year, $40 million deal with the Giants in March and has dominated camp with a visible connection to Jaxson Dart. Could be the second or third option in the passing game, more if Malik Nabers is slow to return. Calvin Austin III tore his ACL, thinning the receiver room further.",
+  "sources": [
+   "https://www.si.com/onsi/fantasy/news/isaiah-likely-fantasy-stock-rises-after-stellar-training-camp",
+   "https://dknetwork.draftkings.com/2026/09/03/can-isaiah-likely-become-an-elite-fantasy-tight-end-with-the-giants-in-2026/"
+  ]
+ },
+ "Quentin Johnston|WR": {
+  "status": "Healthy",
+  "role": "WR2",
+  "note": "A lower-body injury in camp was described as totally fine, with little or no practice time missed. Keenan Allen's departure leaves 112 vacated targets; viewed as a boom-or-bust WR4/flex with upside under Mike McDaniel.",
+  "sources": [
+   "https://fantasyfootballcalculator.com/players/quentin-johnston/news",
+   "https://www.fanduel.com/research/quentin-johnston-nfl-fantasy-outlook-2026"
+  ]
+ },
+ "Jacory Croskey-Merritt|RB": {
+  "status": "Healthy",
+  "role": "Early-down back",
+  "note": "Minor groin injury cost him the last two preseason games; returned to practice Sept 1 and is on track for the opener against Philadelphia.",
+  "sources": [
+   "https://www.draftsharks.com/fantasy-football-news/82442/jacory-croskey-merritt-back-from-groin-injury",
+   "https://www.rotowire.com/football/headlines/jacory-croskey-merritt-injury-set-to-practice-next-week-635614"
+  ]
+ },
+ "Jayden Reed|WR": {
+  "status": "Healthy",
+  "role": "Slot WR3",
+  "note": "Missed 10 games last year with collarbone and foot injuries. Green Bay lost Romeo Doubs and Dontayvion Wicks and may throw more with Josh Jacobs on the exempt list, but he still competes with Christian Watson and Matthew Golden for targets.",
+  "sources": [
+   "https://www.rotoballer.com/player-news/jayden-reed-well-positioned-to-bounce-back-in-2026/1920642",
+   "https://www.profootballnetwork.com/fantasy-football/jayden-reed-fantasy-outlook-2026/"
+  ]
+ },
+ "Mark Andrews|TE": {
+  "status": "Healthy",
+  "role": "Starting tight end (Ravens)",
+  "note": "No injury. Isaiah Likely and Charlie Kolar are both gone, so the target competition at tight end is thinner than it has been in years. The concern is age: Andrews turns 31 this season and last year's efficiency dipped, so he is a floor play, not a ceiling play.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/bal/baltimore-ravens"
+  ]
+ },
+ "De'Zhaun Stribling|WR": {
+  "status": "Questionable",
+  "role": "Competing for the No. 2 receiver job (49ers)",
+  "note": "Rookie second-round pick. Returned from a minor hamstring issue in camp and is now day-to-day with a shoulder. With Ricky Pearsall out for the year and Deebo Samuel back only on a one-year deal, Stribling has a real path to starter snaps if he stays healthy.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/sf/san-francisco-49ers"
+  ]
+ },
+ "Kyler Murray|QB": {
+  "status": "Healthy",
+  "role": "Named Week 1 starter (Vikings)",
+  "note": "Signed a one-year deal and beat out J.J. McCarthy for the starting job. Kevin O'Connell's offense with Justin Jefferson and Jordan Addison is a big upgrade in weapons; the question is whether the job stays his if he struggles.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/min/minnesota-vikings"
+  ]
+ },
+ "Xavier Worthy|WR": {
+  "status": "Healthy",
+  "role": "No. 4 receiver / flex option (Chiefs)",
+  "note": "Had shoulder (labrum) surgery in January but is not expected to miss time. The Chiefs' receiver room is crowded, so treat him as a boom-or-bust weekly play tied to deep shots from Mahomes.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/kc/kansas-city-chiefs"
+  ]
+ },
+ "Romeo Doubs|WR": {
+  "status": "Healthy",
+  "role": "No. 2 receiver (Patriots)",
+  "note": "Signed a multi-year deal with New England and slots in behind A.J. Brown. Steady, not spectacular; a bye-week fill-in with weekly upside if Drake Maye keeps throwing at a high rate.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/ne/new-england-patriots"
+  ]
+ },
+ "Jalen Coker|WR": {
+  "status": "Healthy",
+  "role": "Clear No. 2 receiver (Panthers)",
+  "note": "Re-signed on a tender and is locked in as the second receiver opposite Tetairoa McMillan. Durability has been the only knock; if he plays 17 games he is a solid depth piece.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/car/carolina-panthers"
+  ]
+ },
+ "Dalton Kincaid|TE": {
+  "status": "Healthy",
+  "role": "Starting tight end (Bills)",
+  "note": "Healthy and expected to see a bigger role under new offensive coordinator Joe Brady. Still shares the position with Dawson Knox, which caps his weekly ceiling.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/buf/buffalo-bills"
+  ]
+ },
+ "Tyjae Spears|RB": {
+  "status": "Healthy",
+  "role": "1B behind Tony Pollard (Titans)",
+  "note": "Healthy after last year's injuries. Shares the backfield with Tony Pollard and rookie Ronnie Singleton is also in the mix, so this is a committee. Best used as a handcuff with standalone flex value in passing situations.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/ten/tennessee-titans"
+  ]
+ },
+ "Cameron Dicker|K": {
+  "status": "Healthy",
+  "role": "Starting kicker (Chargers)",
+  "note": "Went into the medical tent during the Aug 28 preseason game and missed a 49-yard field goal, but no injury is listed and he is expected to kick Week 1. Strong-legged kicker on a good offense.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/lac/los-angeles-chargers"
+  ]
+ },
+ "Tyler Shough|QB": {
+  "status": "Healthy",
+  "role": "Undisputed starter (Saints)",
+  "note": "Took over the job in Week 9 last season and was a top-12 fantasy quarterback per game from that point. No competition in camp. A late-round streaming quarterback with rushing upside.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/no/new-orleans-saints"
+  ]
+ },
+ "Jordan Mason|RB": {
+  "status": "Healthy",
+  "role": "Power back in a committee (Vikings)",
+  "note": "Expected to split with Aaron Jones and could lead the backfield early in the season on early downs and short yardage. Goal-line work makes him a viable flex even in a timeshare.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/min/minnesota-vikings"
+  ]
+ },
+ "Deebo Samuel Sr.|WR": {
+  "status": "Healthy",
+  "role": "No. 2 receiver competition (49ers)",
+  "note": "Back in San Francisco on a one-year deal. Competing with rookie De'Zhaun Stribling for the second receiver role while Ricky Pearsall is out for the season. Age and declining explosiveness are the risk; the role is real.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/sf/san-francisco-49ers"
+  ]
+ },
+ "Jared Goff|QB": {
+  "status": "Healthy",
+  "role": "Starting quarterback (Lions)",
+  "note": "No injury concerns. New offensive coordinator Drew Petzing replaces Ben Johnson, which is the only real question mark for an otherwise loaded offense. Safe, low-rushing QB2 with top-10 weeks.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/det/detroit-lions"
+  ]
+ },
+ "Woody Marks|RB": {
+  "status": "Healthy",
+  "role": "Complementary back behind David Montgomery (Lions)",
+  "note": "Third-down back and kick returner. Would need an injury ahead of him to be a weekly starter, but has receiving-game floor in a good offense.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/det/detroit-lions"
+  ]
+ },
+ "Jason Myers|K": {
+  "status": "Monitor",
+  "role": "Starting kicker (Seahawks)",
+  "note": "Led the NFL with 171 points in 2025, but a rough preseason (2 of 5 field goals, 2 of 4 extra points, including a missed 52-yard game-winner) has raised questions. No injury; still the starter.",
+  "sources": [
+   "https://www.espn.com/nfl/team/_/name/sea/seattle-seahawks"
+  ]
+ },
+ "KC Concepcion|WR": {
+  "status": "Healthy",
+  "role": "Starting receiver (Browns)",
+  "note": "First-round rookie (24th overall) who won the Browns' top-rookie training-camp award and appears to have locked down a starting role. Coach Todd Monken is using him like Zay Flowers in Baltimore: motion, manufactured touches, screens. Quarterback play (Deshaun Watson) is the ceiling cap.",
+  "sources": [
+   "https://sports.yahoo.com/articles/browns-rookie-wr-seems-locked-040944763.html",
+   "https://www.si.com/nfl/browns/onsi/browns-rookie-receiver-kc-concepcion-named-recipient-of-training-camp-award-01m1cky5tjmx"
+  ]
+ },
+ "Jalen McMillan|WR": {
+  "status": "Questionable",
+  "role": "No. 2 or No. 3 receiver (Buccaneers)",
+  "note": "Missed more than a week of camp with a knee/leg issue but is back at practice; the team is being cautious. Mike Evans left for San Francisco, so McMillan is in line for a bigger role next to Emeka Egbuka. Played only four games in 2025 because of a neck injury, so durability is the concern.",
+  "sources": [
+   "https://www.newsweek.com/sports/nfl/buccaneers-get-major-boost-as-jalen-mcmillan-returns-to-practice-12339238",
+   "https://www.joebucsfan.com/2026/08/injury-updates-on-jalen-mcmillan-tristan-wirfs/"
+  ]
+ },
+ "Tank Dell|WR": {
+  "status": "Out (injured reserve)",
+  "role": "On injured reserve, designated to return (Texans)",
+  "note": "Placed on injured reserve Aug 30; cannot play until Week 5 at the earliest (Oct 11 vs. Titans). Still recovering from the multi-ligament knee injury and dislocated kneecap from December 2024 that cost him all of 2025. GM Nick Caserio says the team will reassess after four weeks. Draft only as a stash.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49777386/texans-place-tank-dell-ir-wr-least-4-weeks"
+  ]
+ },
+ "Texans D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Consensus No. 1 fantasy defense",
+  "note": "Ranked the top defense almost everywhere for 2026 after finishing second in fantasy points per game (9.6) and first in EPA per play allowed in 2025. Will Anderson Jr. and Danielle Hunter lead the pass rush. Week 1 is at Buffalo, a tough draw, but Houston has historically contained Josh Allen.",
+  "sources": [
+   "https://www.fantasylife.com/articles/fantasy/defense-dst-rankings-for-2026-fantasy-football",
+   "https://www.rotoballer.com/week-1-defense-def-streamers-starters-and-rankings-2026-fantasy-tiers-rankings/1916094"
+  ]
+ },
+ "Zach Charbonnet|RB": {
+  "status": "Out (PUP list)",
+  "role": "On the physically-unable-to-perform list (Seahawks)",
+  "note": "Placed on reserve/PUP Aug 30 while recovering from the torn ACL he suffered in January's playoff win over the 49ers. Must miss at least the first four games; Week 5 is the earliest return and the real timeline depends on his rehab. Rookie first-rounder Jadarian Price, George Holani and Emanuel Wilson handle the backfield until then.",
+  "sources": [
+   "https://sports.yahoo.com/articles/seahawks-place-rb-zach-charbonnet-180047644.html",
+   "https://www.draftsharks.com/fantasy-football-news/82409/zach-charbonnet-out-at-least-first-four-games"
+  ]
+ },
+ "Broncos D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Top-tier fantasy defense",
+  "note": "Led the NFL with 68 sacks and the best pressure rate (30.5%) in 2025 and returns its entire starting defense; sixth in fantasy points per game last year. Altitude at home helps. Concerns: injury luck rarely repeats, and the first eight games (Chiefs twice, Jaguars, Rams, 49ers, Chargers, Seahawks, Cardinals) are the third-toughest stretch in the league.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/424693/denver-defense-2026-outlook.php",
+   "https://www.thebroncosobserver.com/broncos-2026-fantasy-football-outlook-is-denvers-d-st-a-set-and-forget-option/"
+  ]
+ },
+ "Jonah Coleman|RB": {
+  "status": "Healthy",
+  "role": "No. 3 running back, passing-down role (Broncos)",
+  "note": "Fourth-round rookie out of Washington (5-8, 220). J.K. Dobbins starts and RJ Harvey is the No. 2, but Coleman is expected to take over Tyler Badie's third-down job as a runner, receiver and pass blocker. A stash, not a starter, unless someone ahead of him gets hurt.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-jonah-coleman-fantasy-outlook-140402005.html",
+   "https://sports.yahoo.com/articles/broncos-updated-running-back-depth-123047590.html"
+  ]
+ },
+ "Baker Mayfield|QB": {
+  "status": "Healthy (playing through)",
+  "role": "Starting quarterback (Buccaneers)",
+  "note": "Expected to play with extra protection on the left shoulder he hurt in 2025, which should limit his rushing more than his passing. Went from QB3 per game in 2024 to QB19 last year while banged up. Mike Evans is gone, Emeka Egbuka has a toe issue, and Zac Robinson is his fourth play-caller in four years. Consensus has him around QB21: a streamer, not a set-and-forget starter.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/422394/baker-mayfield-2026-outlook.php",
+   "https://www.profootballnetwork.com/fantasy-football/baker-mayfield-fantasy-outlook-2026/"
+  ]
+ },
+ "Ka'imi Fairbairn|K": {
+  "status": "Healthy",
+  "role": "Starting kicker (Texans)",
+  "note": "Perfect preseason, including a 57-yard field goal, and just signed a two-year, $13 million extension that makes him the highest-paid kicker in the league. Top-five in points each of the last two seasons; as safe as a kicker gets.",
+  "sources": [
+   "https://www.thefantasyfootballers.com/news/635147/kaimi-fairbairn-wraps-up-perfect-preseason/"
+  ]
+ },
+ "Isiah Pacheco|RB": {
+  "status": "Out (injured reserve)",
+  "role": "Backup running back, on injured reserve (Lions)",
+  "note": "Placed on injured reserve Sept 1 with an MCL sprain on top of a training-camp back injury; out at least four games, eligible to return Week 5 vs. Arizona. GM Brad Holmes would only say a return this season is 'the hope.' Signed a one-year deal in March after four seasons in Kansas City. Jahmyr Gibbs and David Montgomery carry the load.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49796729/detroit-lions-place-rb-isiah-pacheco-injured-reserve",
+   "https://www.detroitnews.com/story/sports/nfl/lions/2026/09/02/lions-hope-isiah-pacheco-can-return-this-season-after-ir-stint/91579698007/"
+  ]
+ },
+ "Chris Rodriguez Jr.|RB": {
+  "status": "Healthy",
+  "role": "Co-starter with Bhayshul Tuten (Jaguars)",
+  "note": "Signed from Washington in March and listed as a co-starter with Bhayshul Tuten; camp produced no separation, so expect a near-even split. Career highs of 115 touches, 530 yards and six touchdowns in 2025. Goal-line work is the fantasy appeal.",
+  "sources": [
+   "https://www.si.com/nfl/jaguars/onsi/jacksonville-updated-depth-chart-after-roster-cuts-liam-coen-squad-finds-clarity",
+   "https://www.jaguars.com/news/jaguars-2026-training-camp-first-unofficial-depth-chart-released"
+  ]
+ },
+ "Harrison Mevis|K": {
+  "status": "Healthy",
+  "role": "Starting kicker (Rams)",
+  "note": "Undrafted kicker who took over in Week 10 last year and has barely missed since: 12 of 13 field goals in the regular season, 6 of 6 in the playoffs (including an NFC title-game-clinching kick) and a perfect preseason (6/6 FG, 8/8 PAT). Week 1 is vs. the 49ers in Melbourne on Thursday, Sept 10, so he plays before Sunday's slate.",
+  "sources": [
+   "https://athlonsports.com/nfl/los-angeles-rams/rams-finally-find-their-kicker-in-harrison-mevis",
+   "https://www.therams.com/team/players-roster/harrison-mevis/"
+  ]
+ },
+ "Daniel Jones|QB": {
+  "status": "Healthy (returning from injury)",
+  "role": "Starting quarterback (Colts)",
+  "note": "Says he is '100%' after tearing his Achilles in Week 14 last December. Did not take a preseason snap, so the Sept 13 opener vs. Baltimore is his first live action in nine months. The Colts re-signed him after the injury, which signals confidence, but his rushing (a big part of his 2025 value) is the thing to watch.",
+  "sources": [
+   "https://www.nfl.com/news/colts-qb-daniel-jones-achilles-absolutely-expects-to-be-ready-week-1",
+   "https://sports.yahoo.com/articles/colts-qb-daniel-jones-one-165512053.html"
+  ]
+ },
+ "Juwan Johnson|TE": {
+  "status": "Healthy",
+  "role": "Lead tight end (Saints)",
+  "note": "Finished as the TE11/12 in 2025 (77 catches, 889 yards on 102 targets) but is being drafted around TE16-18. The Saints added Noah Fant, Devaughn Vele and No. 8 overall pick Jordyn Tyson, so there is more target competition; still, he is Tyler Shough's safety valve and a PPR floor play with a top-10 shot.",
+  "sources": [
+   "https://dknetwork.draftkings.com/2026/08/31/is-juwan-johnson-the-best-late-round-tight-end-sleeper-in-2026-fantasy-football/",
+   "https://www.fantasylife.com/articles/fantasy/te-sleepers-for-2026"
+  ]
+ },
+ "Alvin Kamara|RB": {
+  "status": "Healthy",
+  "role": "No. 2 running back behind Travis Etienne (Saints)",
+  "note": "Turned 31 this summer and took a reworked, reduced contract to stay in New Orleans. Travis Etienne was paid to be the lead back, so Kamara is looking at roughly 12 touches a game after career lows in rushing yards (471), receiving yards (186) and touchdowns (1) in 2025. Name value is far ahead of the role.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49369711/alvin-kamara-agrees-reworked-deal-stay-saints",
+   "https://sports.yahoo.com/articles/updated-alvin-kamara-fantasy-outlook-144813695.html"
+  ]
+ },
+ "Tyler Allgeier|RB": {
+  "status": "Healthy",
+  "role": "No. 2 back, likely Week 1 starter (Cardinals)",
+  "note": "Signed a two-year, $12 million deal to pair with No. 3 overall pick Jeremiyah Love. Love is working back from a preseason ankle injury and may miss Week 1, so Allgeier could lead the backfield to open the season. Once Love is full-go the expected split is roughly 65/35 in Love's favor. Has rushed for 514+ yards in all four seasons.",
+  "sources": [
+   "https://www.si.com/onsi/fantasy/rankings/cardinals-running-back-jeremiyah-love-tyler-allgeier",
+   "https://www.azcardinals.com/news/cardinals-roster-reset-2026-running-back"
+  ]
+ },
+ "Mike Washington Jr.|RB": {
+  "status": "Healthy",
+  "role": "No. 2 running back behind Ashton Jeanty (Raiders)",
+  "note": "Fourth-round rookie (6-2, 228) who ran 23 times for 168 yards in the preseason and is listed second on the depth chart. Coach Klint Kubiak says he will 'play a lot of football' even with Jeanty healthy. Best handcuff value on the Raiders.",
+  "sources": [
+   "https://www.profootballnetwork.com/raiders-rb-depth-chart-mike-washington-jr-draft/",
+   "https://www.raiders.com/news/raiders-first-unofficial-depth-chart-of-2026-season-training-camp-preseason-vs-arizona-cardinals"
+  ]
+ },
+ "Dylan Sampson|RB": {
+  "status": "Healthy",
+  "role": "Change-of-pace and receiving back behind Quinshon Judkins (Browns)",
+  "note": "Jerome Ford is gone, so Sampson is the clear No. 2. Caught 33 passes as a rookie and fits Deshaun Watson's checkdown-heavy game. Standalone value is flex-only unless Judkins misses time; some Cleveland writers see him as a breakout candidate.",
+  "sources": [
+   "https://www.si.com/nfl/browns/onsi/dylan-sampson-should-take-on-a-larger-role-with-the-cleveland-browns-in-2026-01krk9dm1nbd",
+   "https://www.clevelandbrowns.com/news/analyzing-the-browns-running-back-room-heading-into-2026-position-preview"
+  ]
+ },
+ "Hunter Henry|TE": {
+  "status": "Healthy",
+  "role": "Starting tight end (Patriots)",
+  "note": "Finished TE7 in half-PPR last year (60 catches, 768 yards, 7 touchdowns) and still has good rapport with Drake Maye at 31. The Patriots added A.J. Brown and Romeo Doubs, so he projects third in the target pecking order; expect something like 60 catches, 650 yards and fewer touchdowns.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/419543/hunter-henry-2026-outlook.php",
+   "https://www.si.com/onsi/fantasy/rankings/can-hunter-henry-beat-his-te19-adp-in-2026-fantasy-football-drafts"
+  ]
+ },
+ "T.J. Hockenson|TE": {
+  "status": "Questionable",
+  "role": "Starting tight end, shoulder injury (Vikings)",
+  "note": "Has not practiced in five straight reports because of a shoulder injury; the same shoulder cost him the last two games of 2025. Took a $5 million pay cut via restructure this offseason. Week 1 status is unclear, and Kyler Murray is a new quarterback for him. Do not count on him as your only tight end.",
+  "sources": [
+   "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/t-j-hockenson-out-of-vikings-practice-with-injury",
+   "https://zonecoverage.com/2026/minnesota-vikings-news/is-it-time-to-start-worrying-about-t-j-hockenson/"
+  ]
+ },
+ "Keaton Mitchell|RB": {
+  "status": "Healthy",
+  "role": "No. 2 running back behind Omarion Hampton (Chargers)",
+  "note": "Signed a multi-year deal and has been the No. 2 back all preseason with Kimani Vidal as the pure handcuff. Mike McDaniel throws to his backs and Mitchell (4.37 speed, 5.8 yards per carry in 2025) is built for scripted big-play touches, not volume. Weekly flex flier.",
+  "sources": [
+   "https://www.nbcsports.com/fantasy/football/player-news/2026-08-20/keaton-mitchell-operates-as-chargers-rb2-on-thu",
+   "https://www.chargers.com/news/keaton-mitchell-mike-mcdaniel-fantasy"
+  ]
+ },
+ "Keenan Allen|WR": {
+  "status": "Monitor (legal issue)",
+  "role": "Starting receiver, expected to play Week 1 (Colts)",
+  "note": "Signed Aug 19 and then arrested on preliminary misdemeanor OWI charges in early September. GM Chris Ballard said he will play Week 1 vs. Baltimore, but a league suspension later in the season is possible. Six-time Pro Bowler with 1,000+ career catches in Shane Steichen's offense with Daniel Jones; Alec Pierce's health also affects his target share.",
+  "sources": [
+   "https://www.washingtontimes.com/news/2026/sep/1/colts-expecting-wr-keenan-allen-play-season-opener-hopeful-alec/",
+   "https://www.profootballrumors.com/2026/09/colts-gm-discusses-keenan-allen-arrest"
+  ]
+ },
+ "Samaje Perine|RB": {
+  "status": "Healthy",
+  "role": "Clear backup behind Chase Brown (Bengals)",
+  "note": "Turns 31 this month and is on a cheap one-year salary as the third-down back and direct handcuff to Chase Brown. Played about 31% of snaps in 2025 (84 carries, 382 yards, 3 touchdowns). No standalone value unless Brown is hurt.",
+  "sources": [
+   "https://sports.yahoo.com/articles/bengals-player-profile-samaje-perine-140033000.html"
+  ]
+ },
+ "Eddy Pineiro|K": {
+  "status": "Healthy",
+  "role": "Starting kicker (49ers)",
+  "note": "Signed a four-year, $17 million contract in March and finished the preseason 6 for 6 in the finale, including 59, 54 and 51-yarders. Kicks for a strong offense; one of the better late-round kicker picks.",
+  "sources": [
+   "https://www.ninersnation.com/san-francisco-49ers-news/161778/eddy-pineiro-caps-off-the-49ers-preseason-with-a-perfect-performance"
+  ]
+ },
+ "Jordan Love|QB": {
+  "status": "Healthy",
+  "role": "Starting quarterback (Packers)",
+  "note": "Played in the preseason opener and is healthy for Week 1 after a late-2025 concussion. Weekly QB1 ceiling on a good offense; no current injury designation.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49584388/packers-qb-love-expected-play-first-preseason-game"
+  ]
+ },
+ "Brian Robinson Jr.|RB": {
+  "status": "Healthy",
+  "role": "Backup and short-yardage back behind Bijan Robinson (Falcons)",
+  "note": "Signed a one-year, $2.5 million deal to replace Tyler Allgeier as the power back behind Bijan. Head coach Kevin Stefanski likes how the two complement each other. Goal-line touches give him small standalone value; his real worth is as the Bijan handcuff.",
+  "sources": [
+   "https://sports.yahoo.com/articles/falcons-rb-depth-chart-brian-100418048.html",
+   "https://www.atlantafalcons.com/news/bijan-robinson-brian-robinson-jr-falcons-backfield"
+  ]
+ },
+ "Terrance Ferguson|TE": {
+  "status": "Healthy",
+  "role": "Part of a four-way tight end rotation (Rams)",
+  "note": "Led all tight ends in yards per catch (20.8) as a rookie on only 25 targets. Shares the position with Tyler Higbee, Colby Parkinson and Max Klare, so weekly usage is unpredictable. Deep-league dart or waiver watch, not a draft priority.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/415895/terrance-ferguson-2026-outlook.php",
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-terrance-ferguson/"
+  ]
+ },
+ "Rashid Shaheed|WR": {
+  "status": "Healthy",
+  "role": "No. 2 receiver and return specialist (Seahawks)",
+  "note": "Re-signed on a three-year, $51 million deal that says Seattle sees him as an offensive piece, not just a returner. Worked out privately with Sam Darnold this offseason and is expected to start opposite Jaxon Smith-Njigba. Deep-ball and return touchdowns give him weekly upside.",
+  "sources": [
+   "https://sports.yahoo.com/articles/seahawks-wr-rashid-shaheed-primed-123025209.html",
+   "https://www.si.com/nfl/seahawks/onsi/seattle-seahawks-blueprint-unlock-rashid-shaheed-2026"
+  ]
+ },
+ "Denzel Boston|WR": {
+  "status": "Healthy",
+  "role": "Starting receiver (Browns)",
+  "note": "Second-round rookie (39th overall) who moved into the first-team offense in camp per coach Todd Monken. Big-bodied red-zone target who will compete with KC Concepcion and Harold Fannin Jr. for targets. Rookie receivers are volatile, but the role is real.",
+  "sources": [
+   "https://www.clevelandbrowns.com/news/browns-announce-initial-53-man-roster-heading-into-the-2026-season",
+   "https://atozsports.com/nfl/cleveland-browns-news/denzel-boston-practice-update-todd-monken-pro-bowler-patriots-preseason/"
+  ]
+ },
+ "Jerry Jeudy|WR": {
+  "status": "Healthy",
+  "role": "Veteran starter in a crowded room (Browns)",
+  "note": "GM Andrew Berry still calls him the 'bell cow,' but the Browns drafted KC Concepcion and Denzel Boston early and both are starting. Jeudy fell from 90 catches/1,229 yards in 2024 to 50/602 in 2025 with a league-worst-tier catch rate. Bounce-back depends on Deshaun Watson and on holding off the rookies.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/48915228/cleveland-browns-nfl-wide-receiver-jerry-jeudy-aims-return-pro-bowl-form-2026",
+   "https://www.clevelandbrowns.com/news/breaking-down-the-browns-receiving-corps-heading-into-the-2026-season-position-preview"
+  ]
+ },
+ "Calvin Ridley|WR": {
+  "status": "Healthy",
+  "role": "Starter on the outside opposite Carnell Tate (Titans)",
+  "note": "Recovered from the broken fibula that ended his 2025 season in Week 11; now the veteran in a very young receiver room (only he and Wan'Dale Robinson have more than one year of experience). Was the Titans' No. 1 early last year but finished with only 303 yards in seven games. Age 31, so he is a cheap flier, not a building block.",
+  "sources": [
+   "https://www.rotowire.com/football/headlines/calvin-ridley-news-experienced-option-in-young-wr-room-636151"
+  ]
+ },
+ "Adonai Mitchell|WR": {
+  "status": "Healthy",
+  "role": "No. 2 receiver behind Garrett Wilson (Jets)",
+  "note": "Listed as a starter for Week 1 vs. Tennessee after catching 24 of 58 targets for 301 yards and two touchdowns in eight games following last year's trade from Indianapolis. Field-stretcher role in a run-first offense with Geno Smith; big-play upside, low weekly floor.",
+  "sources": [
+   "https://www.thefantasyfootballers.com/news/636257/adonai-mitchell-listed-as-starter-opposite-wilson/",
+   "https://sports.yahoo.com/articles/projecting-jets-wr-depth-chart-142840448.html"
+  ]
+ },
+ "Caleb Douglas|WR": {
+  "status": "Healthy",
+  "role": "Starting X receiver (Dolphins)",
+  "note": "Third-round rookie (75th overall) who was a camp standout and ran with the first team most of the summer; listed as the starting X for Week 1 vs. the Raiders. Vertical threat in a play-action-heavy offense with Malik Willis. Projections sit around 40 catches and 540 yards, with a wide range.",
+  "sources": [
+   "https://sports.yahoo.com/articles/dolphins-rookie-caleb-douglas-lands-120000119.html",
+   "https://www.thephinsider.com/miami-dolphins-roster/120922/miami-dolphins-wide-receiver-depth-chart-position-battles-2026-training-camp-caleb-douglas-rookie-preview"
+  ]
+ },
+ "Malik Willis|QB": {
+  "status": "Healthy",
+  "role": "Starting quarterback (Dolphins)",
+  "note": "Signed a three-year, $67.5 million deal ($45 million guaranteed) to be Miami's starter after backing up in Green Bay. Only six career starts, making him the least experienced Week 1 starter in the league. Rushing ability gives him a real fantasy floor; the passing offense is the unknown.",
+  "sources": [
+   "https://sports.yahoo.com/articles/updated-malik-willis-fantasy-outlook-161145850.html",
+   "https://www.foxsports.com/stories/nfl/unproven-unfazed-malik-willis-works-assure-dolphins-hes-qb-future"
+  ]
+ },
+ "Jordyn Tyson|WR": {
+  "status": "Out (injured reserve)",
+  "role": "On injured reserve, designated to return (Saints)",
+  "note": "No. 8 overall pick placed on injured reserve Aug 30 with a right hamstring injury suffered in a joint practice with Jacksonville. Must miss at least four games (eligible Week 5 vs. Minnesota), but the recurring hamstring is expected to keep him out closer to two months. Stash only.",
+  "sources": [
+   "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/saints-place-jordyn-tyson-on-ir-reduce-roster-to-53-players",
+   "https://www.cbssports.com/fantasy/football/news/saints-jordyn-tyson-lands-on-ir-designated-to-return/"
+  ]
+ },
+ "Tre Tucker|WR": {
+  "status": "Healthy",
+  "role": "Lead receiver (Raiders)",
+  "note": "Led the Raiders in receiving yards (696) and touchdowns (5) in 2025 while Brock Bowers was hurt, and played nearly every first-team snap in the preseason under new coach Klint Kubiak. Competes with Jalen Nailor for targets behind Bowers; a late-round target with a defined role.",
+  "sources": [
+   "https://sports.yahoo.com/articles/espn-insider-reveals-raiders-wr-160920623.html",
+   "https://www.raiders.com/news/2026-position-breakdown-wide-receivers-jalen-nailor-jack-bech-tre-tucker-raiders"
+  ]
+ },
+ "Jalen Nailor|WR": {
+  "status": "Healthy",
+  "role": "No. 2 receiver (Raiders)",
+  "note": "Signed a three-year, $35 million deal in March and reunites with Kirk Cousins from their Minnesota days. Set career highs of 29 catches and 444 yards in 2025 as a deep threat behind Justin Jefferson and Jordan Addison. Projected to open as the No. 2 wideout behind Tre Tucker.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/419987/jalen-nailor-2026-outlook.php",
+   "https://sports.yahoo.com/articles/raiders-wr-jalen-nailor-fantasy-175756496.html"
+  ]
+ },
+ "Braelon Allen|RB": {
+  "status": "Healthy",
+  "role": "Primary backup to Breece Hall (Jets)",
+  "note": "Breece Hall (new three-year, $43.5 million extension) is the workhorse, but Hall left a recent practice with a groin strain that coach Aaron Glenn called not serious. Allen is the early-down and goal-line complement and the immediate beneficiary if Hall misses time. Strong handcuff.",
+  "sources": [
+   "https://sports.yahoo.com/articles/jets-rb-braelon-allen-support-173101951.html",
+   "https://www.si.com/nfl/jets/onsi/examining-braelon-allen-s-outlook-if-breece-hall-misses-extended-time-01m08a5h7ytk"
+  ]
+ },
+ "Tank Bigsby|RB": {
+  "status": "Healthy",
+  "role": "No. 2 running back behind Saquon Barkley (Eagles)",
+  "note": "Firmly the backup; he was rested for preseason Weeks 2 and 3 while Will Shipley played. Philadelphia has talked about using him more to keep 29-year-old Barkley fresh. Averaged 5.9 yards per carry on 58 attempts last year. One of the best handcuffs in the league.",
+  "sources": [
+   "https://sports.yahoo.com/articles/why-tank-bigsby-eagles-rb2-113600616.html",
+   "https://www.si.com/nfl/eagles/onsi/eagles-very-high-on-tank-bigsby-this-year-after-massive-offseason-growth-01m1grvc7f4f"
+  ]
+ },
+ "Kenyon Sadiq|TE": {
+  "status": "Healthy (limited reps)",
+  "role": "Rotational tight end behind Mason Taylor (Jets)",
+  "note": "No. 16 overall pick with rare athleticism (4.39 forty, 43.5-inch vertical) but he missed most of camp and all of the preseason, so Mason Taylor is expected to be the every-down tight end early. Geno Smith's passing game is not expected to support two tight ends. Dynasty asset, not a 2026 starter.",
+  "sources": [
+   "https://sports.yahoo.com/articles/kenyon-sadiq-fantasy-outlook-2026-164941833.html",
+   "https://www.fantasypros.com/nfl/notes/419546/kenyon-sadiq-2026-outlook.php"
+  ]
+ },
+ "Rashod Bateman|WR": {
+  "status": "Monitor",
+  "role": "No. 2 receiver behind Zay Flowers (Ravens)",
+  "note": "Missed two practices this week for undisclosed reasons, then was back in full uniform Thursday. Injuries held him to 19 catches for 224 yards in 2025 after a 45/756/9 season in 2024. Bounce-back candidate with a healthy Lamar Jackson and new offensive coordinator Declan Doyle, but not a high-target role.",
+  "sources": [
+   "https://www.foxsports.com/nfl/rashod-bateman-player",
+   "https://www.baltimoreravens.com/team/players-roster/rashod-bateman/"
+  ]
+ },
+ "Dontayvion Wicks|WR": {
+  "status": "Healthy",
+  "role": "Likely No. 2 receiver (Eagles)",
+  "note": "Acquired from Green Bay in April and extended for one year at $12.5 million. Was expected to be the fourth receiver, but Hollywood Brown has struggled in camp and Lemon is hurt, so Wicks has moved into a starting role and is being talked up as a red-zone contributor by people inside the team.",
+  "sources": [
+   "https://sports.yahoo.com/articles/eagles-wr-dontayvion-wicks-might-181607983.html",
+   "https://phlsportsnation.com/2026/08/11/dontayvion-wicks-your-wide-receiver-2-for-the-eagles-2026-football-season/"
+  ]
+ },
+ "Devaughn Vele|WR": {
+  "status": "Healthy",
+  "role": "No. 3 receiver, likely No. 2 while Jordyn Tyson is out (Saints)",
+  "note": "Coach Kellen Moore says he has 'a really defined role.' Finished 2025 strong with 19 catches for 239 yards over the last four games and has chemistry with Tyler Shough. With first-round pick Jordyn Tyson on injured reserve for at least four games, Vele opens the season as the No. 2 behind Chris Olave.",
+  "sources": [
+   "https://gridironexperts.com/devaughn-vele-looks-to-have-locked-wr3-for-the-saints/",
+   "https://sports.yahoo.com/articles/2026-saints-player-preview-devaughn-005637548.html"
+  ]
+ },
+ "Jaylin Noel|WR": {
+  "status": "Healthy",
+  "role": "Slot receiver and returner (Texans)",
+  "note": "Activated from the non-football-injury list and back at practice. Jayden Higgins (torn ACL) and Tank Dell (injured reserve) are out, which opens snaps, but the Texans traded for Kayshon Boutte to start opposite Nico Collins, so Noel is mostly a slot-only player in three-receiver sets. Coach DeMeco Ryans says there is a plan for him to be more than a returner.",
+  "sources": [
+   "https://sports.yahoo.com/articles/texans-wr-jaylin-noel-returns-224434214.html",
+   "https://www.fantasypros.com/nfl/notes/431026/jaylin-noel-2026-outlook.php"
+  ]
+ },
+ "Ray Davis|RB": {
+  "status": "Healthy",
+  "role": "Backup to James Cook, All-Pro kick returner (Bills)",
+  "note": "James Cook won the 2025 rushing title (1,621 yards), so Davis's standalone fantasy value is small unless Cook is hurt. He led the NFL in kick-return average (30.4) and made the All-Pro team. Handcuff with return-touchdown upside.",
+  "sources": [
+   "https://www.si.com/nfl/bills/onsi/under-the-radar-bills-storyline-in-2026-is-what-is-ray-davis-role-entering-year-3",
+   "https://sports.yahoo.com/articles/bills-found-ideal-james-cook-222530148.html"
+  ]
+ },
+ "Najee Harris|RB": {
+  "status": "Healthy (returning from injury)",
+  "role": "Co-No. 2 running back behind Cam Skattebo (Giants)",
+  "note": "Signed less than two weeks before the roster deadline after an Achilles injury early last season with the Chargers, and made the 53-man roster. Listed as a co-backup with Tyrone Tracy Jr. and Devin Singletary behind Cam Skattebo. Ran 11 times for 39 yards in the preseason. Four straight 1,000-yard seasons in Pittsburgh are the appeal; the depth chart is the problem.",
+  "sources": [
+   "https://www.giants.com/news/roster-update-giants-announce-initial-53-man-roster-for-2026-nfl-season-week-1-john-harbaugh",
+   "https://sports.yahoo.com/articles/york-giants-rb-najee-harris-145903160.html"
+  ]
+ },
+ "Rams HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Sean McVay (Rams)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. The Rams are the consensus Super Bowl favorite (+500) after a 12-5 season and an NFC title game loss; they traded for reigning Defensive Player of the Year Myles Garrett and cornerback Trent McDuffie. Win total is 11.5, tied for highest in the league. Week 1 is Thursday, Sept 10, vs. the 49ers in Melbourne.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49537787/2026-nfl-season-rams-superteams-preseason-favorites-win-super-bowl-barnwell",
+   "https://www.cbssports.com/betting/news/betting-the-rams-in-2026-see-how-los-angeles-win-total-super-bowl-odds-are-trending-and-our-best-bets/"
+  ]
+ },
+ "Seahawks HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Mike Macdonald (Seahawks)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. Defending Super Bowl champions after a 14-3 season. Seattle re-signed nearly all of its own free agents rather than adding stars, but has turnover at running back, edge rusher and in the secondary plus a new offensive coordinator; projections are around 10-7 with a harder schedule after the Week 11 bye.",
+  "sources": [
+   "https://www.pff.com/news/nfl-seattle-seahawks-2026-preview",
+   "https://sogsports.com/seattle-seahawks-2026-record-prediction/"
+  ]
+ },
+ "Cowboys HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Brian Schottenheimer (Cowboys)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. Second year for Schottenheimer after a 7-9-1 season. Win total is 9.5; the offense was fifth in points per game (27.7) in 2025 and new defensive coordinator Christian Parker replaces Matt Eberflus. Projections range from 6-11 to 11-6, so this is a wide-variance pick.",
+  "sources": [
+   "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-projected-win-total-for-2026-season-leans-toward-playoff-push",
+   "https://www.foxsports.com/stories/nfl/cowboys-win-11-games-why-dallas-poised-make-playoffs-2026"
+  ]
+ },
+ "Lions HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Dan Campbell (Lions)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. Detroit fell from 15-2 to 9-8 last year and missed the playoffs. Win total is 10.5 and ESPN projects 11.3 wins, helped by the easiest schedule in the league by opponent win totals. New offensive coordinator Drew Petzing.",
+  "sources": [
+   "https://www.si.com/betting/detroit-lions-win-total-projection-for-2026-season-lions-will-benefit-from-league-s-easiest-schedule-01kz4mtd1bgj",
+   "https://www.nbcnews.com/sports/nfl/detroit-lions-2026-nfl-season-preview-guide-jared-goff-rcna593380"
+  ]
+ },
+ "Ravens HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Jesse Minter, first season (Ravens)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. John Harbaugh left for the Giants after 18 seasons; former Chargers defensive coordinator Jesse Minter takes over with young play-caller Declan Doyle running the offense. Baltimore went 8-9 last year but the market still sets its win total at 11.5, tied for the highest in the NFL, and favors it in the AFC North. Week 1 is at Indianapolis.",
+  "sources": [
+   "https://baltimoresportsandlife.com/previewing-the-2026-ravens-season-and-week-1-at-indianapolis/",
+   "https://dknetwork.draftkings.com/2026/08/19/2026-nfl-win-total-prediction-pick-baltimore-ravens/"
+  ]
+ },
+ "Bills HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Joe Brady, first season (Bills)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. Sean McDermott was fired in January after the divisional-round loss to Denver; 36-year-old offensive coordinator Joe Brady was promoted. Win total is 10.5 and Buffalo is expected to reach 11 wins for a seventh straight year with Josh Allen. Week 1 is vs. Houston.",
+  "sources": [
+   "https://www.si.com/betting/buffalo-bills-win-total-projection-for-2026-season-expect-another-strong-season-in-buffalo-01kyjjvb6qq3",
+   "https://athlonsports.com/nfl/buffalo-bills/buffalo-bills-2026-nfl-season-preview"
+  ]
+ },
+ "Broncos HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Sean Payton (Broncos)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. Reigning AFC West champions who reached the AFC title game; Payton kept the roster together and promoted Davis Webb to offensive coordinator. Win total is only 9.5 because Denver went 12-3 in one-score games last year, which rarely repeats. The early schedule (Chiefs twice, Jaguars, Rams, 49ers, Chargers, Seahawks, Cardinals) is the third-toughest stretch in the league.",
+  "sources": [
+   "https://www.si.com/betting/denver-broncos-win-total-projection-for-2026-season-broncos-will-regress-after-overperforming-in-2025-01kytc74pf5f",
+   "https://athlonsports.com/nfl/denver-broncos/denver-broncos-2026-nfl-season-preview"
+  ]
+ },
+ "Eagles HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Nick Sirianni (Eagles)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. Win total is 10.5 with a fifth straight double-digit-win season expected. New offensive coordinator Sean Mannion is tasked with fixing last year's underwhelming offense; Vic Fangio's defense may be the best in the league. Sirianni and Jalen Hurts have made the playoffs every year together, though Sirianni is under real pressure this season.",
+  "sources": [
+   "https://insidetheiggles.com/another-successful-campaign-total-wins-forecast-philadelphia-eagles",
+   "https://www.bleedinggreennation.com/news/181478/eagles-news-nick-sirianni-listed-among-people-who-will-define-the-2026-nfl-season"
+  ]
+ },
+ "Chargers HC|HC": {
+  "status": "Healthy",
+  "role": "Head coach Jim Harbaugh (Chargers)",
+  "note": "This is ESPN's optional Head Coach slot: you draft an NFL team's coach and score points when that team wins (and, depending on league settings, by margin of victory or points scored). No ADP site tracks it, so there is no market comparison for these rows. Pick the team you expect to win the most games. Back-to-back 11-win seasons under Harbaugh; win total is 9.5 with the over heavily favored (-140). Former Dolphins head coach Mike McDaniel is the new offensive coordinator for Justin Herbert, and a healthier offensive line is expected to lift the offense. Note: McDaniel is the coordinator, not the head coach, so Harbaugh is the name behind this slot.",
+  "sources": [
+   "https://www.si.com/betting/los-angeles-chargers-win-total-projection-for-2026-season-sky-is-the-limit-for-los-angeles",
+   "https://www.chargers.com/news/mike-mcdaniel-chris-oleary-new-coordinator-2026"
+  ]
+ },
+ "Steelers D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Top-five fantasy defense candidate",
+  "note": "Fifth in fantasy points per game last year with the sixth-most sacks and eighth-most interceptions; T.J. Watt, Cameron Heyward, Patrick Queen and Alex Highsmith return, and Jaquon Brisker and Jamel Dean were added to the secondary. New defensive coordinator Patrick Graham. Week 1 vs. Atlanta is a good start; Weeks 2-3 (Patriots, Bengals) are tougher.",
+  "sources": [
+   "https://www.fantasypros.com/nfl/notes/424699/pittsburgh-defense-2026-outlook.php",
+   "https://www.cbssports.com/fantasy/football/news/2026-outlook-steelers/"
+  ]
+ },
+ "Seahawks D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Defending-champion defense with turnover",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. Mike Macdonald's defense carried a 14-3 Super Bowl-winning season, but Seattle lost pieces at edge rusher and in the secondary this offseason and mostly re-signed its own players rather than adding. Still a top-half unit, but check the Week 1 matchup before starting it.",
+  "sources": [
+   "https://www.pff.com/news/nfl-seattle-seahawks-2026-preview"
+  ]
+ },
+ "Rams D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Upgraded pass rush and secondary",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. Los Angeles traded Jared Verse and three picks for reigning Defensive Player of the Year Myles Garrett, and added cornerbacks Trent McDuffie and Jaylen Watson. On paper this is one of the most improved defenses in the league; the projection assumes the new pieces gel by midseason. Plays Thursday, Sept 10, in Melbourne (Week 1).",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49537787/2026-nfl-season-rams-superteams-preseason-favorites-win-super-bowl-barnwell"
+  ]
+ },
+ "Ravens D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Defense-first new head coach",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. New head coach Jesse Minter is a defensive coordinator by trade (Chargers), and Baltimore's 11.5 win total implies a lot of positive game script for the defense. Week 1 at Indianapolis against Daniel Jones in his first game back from an Achilles tear.",
+  "sources": [
+   "https://baltimoresportsandlife.com/previewing-the-2026-ravens-season-and-week-1-at-indianapolis/"
+  ]
+ },
+ "Eagles D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Vic Fangio's unit, possible best in the league",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. Philadelphia reporting says Fangio 'could conceivably oversee the best defense in the NFL' this year, and the Eagles are expected to win 10+ games again, which means favorable game scripts. A reasonable late pick, especially in a league that lets you stream.",
+  "sources": [
+   "https://insidetheiggles.com/another-successful-campaign-total-wins-forecast-philadelphia-eagles"
+  ]
+ },
+ "Browns D/ST|DEF": {
+  "status": "Monitor",
+  "role": "Lost Myles Garrett",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. Cleveland traded Myles Garrett to the Rams for Jared Verse and three draft picks. Losing the reigning Defensive Player of the Year is a big hit to the sack floor that made this a fantasy defense; treat it as a streaming option based on matchup rather than a set-and-forget pick.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49537787/2026-nfl-season-rams-superteams-preseason-favorites-win-super-bowl-barnwell"
+  ]
+ },
+ "Patriots D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Streaming defense",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. New England reached the Super Bowl last season and added A.J. Brown and Romeo Doubs on offense, which should keep the defense in positive game scripts. No injury or personnel news surfaced. Streamer tier in ESPN's own ranking (197th overall).",
+  "sources": [
+   "https://www.pff.com/news/nfl-seattle-seahawks-2026-preview"
+  ]
+ },
+ "Lions D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Streaming defense with the easiest schedule",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. Detroit plays the easiest schedule in the league by opponent win totals, which is the main argument for its defense as a streamer. No injury news surfaced for the unit.",
+  "sources": [
+   "https://www.si.com/betting/detroit-lions-win-total-projection-for-2026-season-lions-will-benefit-from-league-s-easiest-schedule-01kz4mtd1bgj"
+  ]
+ },
+ "Chiefs D/ST|DEF": {
+  "status": "Monitor",
+  "role": "Lost Trent McDuffie",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. Kansas City traded cornerback Trent McDuffie to the Rams this offseason, weakening the secondary. Not covered by Draft Sharks at all, and ESPN ranks it 199th, so this is a waiver-wire defense, not a draft pick.",
+  "sources": [
+   "https://www.espn.com/nfl/story/_/id/49537787/2026-nfl-season-rams-superteams-preseason-favorites-win-super-bowl-barnwell"
+  ]
+ },
+ "Chargers D/ST|DEF": {
+  "status": "Healthy",
+  "role": "Streaming defense",
+  "note": "No dedicated defense report was pulled for this unit (research limit reached), so this is assembled from team-level coverage. Defensive coordinator Jesse Minter left to become the Ravens' head coach, so the unit has a new play-caller. The Chargers are expected to win 10 games, which helps game script. Last pick of the ESPN top 200; only draft if your league requires a defense.",
+  "sources": [
+   "https://www.si.com/betting/los-angeles-chargers-win-total-projection-for-2026-season-sky-is-the-limit-for-los-angeles"
+  ]
+ }
+}

@@ -6,6 +6,8 @@ Baselines attached per player:
   * 4for4  - their blended ADP (the ADP column is the 12-team overall pick),
              plus the spread across the individual sites they aggregate.
   * Underdog - best-ball ADP, with movement since the export's first column.
+  * Draft Sharks - their consensus ADP.
+Plus, per player, a hand-researched status/role/narrative note (data/notes).
 """
 
 import csv
@@ -142,11 +144,21 @@ def load_draftsharks(path, espn_rows):
     return by_key, unmatched
 
 
-def build(espn_path, f4_path, underdog_path, ds_path, out_path, teams=12):
+def load_notes(path):
+    """{"Name|POS": {status, role, note, sources}} - researched per player."""
+    if not path or not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def build(espn_path, f4_path, underdog_path, ds_path, out_path, teams=12,
+          notes_path=None):
     espn, _ = load_file(espn_path, "espn")
     f4 = load_4for4(f4_path)
     ud, ud_latest, ud_base = load_underdog(underdog_path)
     ds, ds_unmatched = load_draftsharks(ds_path, espn)
+    notes = load_notes(notes_path)
 
     players = []
     for e in sorted(espn, key=lambda r: r["rank"]):
@@ -164,6 +176,10 @@ def build(espn_path, f4_path, underdog_path, ds_path, out_path, teams=12):
             "ua": u["cur"] if u else None,
             "uapr": u["base"] if u else None,
         })
+        note = notes.get(f"{e['name']}|{e['pos']}")
+        if note:
+            players[-1].update({"st": note["status"], "ro": note["role"],
+                                "nt": note["note"], "sr": note.get("sources", [])})
 
     espn_day = re.search(r"(\d{4})-(\d{2})-(\d{2})", espn_path)
     f4_day = re.search(r"(\d{4})-(\d{2})-(\d{2})", f4_path)
@@ -175,6 +191,8 @@ def build(espn_path, f4_path, underdog_path, ds_path, out_path, teams=12):
         "ud_date": f"{ud_day.group(1)} {ud_day.group(2)}" if ud_day else ud_latest,
         "ud_base": ud_base, "sites": len(SITES), "ds_date": "2026-09-04",
     }
+    notes_day = re.search(r"(\d{4})-(\d{2})-(\d{2})", notes_path or "")
+    meta["notes_date"] = notes_day.group(0) if notes_day else ""
     if espn_day and ud_day:
         e = datetime.date(*(int(g) for g in espn_day.groups()))
         u = datetime.date(e.year, MONTHS.index(ud_day.group(1).lower()) + 1, int(ud_day.group(2)))
@@ -189,14 +207,16 @@ def build(espn_path, f4_path, underdog_path, ds_path, out_path, teams=12):
           f" | 4for4 {sum(1 for p in players if p['fa'] is not None)}"
           f" | sharks {sum(1 for p in players if p['da'] is not None)}"
           f" | underdog {sum(1 for p in players if p['ua'] is not None)} (of {len(skill)} skill)"
-          f" | byes {sum(1 for p in players if p['by'] is not None)}")
+          f" | byes {sum(1 for p in players if p['by'] is not None)}"
+          f" | notes {sum(1 for p in players if 'nt' in p)}")
     print(f"  draft-sharks rows with no ESPN match: {ds_unmatched}")
     # Head coaches are an ESPN-only draft slot; no ADP source lists them.
     rated = [p for p in players if p["p"] != "HC"]
     for label, miss in (("4for4", [p["n"] for p in rated if p["fa"] is None]),
                         ("sharks", [p["n"] for p in rated if p["da"] is None]),
                         ("underdog", [p["n"] for p in skill if p["ua"] is None]),
-                        ("bye", [p["n"] for p in players if p["by"] is None])):
+                        ("bye", [p["n"] for p in players if p["by"] is None]),
+                        ("notes", [p["n"] for p in players if "nt" not in p])):
         if miss:
             print(f"  missing {label}: {', '.join(miss[:8])}{' ...' if len(miss) > 8 else ''}")
     return meta, players
@@ -207,4 +227,5 @@ if __name__ == "__main__":
     j = lambda p: os.path.join(root, p)
     build(j("data/raw/espn_2026-09-05.csv"), j("data/raw/4for4_adp_2026-09-05.csv"),
           j("data/raw/underdog_adp_2026-09-05.csv"),
-          j("data/raw/draftsharks_consensus_2026-09-04.tsv"), j("out/board.json"))
+          j("data/raw/draftsharks_consensus_2026-09-04.tsv"), j("out/board.json"),
+          notes_path=j("data/notes/player_notes_2026-09-05.json"))

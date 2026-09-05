@@ -19,7 +19,7 @@ FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' "
 
 HEAD_EXTRA = f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Live 10-team PPR draft board: where ESPN's ADP disagrees with consensus, with pick markers that track your turn.">
+<meta name="description" content="12-team PPR draft board: where ESPN's ADP disagrees with the market (4for4, Draft Sharks, Underdog), with a researched status note for every player.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#EBEFED">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0D1315">
 <link rel="icon" href="{FAVICON}">
