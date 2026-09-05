@@ -1,8 +1,16 @@
 name: Deploy site to GitHub Pages
 
-# Manual-only until Pages is enabled in repo settings (Settings > Pages >
-# Source: GitHub Actions) — on-push deploys just fail red until then.
+# Pages must be enabled once by hand (Settings > Pages > Source: GitHub
+# Actions). The Actions token is refused when it tries to create the Pages
+# site itself ("Resource not accessible by integration"), so configure-pages
+# only reads the existing configuration here.
 on:
+  push:
+    branches: [claude/fantasy-draft-rankings-r5665l]
+    paths:
+      - viewer/board.html
+      - scripts/build_site.py
+      - .github/workflows/pages.yml
   workflow_dispatch:
 
 permissions:
@@ -25,8 +33,6 @@ jobs:
       - name: Rebuild site from viewer source
         run: python3 scripts/build_site.py
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
